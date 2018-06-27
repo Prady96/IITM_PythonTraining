@@ -1,7 +1,6 @@
 # IITM_PythonTraining
-Notes for Python Training in Data Analytics
 
-Notes for Session 1 training and Practise along with it, Try New List Questions 
+Notes for Session 1 training ,Try New List Questions 
 
 **Download The Session 1 folder and import it into your Jupyter Notebooks.**
 
