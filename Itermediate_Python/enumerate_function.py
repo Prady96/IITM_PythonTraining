@@ -29,6 +29,30 @@ new_dict = dict(enumerate(example))
 print(new_dict)
 
 print()
-print("Enumerate inside dict")
+# print("Enumerate inside dict")
 # Enumerate inside dict
-[print(i, j) for i, j in enumerate(new_dict)]
+# [print(i, j) for i, j in enumerate(new_dict)]
+
+
+# OUTPUT
+"""
+
+root@pradyum-Lenovo-B40-80:~/django-apps/freshInstall/Intermediate_python/IITM_PythonTraining/Itermediate_Python# python enumerate_function.py
+()
+Normal Function
+(0, 'left')
+(1, 'right')
+(2, 'down')
+(3, 'up')
+()
+Enumerate Function
+(0, 'left')
+(1, 'right')
+(2, 'down')
+(3, 'up')
+()
+Enuemrate with dictionary
+{0: 'left', 1: 'right', 2: 'down', 3: 'up'}
+()
+
+"""
