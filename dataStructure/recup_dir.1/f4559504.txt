@@ -1,6 +1,0 @@
- District~Boe District~Buada District~Denigomodu District~Ewa District~Ijuw District~Meneng District~Nibok District~Uaboe District~Yaren District"},
-  "data/NU": {"id": "data/NU", "key": "NU", "name": "NIUE"},
-  "data/NZ": {"fmt": "%N%n%O%n%A%n%D%n%C %Z", "id": "data/NZ", "key": "NZ", "name": "NEW ZEALAND", "posturl": "http://www.nzpost.co.nz/Cultures/en-NZ/OnlineTools/PostCodeFinder/", "require": "ACZ", "zip": "\\d{4}", "zipex": "6001,6015,6332,8252,1030"},
-  "data/OM": {"fmt": "%N%n%O%n%A%n%Z%n%C", "id": "data/OM", "key": "OM", "name": "OMAN", "zip": "(?:PC )?\\d{3}", "zipex": "133,112,111"},
-  "data/PA": {"fmt": "%N%n%O%n%A%n%C%n%S", "id": "data/PA", "key": "PA", "name": "PANAMA (REP.)", "upper": "CS"},
-  "data/PE": {"fmt": "%N%n%O%n%A%n%C %Z%n%S", "id": "data/PE", "key": "PE", "lang": "es", "languages": "es", "locality_name_type": "district", "name": "PERU", "posturl": "http://www.serpost.com.pe/cpostal/codigo", "sub_isoids": "AMA~ANC~APU~ARE~AYA~CAJ~CAL~CUS~LIM~HUV~HUC~ICA~JUN~LAL~LAM~LOR~MDD~MOQ~LMA~PAS~PIU~PUN~SAM~TAC~TUM~UCA", "sub_keys": "Amazonas~

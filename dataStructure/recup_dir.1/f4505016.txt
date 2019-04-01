@@ -1,2 +1,0 @@
-m de X-server alleen te laten opstarten door gebruikers die aangemeld zijn via één van de virtuele consoles.
-Extended_description-nn.utf-8: Sidan X-tenaren køyrer med priviliegiar som superbrukar, er det kanskje uklokt av tryggingsgrunner 

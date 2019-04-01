@@ -1,2 +1,0 @@
-m dette systemet tilbyr, /opt - programpakker som legges til manuelt, /usr/local - lokalt hierarki, Skriv inn manuelt, Ikke monter
-Choices-pa.utf-8: / - root 

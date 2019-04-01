@@ -1,2 +1,0 @@
-": "ESTONIA", "posturl": "https://www.omniva.ee/era/sihtnumbrite_otsing", "zip": "\\d{5}", "zipex": "69501,11212"},
-  "data/EG": {"fmt": "%N%n%O%n%A%n%C%n%S%n%Z", "id": "data/EG", "key": "EG", "lang": "ar", "languages": "ar", "lfmt": "%N%n%O%n%A%n%C%n%S%n%Z", "name": "EGYPT", "sub_isoids": "ASN~AST~ALX~IS~LX~BA~BH~GZ~DK~SUZ~SHR~GH~FYM~C~KB~MNF~MN~WAD~BNS~PTS~JS~DT~SHG~SIN~KN~KFS~MT", "sub_keys": "

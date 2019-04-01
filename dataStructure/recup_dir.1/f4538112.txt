@@ -1,2 +1,0 @@
-on-eu.utf-8: Ez da muntatze-punturik ezarri ${FILESYSTEM} fitxategi-sistemarako (${DEVICE} gailuko ${PARTITION} partizioan).\n\nPartizioak egiteko menura itzultzen ez bazara eta muntatze-punturik esleitzen ez baduzu, partizio hau ez da erabiliko.
-Extended_description-fa.utf-8: 

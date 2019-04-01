@@ -1,5 +1,0 @@
- {
-    "message": "Come piace a te"
-  },
-  "tourBodyDownloadUpload": {
-    "message": "Cattura una schermata di una pagina web, ritagliala e salvala online per condividerla in modo più veloce, oppure scaricala sul tuo computer. Puoi anche utilizzare il pulsante 

@@ -1,1 +1,0 @@
-t.utf-8: Comprobando'l ${TYPE} sistema de ficheros na partici

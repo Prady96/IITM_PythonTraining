@@ -1,2 +1,0 @@
-spaço swap.
-Extended_description-pt_br.utf-8: Você não selecionou nenhuma partição para usar como área de troca (swap). Habilitar área de troca (swap) é recomendado para que o sistema possa fazer melhor uso da mem

@@ -1,6 +1,0 @@
-address[_-]?line(one)?|address1|addr1|street" +
-      "|addrline1|address_1" + // Extra rules by Firefox
-      "|(?:shipping|billing)address$" +
-      "|strasse|straße|hausnummer|housenumber" + // de-DE
-      "|house.?name" + // en-GB
-      "|direccion|direcci
