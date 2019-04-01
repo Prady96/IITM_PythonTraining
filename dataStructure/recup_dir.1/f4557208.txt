@@ -1,0 +1,7 @@
+që të gjeni krejt shkrepjet që keni bërë."
+  },
+  "tourHeaderAccounts": {
+    "message": "Foto ekrani Kudo Me Vete"
+  },
+  "tourBodyAccounts": {
+    "message": "Hyni në Llogarinë tuaj Firefox që të përdorni shkrepjet tuaja në krejt pajisjet tuaja dhe t

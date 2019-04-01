@@ -1,0 +1,11 @@
+{
+  let availableRegionCodes = Services.intl.getAvailableLocaleDisplayNames("region");
+  let displayNames = Services.intl.getRegionDisplayNames(undefined, availableRegionCodes);
+  let result = new Map();
+  for (let i = 0; i < availableRegionCodes.length; i++) {
+    result.set(availableRegionCodes[i].toUpperCase(), displayNames[i]);
+  }
+  return result;
+});
+
+PK

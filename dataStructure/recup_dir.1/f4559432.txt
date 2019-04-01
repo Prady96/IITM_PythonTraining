@@ -1,0 +1,2 @@
+x": "28039,28300,28070"},
+  "data/ES--eu": {"fmt": "%N%n%O%n%A%n%Z %C %S", "id": "data/ES--eu", "key": "ES", "lang": "eu", "name": "SPAIN", "posturl": "http://www.correos.es/contenido/13-MenuRec2/04-MenuRec24/1010_s-CodPostal.asp", "require": "ACSZ", "sub_keys": "A~AB~AL~VI~O~AV~BA~B~BI~BU~CC~CA~S~CS~CE~CR~C~CU~SS~GI~GR~GU~H~HU~PM~J~CO~LO~GC~LE~L~LU~M~MA~ML~MU~NA~OR~P~PO~SA~TF~SG~SE~SO~T~TE~TO~V~VA~ZA~Z", "sub_names": "Alacant~Albacete~Almería~Araba~Asturias~

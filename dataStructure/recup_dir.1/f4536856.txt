@@ -1,0 +1,3358 @@
+e: http://libmtp.sourceforge.net/
+Original-Maintainer: Alessio Treglia <alessio@debian.org>
+
+Package: libmtdev1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 79
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: mtdev
+Version: 1.1.5-1ubuntu2
+Depends: libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Description: Multitouch Protocol Translation Library - shared library
+ libmtdev is a library for translating evdev multitouch events using the legacy
+ protocol to the new multitouch slots protocol. This is necessary for kernel
+ drivers that have not been updated to use the newer protocol.
+Homepage: http://bitmath.org/code/mtdev/
+Original-Maintainer: Nobuhiro Iwamatsu <iwamatsu@debian.org>
+
+Package: libqt5sql5
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 387
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: qtbase-opensource-src
+Version: 5.5.1+dfsg-16ubuntu7.5
+Depends: libc6 (>= 2.14), libqt5core5a (>= 5.5.0), libstdc++6 (>= 4.1.1), qtbase-abi-5-5-1
+Recommends: libqt5sql5-sqlite | libqt5sql5-mysql | libqt5sql5-odbc | libqt5sql5-psql
+Description: Qt 5 SQL module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ The QtSql module helps you provide seamless database integration to your Qt
+ applications.
+Homepage: http://qt-project.org/
+Original-Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+
+Package: libipc-run-perl
+Status: install ok installed
+Priority: optional
+Section: perl
+Installed-Size: 274
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 0.94-1
+Depends: perl, libio-pty-perl
+Description: Perl module for running processes
+ IPC::Run allows you to run and interact with child processes using
+ files, pipes, and pseudo-ttys.  Both system()-style and scripted
+ usages are supported and may be mixed.  Likewise, functional and OO
+ API styles are both supported and may be mixed.
+ .
+ Various redirection operators reminiscent of those seen on common
+ Unix and DOS command lines are provided.
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Homepage: https://metacpan.org/release/IPC-Run
+
+Package: fonts-tlwg-loma-ttf
+Status: install ok installed
+Priority: optional
+Section: fonts
+Installed-Size: 381
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Source: fonts-tlwg
+Version: 1:0.6.2-2.1
+Replaces: fonts-tlwg-loma (<< 1:0.6.2-2)
+Recommends: fonts-tlwg-loma (>= 1:0.6.2-2)
+Breaks: fonts-tlwg-loma (<< 1:0.6.2-2)
+Description: Thai Loma TrueType font
+ This package provides Thai Loma UI font from NECTEC, in TrueType format.
+ .
+ The font provides Arial-compatible Thai glyphs with metrics optimized
+ for on-screen user interface. For example, line spacing is reduced from
+ regular typographic designs to allow more lines displayed on screen.
+Original-Maintainer: Theppitak Karoonboonyanan <thep@debian.org>
+Homepage: http://linux.thai.net/projects/fonts-tlwg
+
+Package: lightdm
+Status: install ok installed
+Priority: optional
+Section: x11
+Installed-Size: 668
+Maintainer: Robert Ancell <robert.ancell@ubuntu.com>
+Architecture: amd64
+Version: 1.18.3-0ubuntu1.1
+Provides: x-display-manager
+Depends: debconf (>= 0.5) | debconf-2.0, lsb-base (>= 4.1+Debian11ubuntu7), libc6 (>= 2.14), libgcrypt20 (>= 1.6.0), libglib2.0-0 (>= 2.37.3), libpam0g (>= 0.99.7.1), libxcb1, libxdmcp6, libpam-runtime (>= 0.76-14), libpam-modules, adduser, libglib2.0-bin, dbus, plymouth (>= 0.8.8-0ubuntu18), bash (>= 4.3)
+Pre-Depends: dpkg (>= 1.15.7.2)
+Recommends: xserver-xorg, unity-greeter | lightdm-greeter | lightdm-kde-greeter
+Suggests: bindfs
+Conflicts: liblightdm-gobject-0-0, liblightdm-qt-0-0
+Conffiles:
+ /etc/apparmor.d/abstractions/lightdm 14606b0b6aeb01259d40ec740caad0be
+ /etc/apparmor.d/abstractions/lightdm_chromium-browser e1195e34922a67fa219b8b95eaf9c305
+ /etc/apparmor.d/lightdm-guest-session 3c7812f49f27e733ad9b5d413c4d14cb
+ /etc/dbus-1/system.d/org.freedesktop.DisplayManager.conf b76b6b45d7f7ff533c51d7fc02be32f4
+ /etc/init.d/lightdm be2b1b20bec52a04c1a877477864e188
+ /etc/init/lightdm.conf 07304e5b3265b4fb82a2c94beb9b577e
+ /etc/lightdm/users.conf 1de1a7e321b98e5d472aa818893a2a3e
+ /etc/logrotate.d/lightdm b6068c54606c0499db9a39a05df76ce9
+ /etc/pam.d/lightdm 1abe2be7a999b42517c82511d9e9ba22
+ /etc/pam.d/lightdm-autologin 28dd060554d1103ff847866658431ecf
+ /etc/pam.d/lightdm-greeter 65ed119ce8f4079f6388b09ad9d8b2f9
+Description: Display Manager
+ LightDM is a X display manager that:
+  * Has a lightweight codebase
+  * Is standards compliant (PAM, ConsoleKit, etc)
+  * Has a well defined interface between the server and user interface
+  * Cross-desktop (greeters can be written in any toolkit)
+Homepage: https://launchpad.net/lightdm
+
+Package: firefox
+Status: install ok installed
+Priority: optional
+Section: web
+Installed-Size: 180228
+Maintainer: Ubuntu Mozilla Team <ubuntu-mozillateam@lists.ubuntu.com>
+Architecture: amd64
+Version: 66.0+build3-0ubuntu0.16.04.2
+Replaces: kubuntu-firefox-installer
+Provides: gnome-www-browser, iceweasel, www-browser
+Depends: lsb-release, libatk1.0-0 (>= 1.12.4), libc6 (>= 2.18), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.10.0), libdbus-1-3 (>= 1.9.14), libdbus-glib-1-2 (>= 0.78), libfontconfig1 (>= 2.11.94), libfreetype6 (>= 2.3.5), libgcc1 (>= 1:4.2), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.31.8), libgtk-3-0 (>= 3.4), libpango-1.0-0 (>= 1.22.0), libpangocairo-1.0-0 (>= 1.14.0), libstartup-notification0 (>= 0.8), libstdc++6 (>= 4.6), libx11-6, libx11-xcb1, libxcb-shm0, libxcb1, libxcomposite1 (>= 1:0.3-1), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxrender1, libxt6
+Recommends: xul-ext-ubufox, libcanberra0, libdbusmenu-glib4, libdbusmenu-gtk3-4
+Suggests: fonts-lyx
+Conffiles:
+ /etc/apparmor.d/usr.bin.firefox 2c5033f33fe1c0e5b9f27ecbbb6ff74f
+ /etc/apport/blacklist.d/firefox ee63264f847e671832d42255912ce144
+ /etc/apport/native-origins.d/firefox 7c26b75c7c2b715c89cc6d85338252a4
+ /etc/firefox/syspref.js 09e457e65435a1a043521f2bd19cd2a1
+Description: Safe and easy web browser from Mozilla
+ Firefox delivers safe, easy web browsing. A familiar user interface,
+ enhanced security features including protection from online identity theft,
+ and integrated search let you get the most out of the web.
+Xul-Appid: {ec8030f7-c20a-464f-9b0e-13a3a9e97384}
+
+Package: libcdr-0.1-1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 650
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libcdr
+Version: 0.1.2-2ubuntu2
+Replaces: libcdr-0.1-1v5
+Provides: libcdr-0.1-1v5
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libicu55 (>= 55.1-1~), liblcms2-2 (>= 2.2+git20110628), librevenge-0.0-0, libstdc++6 (>= 5.2), zlib1g (>= 1:1.1.4)
+Conflicts: libcdr-0.1-1v5
+Description: library for reading and converting Corel DRAW files
+ libcdr is a library and a set of tools for reading and converting binary files
+ produced by Corel DRAW.
+ .
+ libcdr currently supports just CDR files from V7 to X3 and the following
+ features:
+ .
+  - pages and page sizes
+  - shapes, lines, Bezier curves, bitmaps
+  - flat color fills, both RGB, CMYK, HLS and HSB
+  - different kinds of strokes including dashed strokes
+ .
+ Above that libcdr provides a public API for rendering preview of pages for
+ applications that have no notion of pages themselves.
+Homepage: http://freedesktop.org/wiki/Software/libcdr
+Original-Maintainer: Rene Engelhard <rene@debian.org>
+
+Package: gedit-common
+Status: install ok installed
+Priority: optional
+Section: gnome
+Installed-Size: 2888
+Maintainer: Ubuntu Desktop Team <ubuntu-desktop@lists.ubuntu.com>
+Architecture: all
+Source: gedit
+Version: 3.18.3-0ubuntu4
+Depends: dconf-gsettings-backend | gsettings-backend
+Recommends: gedit
+Description: official text editor of the GNOME desktop environment (support files)
+ gedit is a text editor which supports most standard editor features,
+ extending this basic functionality with other features not usually
+ found in simple text editors.
+ .
+ This package contains gedit's architecture-independent support files.
+Homepage: https://wiki.gnome.org/Apps/Gedit
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+
+Package: python3-httplib2
+Status: install ok installed
+Priority: optional
+Section: python
+Installed-Size: 113
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: python-httplib2
+Version: 0.9.1+dfsg-1
+Depends: python3:any (>= 3.3.2-2~), ca-certificates
+Description: comprehensive HTTP client library written for Python3
+ httplib2.py supports many features left out of other HTTP libraries.
+  * HTTP and HTTPS
+  * Keep-Alive
+  * Authentication
+  * Caching
+  * All Methods
+  * Redirects
+  * Compression
+  * Lost update support
+  * Unit Tested
+ .
+ This package provides module for python3 series.
+Original-Maintainer: Andrea Colangelo <warp10@debian.org>
+Homepage: https://github.com/jcgregorio/httplib2
+
+Package: libclutter-gtk-1.0-0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 77
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: clutter-gtk
+Version: 1.6.6-1
+Depends: libc6 (>= 2.4), libcairo2 (>= 1.2.4), libclutter-1.0-0 (>= 1.23.7), libcogl20 (>= 1.17.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk-3-0 (>= 3.9.10), libwayland-client0 (>= 1.3.92)
+Description: Open GL based interactive canvas library GTK+ widget
+ Clutter is an Open GL based interactive canvas library, designed for creating
+ fast, mainly 2D single window applications such as media box UIs,
+ presentations, kiosk style applications and so on.
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Homepage: http://www.clutter-project.org/
+
+Package: libatk-bridge2.0-0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 213
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: at-spi2-atk
+Version: 2.18.1-2ubuntu1
+Depends: libatk1.0-0 (>= 2.15.4), libatspi2.0-0 (>= 2.9.90), libc6 (>= 2.4), libdbus-1-3 (>= 1.9.14), libglib2.0-0 (>= 2.41.1)
+Description: AT-SPI 2 toolkit bridge - shared library
+ This package contains the ATK bridge shared library.
+Homepage: https://wiki.gnome.org/Accessibility
+Original-Maintainer: Debian Accessibility Team <debian-accessibility@lists.debian.org>
+
+Package: signon-plugin-password
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 56
+Maintainer: Ubuntu Desktop Team <ubuntu-desktop@lists.ubuntu.com>
+Architecture: amd64
+Source: signon
+Version: 8.58+16.04.20151106-0ubuntu1
+Replaces: signon-passwordplugin
+Depends: signond, libc6 (>= 2.4), libqt5core5a (>= 5.4.0), libsignon-plugins-common1, libstdc++6 (>= 4.1.1)
+Conflicts: signon-passwordplugin
+Description: Plain Password plugin for Single Sign On
+ Password plugin for Single Sign On.
+Homepage: http://code.google.com/p/accounts-sso/
+
+Package: ftp
+Status: install ok installed
+Priority: standard
+Section: net
+Installed-Size: 149
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: netkit-ftp
+Version: 0.17-33
+Replaces: netstd
+Depends: libc6 (>= 2.15), libreadline6 (>= 6.0), netbase
+Description: classical file transfer client
+ This is the user interface to the ARPANET standard File Transfer Protocol.
+ The program allows a user to transfer files to and from a remote network
+ site.
+Original-Maintainer: Mats Erik Andersson <mats.andersson@gisladisker.se>
+
+Package: openssl
+Status: install ok installed
+Priority: optional
+Section: utils
+Installed-Size: 934
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1.0.2g-1ubuntu4.15
+Depends: libc6 (>= 2.15), libssl1.0.0 (>= 1.0.2g)
+Suggests: ca-certificates
+Conffiles:
+ /etc/ssl/openssl.cnf 7df26c55291b33344dc15e3935dabaf3
+Description: Secure Sockets Layer toolkit - cryptographic utility
+ This package is part of the OpenSSL project's implementation of the SSL
+ and TLS cryptographic protocols for secure communication over the
+ Internet.
+ .
+ It contains the general-purpose command line binary /usr/bin/openssl,
+ useful for cryptographic operations such as:
+  * creating RSA, DH, and DSA key parameters;
+  * creating X.509 certificates, CSRs, and CRLs;
+  * calculating message digests;
+  * encrypting and decrypting with ciphers;
+  * testing SSL/TLS clients and servers;
+  * handling S/MIME signed or encrypted mail.
+Original-Maintainer: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
+
+Package: libplymouth4
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 298
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: plymouth
+Version: 0.9.2-3ubuntu13.5
+Replaces: plymouth (<< 0.9.2-1~)
+Depends: libc6 (>= 2.14), libpng12-0 (>= 1.2.13-4), libudev1 (>= 183)
+Breaks: plymouth (<< 0.9.2-1~)
+Description: graphical boot animation and logger - shared libraries
+ Plymouth is an application that runs very early in the boot process
+ (even before the root filesystem is mounted!) that provides a graphical
+ boot animation while the boot process happens in the background.
+ .
+ This package contains the shared libraries.
+Homepage: http://www.freedesktop.org/wiki/Software/Plymouth
+Original-Maintainer: Laurent Bigonville <bigon@debian.org>
+
+Package: sbsigntool
+Status: install ok installed
+Priority: optional
+Section: utils
+Installed-Size: 336
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: foreign
+Version: 0.6-0ubuntu10.1
+Depends: libc6 (>= 2.14), libssl1.0.0 (>= 1.0.0), libuuid1 (>= 2.16)
+Description: utility for signing and verifying files for UEFI Secure Boot
+ This package provides utilities that can be used for signing PE programs
+ for use with UEFI Secure Boot, and for verifying the signatures included
+ in the same.
+Original-Maintainer: Steve Langasek <vorlon@debian.org>
+
+Package: wget
+Status: install ok installed
+Priority: important
+Section: web
+Installed-Size: 884
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: foreign
+Version: 1.17.1-1ubuntu1.4
+Depends: libc6 (>= 2.17), libidn11 (>= 1.13), libpcre3, libssl1.0.0 (>= 1.0.1), libuuid1 (>= 2.16), zlib1g (>= 1:1.1.4)
+Recommends: ca-certificates
+Conflicts: wget-ssl
+Conffiles:
+ /etc/wgetrc c43064699caf6109f4b3da0405c06ebb
+Description: retrieves files from the web
+ Wget is a network utility to retrieve files from the web
+ using HTTP(S) and FTP, the two most widely used internet
+ protocols. It works non-interactively, so it will work in
+ the background, after having logged off. The program supports
+ recursive retrieval of web-authoring pages as well as FTP
+ sites -- you can use Wget to make mirrors of archives and
+ home pages or to travel the web like a WWW robot.
+ .
+ Wget works particularly well with slow or unstable connections
+ by continuing to retrieve a document until the document is fully
+ downloaded. Re-getting files from where it left off works on
+ servers (both HTTP and FTP) that support it. Both HTTP and FTP
+ retrievals can be time stamped, so Wget can see if the remote
+ file has changed since the last retrieval and automatically
+ retrieve the new version if it has.
+ .
+ Wget supports proxy servers; this can lighten the network load,
+ speed up retrieval, and provide access behind firewalls.
+Homepage: https://www.gnu.org/software/wget/
+Original-Maintainer: Noël Köthe <noel@debian.org>
+
+Package: libupower-glib3
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 188
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: upower
+Version: 0.99.4-2ubuntu0.3
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.37.3)
+Recommends: upower (>> 0.99)
+Description: abstraction for power management - shared library
+ upower provides an interface to enumerate power sources on the system
+ and control system-wide power management. Any application can access the
+ org.freedesktop.UPower service on the system message bus. Some
+ operations (such as suspending the system) are restricted using PolicyKit.
+ .
+ This package contains the shared library to be used by applications.
+Homepage: http://upower.freedesktop.org/
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+
+Package: libtimezonemap1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 84
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libtimezonemap
+Version: 0.4.5
+Depends: libc6 (>= 2.4), libcairo2 (>= 1.10), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk-3-0 (>= 3.1.4), libjson-glib-1.0-0 (>= 0.12.0), libsoup2.4-1 (>= 2.42.0), libtimezonemap-data (= 0.4.5)
+Description: GTK+3 timezone map widget
+ Timezone map widget for GTK+3
+
+Package: ubuntu-sounds
+Status: install ok installed
+Priority: optional
+Section: gnome
+Installed-Size: 396
+Maintainer: Ubuntu Artwork Team <ubuntu-art@lists.ubuntu.com>
+Architecture: all
+Version: 0.13
+Description: Ubuntu's GNOME audio theme
+ Sounds to spruce up the GNOME desktop environment.
+
+Package: libavc1394-0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 59
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libavc1394
+Version: 0.5.4-4
+Depends: libc6 (>= 2.14), libraw1394-11
+Description: control IEEE 1394 audio/video devices
+ libavc1394 is a programming interface for the 1394 Trade Association AV/C
+ (Audio/Video Control) Digital Interface Command Set. It allows you to
+ remote control camcorders and similar devices connected to your computer
+ via an IEEE 1394 (aka Firewire) link.
+ .
+ This package includes the libraries needed to run executables using
+ libavc1394.
+Original-Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Homepage: http://sourceforge.net/projects/libavc1394/
+
+Package: libboost-iostreams1.58.0
+Status: install ok installed
+Priority: important
+Section: libs
+Installed-Size: 142
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: boost1.58
+Version: 1.58.0+dfsg-5ubuntu3.1
+Depends: libbz2-1.0, libc6 (>= 2.14), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2), zlib1g (>= 1:1.1.4)
+Description: Boost.Iostreams Library
+ This package forms part of the Boost C++ Libraries collection.
+ .
+ Boost.Iostreams are a collection of concepts and a set of templates
+ which turn models of these concepts into C++ standard library streams
+ and stream buffers.
+Homepage: http://www.boost.org/libs/iostreams/
+Original-Maintainer: Debian Boost Team <pkg-boost-devel@lists.alioth.debian.org>
+
+Package: unity-scope-devhelp
+Status: install ok installed
+Priority: optional
+Section: gnome
+Installed-Size: 77
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 0.1+14.04.20140328-0ubuntu1
+Depends: python3, python3-gi, python3-lxml, gir1.2-unity-5.0 (>= 7), gir1.2-dee-1.0 (>= 1.2.5), unity-scopes-runner, gir1.2-glib-2.0
+Description: devhelp scope for Unity
+ This package contains the "devhelp" scope which allows Unity
+ to search for devhelp content.
+Original-Maintainer: Mark Tully <markjtully@gmail.com>
+Homepage: https://launchpad.net/unity-scope-devhelp
+
+Package: libcogl-pango20
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 84
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: cogl
+Version: 1.22.0-2
+Depends: libc6 (>= 2.4), libcairo2 (>= 1.10), libcogl20 (>= 1.17.4), libglib2.0-0 (>= 2.37.3), libpango-1.0-0 (>= 1.28.3-5), libpangocairo-1.0-0 (>= 1.28.3-5)
+Recommends: libcogl-common
+Description: Object oriented GL/GLES Abstraction/Utility Layer
+ Cogl is a small open source library for using 3D graphics hardware to draw
+ pretty pictures. The API departs from the flat state machine style of
+ OpenGL and is designed to make it easy to write orthogonal components that
+ can render without stepping on each others toes.
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+
+Package: libsignon-plugins-common1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 80
+Maintainer: Ubuntu Desktop Team <ubuntu-desktop@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: signon
+Version: 8.58+16.04.20151106-0ubuntu1
+Depends: libc6 (>= 2.14), libqt5core5a (>= 5.4.0), libqt5dbus5 (>= 5.0.2), libstdc++6 (>= 4.1.1)
+Description: Single Sign On framework
+ Framework to provide credential storage and authentication service.
+Homepage: http://code.google.com/p/accounts-sso/
+
+Package: vim-common
+Status: install ok installed
+Priority: important
+Section: editors
+Installed-Size: 368
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: vim
+Version: 2:7.4.1689-3ubuntu1.2
+Replaces: vim-gui-common (<< 2:7.4.488-4~)
+Depends: libc6 (>= 2.3.4)
+Recommends: vim | vim-gnome | vim-gtk | vim-gtk3 | vim-athena | vim-nox | vim-tiny
+Suggests: vim-gnome-py2 | vim-gtk-py2 | vim-gtk3-py2 | vim-athena-py2 | vim-nox-py2
+Breaks: vim-gui-common (<< 2:7.4.488-4~)
+Conffiles:
+ /etc/vim/vimrc b458e7b28b9bc2d04bd5a3fd0f8d777e
+Description: Vi IMproved - Common files
+ Vim is an almost compatible version of the UNIX editor Vi.
+ .
+ This package contains files shared by all non GUI-enabled vim variants
+ available in Debian.  Examples of such shared files are: manpages,
+ common executables like xxd, and configuration files.
+Homepage: http://www.vim.org/
+Original-Maintainer: Debian Vim Maintainers <pkg-vim-maintainers@lists.alioth.debian.org>
+
+Package: fonts-tlwg-norasi
+Status: install ok installed
+Priority: optional
+Section: fonts
+Installed-Size: 30
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Source: fonts-tlwg
+Version: 1:0.6.2-2.1
+Depends: fonts-tlwg-norasi-ttf | fonts-tlwg-norasi-otf
+Conffiles:
+ /etc/fonts/conf.avail/64-02-tlwg-norasi.conf 4fef8f04b5e39f43c23c6911a7230bbb
+Description: Thai Norasi font (dependency package)
+ This package provides Thai Norasi font, code-name "NF3", from the
+ National Font Project.
+ .
+ The font provides Times-compatible Thai glyphs with a rich set of Latin
+ glyphs for typesetting books. It was originally created for the Omega
+ (Unicode-based TeX kernel) project.
+ .
+ This is a dependency package for installing alternative font formats.
+Original-Maintainer: Theppitak Karoonboonyanan <thep@debian.org>
+Homepage: http://linux.thai.net/projects/fonts-tlwg
+
+Package: libcgi-pm-perl
+Status: install ok installed
+Priority: optional
+Section: perl
+Installed-Size: 444
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 4.26-1
+Depends: perl, libhtml-parser-perl
+Recommends: libcgi-fast-perl (>= 1:2.01)
+Breaks: git (<< 1:2.1.3), libcgi-fast-perl (<< 1:2)
+Description: module for Common Gateway Interface applications
+ CGI.pm is a Perl module that provides classes useful for creating Web forms
+ and for parsing their contents. It defines CGI objects, entities that contain
+ the values of the current query string and other state variables.
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Homepage: https://metacpan.org/release/CGI
+
+Package: libijs-0.35
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 50
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: ijs
+Version: 0.35-12
+Depends: libc6 (>= 2.14)
+Description: IJS raster image transport protocol: shared library
+ IJS is, first and foremost, a protocol for transmission of raster page
+ images. This snapshot provides a reference implementation of the protocol,
+ the design of which is still in flux. When the protocol specification is
+ published, it will be authoritative. Applications should feel free to link
+ against the library provided in this package, adapt that code for their own
+ needs, or roll a completely new implementation.
+ .
+ IJS is a client-server protocol, used to write ghostscript drivers. The
+ drivers are separate programs. The client and server communicate via pipes,
+ though shared memory may be used additionally in the future. Currently IJS
+ is used by the hpijs and ijsgimpprint drivers.
+ .
+ Code for both the client- and server-side is included in the library. This
+ package provides the shared library.
+Original-Maintainer: Debian Printing Team <debian-printing@lists.debian.org>
+Homepage: http://www.linuxprinting.org/ijs/
+
+Package: apport-symptoms
+Status: install ok installed
+Priority: optional
+Section: utils
+Installed-Size: 75
+Maintainer: Ubuntu Developers <ubuntu-motu@lists.ubuntu.com>
+Architecture: all
+Version: 0.20
+Recommends: apport
+Description: symptom scripts for apport
+ Apport intercepts program crashes, collects debugging information about the
+ crash and the operating system environment, and sends it to bug trackers in a
+ standardized form. It also offers the user to report a bug about a package,
+ with again collecting as much information about it as possible.
+ .
+ This package extends Apport by some "symptom" scripts, so that bug reporters
+ do not have to guess the correct package, but report problems based on
+ symptoms that they have (like "sound problem"), through an interactive process.
+Homepage: https://wiki.ubuntu.com/Apport
+
+Package: gir1.2-gnomekeyring-1.0
+Status: install ok installed
+Priority: optional
+Section: introspection
+Installed-Size: 82
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: libgnome-keyring
+Version: 3.12.0-1build1
+Depends: libgnome-keyring0 (= 3.12.0-1build1), gir1.2-glib-2.0
+Description: GNOME keyring services library - introspection data
+ gnome-keyring is a daemon in the session, similar to ssh-agent,
+ and other applications can use it to store passwords and other
+ sensitive information.
+ .
+ The program can manage several keyrings, each with its own master
+ password, and there is also a session keyring which is never stored to
+ disk, but forgotten when the session ends.
+ .
+ This package provides introspection data for libgnome-keyring. It can
+ be used by packages using the GIRepository format to generate dynamic
+ bindings.
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Homepage: https://wiki.gnome.org/GnomeKeyring
+
+Package: unattended-upgrades
+Status: install ok installed
+Priority: optional
+Section: admin
+Installed-Size: 308
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 0.90ubuntu0.10
+Depends: debconf (>= 0.5) | debconf-2.0, init-system-helpers (>= 1.18~), debconf, python3, python3-apt, apt-utils, apt, ucf, lsb-release, lsb-base (>= 3.2-14), xz-utils
+Recommends: cron | cron-daemon | anacron
+Suggests: bsd-mailx, mail-transport-agent
+Conffiles:
+ /etc/init.d/unattended-upgrades 290829a5efc55b7c435de0bb769f217b
+ /etc/kernel/postinst.d/unattended-upgrades b74a4f1a1fe2e350aec97f472c25e0bb
+ /etc/logrotate.d/unattended-upgrades e45049ee847f069a99e3e6ec39155d4a
+ /etc/pm/sleep.d/10_unattended-upgrades-hibernate d4ebdc2a2fdfeea33e6cd39812a85c3a
+Description: automatic installation of security upgrades
+ This package can download and install security upgrades automatically
+ and unattended, taking care to only install packages from the
+ configured APT source, and checking for dpkg prompts about
+ configuration file changes.
+ .
+ This script is the backend for the APT::Periodic::Unattended-Upgrade
+ option.
+Original-Maintainer: Michael Vogt <mvo@debian.org>
+
+Package: libsqlite3-0
+Status: install ok installed
+Priority: standard
+Section: libs
+Installed-Size: 947
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: sqlite3
+Version: 3.11.0-1ubuntu1.1
+Depends: libc6 (>= 2.14)
+Description: SQLite 3 shared library
+ SQLite is a C library that implements an SQL database engine.
+ Programs that link with the SQLite library can have SQL database
+ access without running a separate RDBMS process.
+Homepage: http://www.sqlite.org/
+Original-Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+
+Package: libjack-jackd2-0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 498
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: jackd2
+Version: 1.9.10+20150825git1ed50c92~dfsg-1ubuntu1
+Replaces: libjack-0.116
+Provides: libjack-0.116
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libsamplerate0 (>= 0.1.7), libstdc++6 (>= 5.2)
+Suggests: jackd2 (= 1.9.10+20150825git1ed50c92~dfsg-1ubuntu1)
+Conflicts: jackd2 (>> 1.9.10+20150825git1ed50c92~dfsg-1ubuntu1), jackd2 (<< 1.9.10+20150825git1ed50c92~dfsg-1ubuntu1), libjack-0.116, libjack0
+Description: JACK Audio Connection Kit (libraries)
+ JACK is a low-latency sound server, allowing multiple applications to
+ connect to one audio device, and to share audio between themselves.
+ .
+ This package contains the shared libraries.
+Homepage: http://jackaudio.org/
+Original-Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+
+Package: libofa0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 162
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libofa
+Version: 0.9.3-10ubuntu1
+Replaces: libofa0v5
+Provides: libofa0v5
+Depends: libc6 (>= 2.14), libfftw3-double3, libgcc1 (>= 1:4.1.1), libstdc++6 (>= 5.2)
+Conflicts: libofa0v5
+Description: library for acoustic fingerprinting
+ LibOFA (Library Open Fingerprint Architecture) is a library for
+ generating acoustic fingerprints that can be used to identify music
+ files using the MusicDNS service.
+ .
+ This package provides the runtime library.
+Homepage: http://code.google.com/p/musicip-libofa/
+Original-Maintainer: Joao Eriberto Mota Filho <eriberto@debian.org>
+
+Package: libetonyek-0.1-1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 2098
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libetonyek
+Version: 0.1.6-1ubuntu1
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), liblangtag1 (>= 0.5.0), librevenge-0.0-0, libstdc++6 (>= 5.2), libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4)
+Description: library for reading and converting Apple Keynote presentations
+ libetonyek is a library and a set of tools for reading and converting
+ Apple Keynote presentations. The library tries to extract the most
+ important parts of version 2 format of Keynote (version 1 is not
+ supported yet, but it should be in the future).
+Original-Maintainer: Rene Engelhard <rene@debian.org>
+Homepage: http://www.freedesktop.org/wiki/Software/libetonyek
+
+Package: imagemagick
+Status: install ok installed
+Priority: optional
+Section: graphics
+Installed-Size: 148
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: foreign
+Version: 8:6.8.9.9-7ubuntu5.13
+Depends: imagemagick-6.q16 (= 8:6.8.9.9-7ubuntu5.13)
+Description: image manipulation programs -- binaries
+ ImageMagick is a software suite to create, edit, and compose bitmap images.
+ It can read, convert and write images in a variety of formats (over 100)
+ including DPX, EXR, GIF, JPEG, JPEG-2000, PDF, PhotoCD, PNG, Postscript,
+ SVG, and TIFF. Use ImageMagick to translate, flip, mirror, rotate, scale,
+ shear and transform images, adjust image colors, apply various special
+ effects, or draw text, lines, polygons, ellipses and Bézier curves.
+ All manipulations can be achieved through shell commands as well as through
+ an X11 graphical interface (display).
+ .
+ This package include links to quantum depth specific binaries and manual
+ pages.
+Homepage: http://www.imagemagick.org/
+Original-Maintainer: ImageMagick Packaging Team <pkg-gmagick-im-team@lists.alioth.debian.org>
+
+Package: lintian
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 3559
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Version: 2.5.43ubuntu0.1
+Replaces: funny-manpages (<< 1.3-5.1)
+Depends: binutils, bzip2, diffstat, file, gettext, hardening-includes, intltool-debian, libapt-pkg-perl, libarchive-zip-perl, libclass-accessor-perl, libclone-perl, libdigest-sha-perl, libdpkg-perl, libemail-valid-perl, libfile-basedir-perl, libipc-run-perl, liblist-moreutils-perl, libparse-debianchangelog-perl, libtext-levenshtein-perl, libtimedate-perl, liburi-perl, libyaml-libyaml-perl, libdata-alias-perl, man-db, patchutils, perl, t1utils, xz-utils
+Recommends: dpkg (>= 1.17.14), perl (>= 5.20) | libautodie-perl (>= 2.18), libperlio-gzip-perl
+Suggests: binutils-multiarch, dpkg-dev, libhtml-parser-perl, libtext-template-perl
+Breaks: funny-manpages (<< 1.3-5.1), pkg-perl-tools (<< 0.23)
+Conffiles:
+ /etc/lintianrc d5b00f3d9e2f7df6b62ef5e2d48c125a
+Description: Debian package checker
+ Lintian dissects Debian packages and reports bugs and policy
+ violations. It contains automated checks for many aspects of Debian
+ policy as well as some checks for common errors.
+ .
+ It uses an archive directory, called laboratory, in which it stores
+ information about the packages it examines.  It can keep this
+ information between multiple invocations in order to avoid repeating
+ expensive data-collection operations. This makes it possible to check the
+ complete Debian archive for bugs, in a reasonable time.
+ .
+ This package is useful for all people who want to check Debian
+ packages for compliance with Debian policy. Every Debian maintainer
+ should check packages with this tool before uploading them to the
+ archive.
+ .
+ This version of Lintian is calibrated for policy version 3.9.7.
+Homepage: https://lintian.debian.org/
+Original-Maintainer: Debian Lintian Maintainers <lintian-maint@debian.org>
+
+Package: libhtml-form-perl
+Status: install ok installed
+Priority: optional
+Section: perl
+Installed-Size: 88
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 6.03-1
+Replaces: libwww-perl (<< 6.00)
+Depends: perl, libhtml-parser-perl, libhttp-message-perl, liburi-perl
+Breaks: libwww-perl (<< 6.00)
+Description: module that represents an HTML form element
+ Objects of the HTML::Form class represents a single HTML <form> ... </form>
+ instance. A form consists of a sequence of inputs that usually have names,
+ and which can take on various values. The state of a form can be tweaked and
+ it can then be asked to provide HTTP::Request objects that can be passed to
+ the request() method of LWP::UserAgent.
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Homepage: http://search.cpan.org/dist/HTML-Form/
+
+Package: gedit
+Status: install ok installed
+Priority: optional
+Section: gnome
+Installed-Size: 1732
+Maintainer: Ubuntu Desktop Team <ubuntu-desktop@lists.ubuntu.com>
+Architecture: amd64
+Version: 3.18.3-0ubuntu4
+Replaces: gedit-common (<< 3.18.1-1ubuntu1)
+Depends: python3:any (>= 3.3.2-2~), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.4), libcairo2 (>= 1.2.4), libenchant1c2a (>= 1.6.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libgirepository-1.0-1 (>= 0.9.3), libglib2.0-0 (>= 2.44), libgtk-3-0 (>= 3.16.2), libgtksourceview-3.0-1 (>= 3.18.0), libpango-1.0-0 (>= 1.14.0), libpeas-1.0-0 (>= 1.1.0), libx11-6, libxml2 (>= 2.7.4), gir1.2-gtk-3.0, gir1.2-gtksource-3.0, gedit-common (>= 3.18), gedit-common (<< 3.19), gsettings-desktop-schemas, python3-gi (>= 3.0), python3-gi-cairo (>= 3.0), gir1.2-peas-1.0, gir1.2-glib-2.0, gir1.2-pango-1.0, libpeas-1.0-0-python3loader, iso-codes
+Recommends: zenity, yelp
+Suggests: gedit-plugins
+Description: official text editor of the GNOME desktop environment
+ gedit is a text editor which supports most standard editor features,
+ extending this basic functionality with other features not usually
+ found in simple text editors. gedit is a graphical application which
+ supports editing multiple text files in one window (known sometimes as
+ tabs or MDI).
+ .
+ gedit fully supports international text through its use of the Unicode
+ UTF-8 encoding in edited files. Its core feature set includes syntax
+ highlighting of source code, auto indentation and printing and print preview
+ support.
+ .
+ gedit is also extensible through its plugin system, which currently
+ includes support for spell checking, comparing files, viewing CVS
+ ChangeLogs, and adjusting indentation levels.
+Homepage: https://wiki.gnome.org/Apps/Gedit
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+
+Package: jayatana
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 85
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 2.7-0ubuntu5
+Replaces: libjayatana (<< 2.6.3), libjayatana-java (<< 2.6.3), libjayatanaag (<< 2.6.3), libjayatanaag-java (<< 2.6.3)
+Provides: libjayatana, libjayatana-java, libjayatanaag, libjayatanaag-java
+Depends: libc6 (>= 2.4), libdbusmenu-glib4 (>= 0.4.2), libglib2.0-0 (>= 2.31.8), libx11-6, gir1.2-glib-2.0, gir1.2-dbusmenu-glib-0.4
+Conflicts: libjayatana, libjayatana-java, libjayatanaag, libjayatanaag-java
+Description: Java Native Library for ayatana project
+ This library integrates Java swing applications to Ubuntu, like application
+ menu support.
+Homepage: http://code.google.com/p/java-swing-ayatana/
+Original-Maintainer: Jared González <danjaredg@gmail.com>
+
+Package: netpbm
+Status: install ok installed
+Priority: optional
+Section: graphics
+Installed-Size: 4229
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: foreign
+Source: netpbm-free
+Version: 2:10.0-15.3
+Replaces: kdelibs4c2a, netpbm-dev, netpbm-nonfree, pbmwbmp, pnmtopng
+Provides: pbmwbmp, pnmtopng
+Depends: libnetpbm10 (= 2:10.0-15.3), libc6 (>= 2.14), libjpeg8 (>= 8c), libpng12-0 (>= 1.2.13-4), libtiff5 (>= 4.0.3), zlib1g (>= 1:1.1.4)
+Recommends: ghostscript
+Conflicts: kdelibs4c2a, netpbm-dev (<= 2:9.10), netpbm-nonfree (<= 1:19940301.1-3), pbmwbmp, pnmtopng, ucbmpeg (<= 1r2-6)
+Description: Graphics conversion tools between image formats
+ Netpbm is a toolkit for manipulation of graphic images, including
+ conversion of images between a variety of different formats. There
+ are over 220 separate tools in the package including converters for
+ more than 80 graphics formats.
+Original-Maintainer: Andreas Barth <aba@not.so.argh.org>
+Homepage: http://netpbm.alioth.debian.org
+
+Package: zenity-common
+Status: install ok installed
+Priority: optional
+Section: gnome
+Installed-Size: 1716
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: zenity
+Version: 3.18.1.1-1ubuntu2
+Description: Display graphical dialog boxes from shell scripts (common files)
+ Zenity allows you to display GTK+ dialogs from shell scripts; it is a
+ rewrite of the `gdialog' command from GNOME 1.
+ .
+ Zenity includes a gdialog wrapper script so that it can be used with
+ legacy scripts.
+ .
+ This package contains architecture independent files.
+Homepage: https://wiki.gnome.org/Projects/Zenity
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+
+Package: libvisual-0.4-0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 348
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libvisual
+Version: 0.4.0-8
+Depends: libc6 (>= 2.4)
+Suggests: libvisual-0.4-plugins
+Breaks: libvisual-0.4-plugins (<< 0.4.0.dfsg.1-5)
+Description: audio visualization framework
+ Libvisual is a generic visualization framework that allows applications
+ to easily access and manage visualization plugins.
+ .
+ Audio visualization is the process of making pretty moving images that
+ are correlated in some way to the audio currently being played by a media
+ player. Most audio visualization is tied to a specific application or media
+ player, making it difficult to share code. Libvisual allows applications
+ to use existing visualization plugins written for the libvisual framework.
+ .
+ This package provides the runtime libraries for libvisual. Libvisual is not
+ very useful without visualization plugins, so it is highly recommended to
+ install the libvisual-0.4-plugins package.
+Original-Maintainer: Joao Eriberto Mota Filho <eriberto@debian.org>
+Homepage: http://sf.net/projects/libvisual
+
+Package: libice6
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 128
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libice
+Version: 2:1.0.9-1
+Depends: libc6 (>= 2.14), x11-common
+Pre-Depends: multiarch-support
+Description: X11 Inter-Client Exchange library
+ This package provides the main interface to the X11 Inter-Client Exchange
+ library, which allows for communication of data between X clients.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libICE
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: fwupd
+Status: install ok installed
+Priority: optional
+Section: admin
+Installed-Size: 728
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: foreign
+Version: 0.8.3-0ubuntu4
+Depends: libappstream-glib8 (>= 0.5.13), libc6 (>= 2.14), libcolorhug2 (>= 1.2.12), libdfu1 (>= 0.8.3), libefivar0 (>= 0.23), libfwup0, libfwupd1 (>= 0.8.3), libglib2.0-0 (>= 2.45.8), libgpg-error0 (>= 1.14), libgpgme11 (>= 1.2.0), libgudev-1.0-0 (>= 146), libgusb2 (>= 0.2.9), libpolkit-gobject-1-0 (>= 0.99), libsoup2.4-1 (>= 2.41.90), libsqlite3-0 (>= 3.5.9)
+Recommends: fwupdate
+Conffiles:
+ /etc/dbus-1/system.d/org.freedesktop.fwupd.conf 68da0ed066cc29f37b8a7531fd29a939
+ /etc/fwupd.conf 1b1b574a894ab0eaaeda9af10567d063
+ /etc/pki/fwupd-metadata/GPG-KEY-Linux-Vendor-Firmware-Service 5abbdc42a8e3d9e60039ab658700ec71
+ /etc/pki/fwupd/GPG-KEY-Hughski-Limited 885ac785ffef40dfcc4f8ea765fa07d4
+ /etc/pki/fwupd/GPG-KEY-Linux-Vendor-Firmware-Service 5abbdc42a8e3d9e60039ab658700ec71
+Description: Firmware update daemon
+ fwupd is a daemon to allow session software to update device firmware.
+ You can either use a GUI software manager like GNOME Software to view and
+ apply updates, the command-line tool or the system D-Bus interface directly.
+ Currently, firmware updates using the UEFI capsule format and for the
+ ColorHug are supported. More formats may be supported in the future.
+ See <https://github.com/hughsie/fwupd> for details
+Original-Maintainer: Debian EFI <debian-efi@lists.debian.org>
+Homepage: https://github.com/hughsie/fwupd
+
+Package: libfontenc1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 47
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libfontenc
+Version: 1:1.1.3-1
+Depends: libc6 (>= 2.14), zlib1g (>= 1:1.1.4)
+Description: X11 font encoding library
+ libfontenc is a library which helps font libraries portably determine
+ and deal with different encodings of fonts.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libfontenc
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: libdigest-hmac-perl
+Status: install ok installed
+Priority: optional
+Section: perl
+Installed-Size: 72
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1.03+dfsg-1
+Depends: perl
+Description: module for creating standard message integrity checks
+ HMAC is used for message integrity checks between two parties
+ that share a secret key, and works in combination with some other
+ Digest algorithm, usually MD5 or SHA-1.  The HMAC mechanism
+ is described in RFC 2104.
+ .
+ The Digest::HMAC module follow the common Digest:: interface,
+ but the constructor takes the secret key and the name of some
+ other simple Digest:: module as argument.
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Homepage: http://search.cpan.org/dist/Digest-HMAC/
+
+Package: python3-requests
+Status: install ok installed
+Priority: optional
+Section: python
+Installed-Size: 247
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: requests
+Version: 2.9.1-3ubuntu0.1
+Depends: python3-urllib3 (>= 1.13.1), python3:any (>= 3.3.2-2~), ca-certificates, python3-chardet, python3-urllib3 (<< 1.13.2)
+Suggests: python3-ndg-httpsclient, python3-openssl, python3-pyasn1
+Description: elegant and simple HTTP library for Python3, built for human beings
+ Requests allow you to send HTTP/1.1 requests. You can add headers, form data,
+ multipart files, and parameters with simple Python dictionaries, and access
+ the response data in the same way. It's powered by httplib and urllib3, but
+ it does all the hard work and crazy hacks for you.
+ .
+ Features
+ .
+   - International Domains and URLs
+   - Keep-Alive & Connection Pooling
+   - Sessions with Cookie Persistence
+   - Browser-style SSL Verification
+   - Basic/Digest Authentication
+   - Elegant Key/Value Cookies
+   - Automatic Decompression
+   - Unicode Response Bodies
+   - Multipart File Uploads
+   - Connection Timeouts
+ .
+ This package contains the Python 3 version of the library.
+Homepage: http://python-requests.org
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+
+Package: upstart
+Status: install ok installed
+Priority: required
+Section: admin
+Installed-Size: 1654
+Maintainer: James Hunt <james.hunt@ubuntu.com>
+Architecture: amd64
+Multi-Arch: foreign
+Version: 1.13.2-0ubuntu21.1
+Replaces: init-system-helpers (<< 1.24ubuntu1), startup-tasks, system-services, sysvinit, upstart-bin (<< 1.13.2-0ubuntu10~), upstart-job
+Provides: startup-tasks, system-services, upstart-compat-sysv, upstart-job
+Depends: libc6 (>= 2.15), libcgmanager0 (>= 0.28), libdbus-1-3 (>= 1.9.14), libjson-c2 (>= 0.10), libnih-dbus1 (>= 1.0.0), libnih1 (>= 1.0.0), libudev1 (>= 183), sysvinit-utils, initscripts, mountall, ifupdown (>= 0.6.10ubuntu5), debianutils (>= 4)
+Suggests: python3, graphviz, bash-completion, upstart-monitor
+Breaks: friendly-recovery (<< 0.2.13), initramfs-tools (<< 0.103ubuntu8), libc6 (<< 2.12.1-0ubuntu12), upstart-bin (<< 1.13.2-0ubuntu10~)
+Conflicts: lxcguest, startup-tasks, system-services, sysvinit, upstart-job
+Conffiles:
+ /etc/X11/Xsession.d/00upstart 46b4576b1f2ceffb2450a88d58786b95
+ /etc/X11/Xsession.d/99upstart f8bc04672e2d4b60ab318197500b4e98
+ /etc/cron.daily/upstart 0f9c6a5212b1e63666337414e812c8e8
+ /etc/dbus-1/system.d/Upstart.conf 64be74cddb0c74b7d98202b40389784c
+ /etc/init/console.conf 8d79b0205f2daffb473604ce53e1dc83
+ /etc/init/container-detect.conf 6bae6257355ad7322e7263e567817465
+ /etc/init/control-alt-delete.conf 16e6603524084b63b0f0ca04eb56757e
+ /etc/init/failsafe.conf 0b88eeccf6c8fd456e886aa7a76e3291
+ /etc/init/flush-early-job-log.conf 09e959647877c39f6490ad29b8a35a28
+ /etc/init/rc-sysinit.conf a50c045d9390a6e6c43c18b19cd72fe5
+ /etc/init/rc.conf 3ebc6ddcd00482cfb24ce09a14ded29f
+ /etc/init/rcS.conf 8533688686f75d7bcf20da5a0d36d94b
+ /etc/init/shutdown.conf 559659602cefe7e8d3c1e76820f5ae5d
+ /etc/init/tty1.conf f42f2298f711147ecf177054294861a7
+ /etc/init/tty2.conf 0d9326fdda081ac96d92bbc57ff773e4
+ /etc/init/tty3.conf 6608f08adf00a282358a1eeb9bdcf78e
+ /etc/init/tty4.conf 2c78cd865d848bb2674104905151dbe2
+ /etc/init/tty5.conf 6d5794f72a1098b008e53e326a6bb5a0
+ /etc/init/tty6.conf e8ad2f0411614f9c8dc9c4e364763549
+ /etc/init/upstart-file-bridge.conf 57ea7ed6cba1f1259ac87410c59237ca
+ /etc/init/upstart-socket-bridge.conf 5f3eaca09ee1f03d5d0686ea99f8c051
+ /etc/init/upstart-udev-bridge.conf 2c24bb70877476b5e7016ccf6de745a4
+ /etc/init/wait-for-state.conf 20b85b55c3f1e040fdbbf669afe4d2a1
+ /etc/logrotate.d/upstart 070767086a27883ec119e1dde779a856
+ /etc/upstart-xsessions 61d640ee115c63b330a6e321c00f48a9
+Description: event-based init daemon - essential binaries
+ upstart is a replacement for the /sbin/init daemon which handles
+ starting of tasks and services during boot, stopping them during
+ shutdown and supervising them while the system is running.
+ .
+ This package provides all essential upstart components, sufficient
+ for running user sessions managed by upstart.
+Homepage: http://upstart.ubuntu.com/
+Orig-Maintainer: Steve Langasek <vorlon@debian.org>
+
+Package: libdconf1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 104
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: d-conf
+Version: 0.24.0-2
+Depends: libc6 (>= 2.14), libglib2.0-0 (>= 2.39.1)
+Breaks: gdm3 (<< 3.4.1-9)
+Description: simple configuration storage system - runtime library
+ DConf is a low-level key/value database designed for storing desktop
+ environment settings.
+ .
+ This package contains the runtime library.
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Homepage: https://wiki.gnome.org/Projects/dconf
+
+Package: libfile-listing-perl
+Status: install ok installed
+Priority: optional
+Section: perl
+Installed-Size: 55
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 6.04-1
+Replaces: libwww-perl (<< 6.00)
+Depends: perl, libhttp-date-perl
+Breaks: libwww-perl (<< 6.00)
+Description: module to parse directory listings
+ File::Listing exports a single function called parse_dir(), which can be used
+ to parse directory listings.
+ .
+ The first parameter to parse_dir() is the directory listing to parse. It can
+ be a scalar, a reference to an array of directory lines or a glob
+ representing a filehandle to read the directory listing from.
+ .
+ The second parameter is the time zone to use when parsing time stamps in the
+ listing. If this value is undefined, then the local time zone is assumed.
+ .
+ The third parameter is the type of listing to assume. Currently supported
+ formats are 'unix', 'apache' and 'dosftp'. The default value 'unix'.
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Homepage: http://search.cpan.org/dist/File-Listing/
+
+Package: libclutter-gst-3.0-0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 177
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: clutter-gst-3.0
+Version: 3.0.18-1
+Depends: libc6 (>= 2.4), libclutter-1.0-0 (>= 1.20.0), libcogl20 (>= 1.17.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgstreamer-plugins-base1.0-0 (>= 1.6.0), libgstreamer1.0-0 (>= 1.4.0), libx11-6
+Description: Open GL based interactive canvas library GStreamer elements
+ Clutter is an Open GL based interactive canvas library, designed for creating
+ fast, mainly 2D single window applications such as media box UIs,
+ presentations, kiosk style applications and so on.
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Homepage: http://www.clutter-project.org/
+
+Package: libxcomposite1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 47
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libxcomposite
+Version: 1:0.4.4-1
+Depends: libc6 (>= 2.2.5), libx11-6 (>= 2:1.4.99.1)
+Pre-Depends: multiarch-support
+Description: X11 Composite extension library
+ libXcomposite provides an X Window System client interface to the Composite
+ extension to the X protocol.
+ .
+ The Composite extension allows clients called compositing managers to control
+ the final drawing of the screen.  Rendering is done into an off-screen buffer.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXcomposite
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: libio-string-perl
+Status: install ok installed
+Priority: optional
+Section: perl
+Installed-Size: 58
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1.08-3
+Depends: perl
+Description: Emulate IO::File interface for in-core strings
+ The IO::String module provide the IO::File interface for in-core
+ strings.  An IO::String object can be attached to a string, and
+ will make it possible to use the normal file operations for reading or
+ writing data, as well as seeking to various locations of the string.
+ The main reason you might want to do this, is if you have some other
+ library module that only provide an interface to file handles, and you
+ want to keep all the stuff in memory.
+ .
+ The IO::String module provide an interface compatible with
+ IO::File as distributed with IO-1.20, but the following methods
+ are not available; new_from_fd, fdopen, format_write,
+ format_page_number, format_lines_per_page, format_lines_left,
+ format_name, format_top_name.
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Homepage: https://metacpan.org/release/IO-String/
+
+Package: sysv-rc
+Status: install ok installed
+Priority: required
+Section: admin
+Installed-Size: 127
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Source: sysvinit
+Version: 2.88dsf-59.3ubuntu2
+Depends: debconf (>= 0.5) | debconf-2.0, sysvinit-utils (>= 2.86.ds1-62), insserv (>> 1.12.0-10)
+Pre-Depends: init-system-helpers (>= 1.25~)
+Recommends: lsb-base (>= 3.2-14)
+Suggests: bum
+Breaks: initscripts (<< 2.86.ds1-63), systemd (<< 215)
+Description: System-V-like runlevel change mechanism
+ This package provides support for the System-V like system
+ for booting, changing runlevels, and shutting down,
+ configured through symbolic links in /etc/rc?.d/.
+Homepage: http://savannah.nongnu.org/projects/sysvinit
+Original-Maintainer: Debian sysvinit maintainers <pkg-sysvinit-devel@lists.alioth.debian.org>
+
+Package: avahi-utils
+Status: install ok installed
+Priority: optional
+Section: net
+Installed-Size: 144
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: avahi
+Version: 0.6.32~rc+dfsg-1ubuntu2.3
+Depends: libavahi-client3 (>= 0.6.16), libavahi-common3 (>= 0.6.22), libc6 (>= 2.4), libgdbm3 (>= 1.8.3), avahi-daemon
+Description: Avahi browsing, publishing and discovery utilities
+ Avahi is a fully LGPL framework for Multicast DNS Service Discovery.
+ It allows programs to publish and discover services and hosts
+ running on a local network with no specific configuration.  For
+ example you can plug into a network and instantly find printers to
+ print to, files to look at and people to talk to.
+ .
+ This package contains several utilities that allow you to interact with
+ the Avahi daemon, including publish, browsing and discovering services.
+Homepage: http://avahi.org/
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+
+Package: xserver-xorg-video-vmware-hwe-16.04
+Status: install ok installed
+Priority: optional
+Section: x11
+Installed-Size: 203
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1:13.2.1-1build1~16.04.1
+Replaces: xserver-xorg-video-vmware
+Provides: xorg-driver-video, xorg-renamed-package, xorg-renamed-package-hwe-16.04, xserver-xorg-video-vmware
+Depends: libc6 (>= 2.14), libdrm2 (>= 2.4.38), libx11-6 (>= 2:1.4.99.1), libxatracker2, libxext6, xorg-video-abi-23, xserver-xorg-core-hwe-16.04 (>= 2:1.18.99.901)
+Conflicts: xserver-xorg-video-vmware
+Description: X.Org X server -- VMware display driver
+ This package provides the driver for VMware client sessions, i.e. if Linux
+ is running inside a VMware session.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This package is built from the X.org xf86-video-vmware driver module.
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: fonts-lao
+Status: install ok installed
+Priority: optional
+Section: fonts
+Installed-Size: 131
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Version: 0.0.20060226-9
+Description: TrueType font for Lao language
+ This package includes fonts that are suitable for the display of the Lao
+ language.
+Original-Maintainer: Christian Perrier <bubulle@debian.org>
+
+Package: snapd-login-service
+Status: install ok installed
+Priority: optional
+Section: admin
+Installed-Size: 58
+Maintainer: Robert Ancell <robert.ancell@canonical.com>
+Architecture: amd64
+Source: snapd-glib
+Version: 1.33-0ubuntu0.16.04.1
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.46), libpolkit-gobject-1-0 (>= 0.99), libsnapd-glib1 (>= 1.26)
+Recommends: policykit-1
+Conffiles:
+ /etc/dbus-1/system.d/io.snapcraft.SnapdLoginService.conf 09b33893b99df2d5178022dff51ffe95
+Description: Daemon to allow non-root access to snapd
+ Snapd Login Service is a daemon that allows users to request authorization from
+ snapd. It uses Polkit to check for permissions.
+Homepage: https://launchpad.net/snapd-glib
+
+Package: libglew1.13
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 649
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: glew
+Version: 1.13.0-2
+Depends: libc6 (>= 2.4), libgl1-mesa-glx | libgl1
+Suggests: glew-utils
+Description: OpenGL Extension Wrangler - runtime environment
+ For more information about GLEW please refer to the description of the
+ libglew-dev package.
+ .
+ This package contains the runtime support files.
+Original-Maintainer: Matteo F. Vescovi <mfv@debian.org>
+Homepage: http://glew.sourceforge.net
+
+Package: libalgorithm-diff-perl
+Status: install ok installed
+Priority: optional
+Section: perl
+Installed-Size: 136
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1.19.03-1
+Depends: perl
+Recommends: libalgorithm-diff-xs-perl
+Description: module to find differences between files
+ Algorithm::Diff is a Perl module that allows users to analyze text based on a
+ Longest Common Subsequence (LCS) algorithm. It can compare two files and find
+ the differences between them, which can produce the same information as the
+ common Unix tool 'diff'.
+ .
+ There is an XS-optimized implementation of the core loop, which accelerates
+ some types of diff output (see libalgorithm-diff-xs-perl).
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Homepage: http://search.cpan.org/~tyemq/Algorithm-Diff/
+
+Package: printer-driver-foo2zjs
+Status: install ok installed
+Priority: optional
+Section: text
+Installed-Size: 598
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: foo2zjs
+Version: 20151024dfsg0-1ubuntu1
+Replaces: foo2zjs (<< 20111023dfsg0-1~)
+Depends: libc6 (>= 2.14), libcups2 (>= 1.4.0), libjbig0 (>= 2.0), mscompress, cups-filters | foomatic-filters, dc, printer-driver-foo2zjs-common (>= 20151024dfsg0-1ubuntu1), liblcms2-utils
+Recommends: wget, unzip, cups, cups-client
+Suggests: psutils, hannah-foo2zjs
+Breaks: cups (<< 1.5.0-3~), foo2zjs (<< 20111023dfsg0-1~), udev (<< 136-1)
+Description: printer driver for ZjStream-based printers
+ foo2zjs is an open source printer driver for printers that use the
+ Zenographics ZjStream wire protocol for their print data, such as the
+ Minolta magicolor 2200/2300/2430 DL, Minolta Color PageWorks/Pro L and
+ HP LaserJet 1000/1005/1018/1020/1022. These printers are often
+ erroneously referred to as "winprinters" or "GDI printers".
+ .
+ This package provides the following drivers: foo2hblp2, foo2hiperc,
+ foo2hp, foo2lava, foo2oak, foo2qpdl, foo2slx, foo2xqx, foo2zjs.
+ .
+ The psutils package is needed to enable n-up printing support.
+Homepage: http://foo2zjs.rkkda.com/
+Original-Maintainer: Debian Printing Team <debian-printing@lists.debian.org>
+
+Package: unity-services
+Status: install ok installed
+Priority: optional
+Section: gnome
+Installed-Size: 207
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: unity
+Version: 7.4.5+16.04.20180221-0ubuntu1
+Depends: libatk-bridge2.0-0 (>= 2.5.3), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.7), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.41.1), libgtk-3-0 (>= 3.9.10), libido3-0.1-0 (>= 13.10.0daily13.06.19), libindicator3-7 (>= 0.4.90), libx11-6
+Description: Services for the Unity interface
+ Unity is a desktop experience that sings. Designed by Canonical and the Ayatana
+ community, Unity is all about the combination of familiarity and the future. We
+ bring together visual design, analysis of user experience testing, modern
+ graphics technologies and a deep understanding of the free software landscape
+ to produce what we hope will be the lightest, most elegant and most delightful
+ way to use your PC.
+ .
+ This package contains the D-Bus service used for unity.
+Homepage: https://launchpad.net/unity
+
+Package: libiw30
+Status: install ok installed
+Priority: extra
+Section: libs
+Installed-Size: 90
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: wireless-tools
+Version: 30~pre9-8ubuntu1
+Depends: libc6 (>= 2.14)
+Pre-Depends: multiarch-support
+Description: Wireless tools - library
+ Wireless tools are used to manipulate the Linux Wireless Extensions. The
+ Wireless Extension is an interface allowing you to set Wireless LAN specific
+ parameters and get the specific stats.
+ .
+ This package contains the dynamic library libiw.
+Homepage: http://www.hpl.hp.com/personal/Jean_Tourrilhes/Linux/Tools.html
+Original-Maintainer: Guus Sliepen <guus@debian.org>
+
+Package: libzvbi-common
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 140
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Source: zvbi
+Version: 0.2.35-10
+Replaces: libzvbi-0.1 (<= 0.2.1-3)
+Description: Vertical Blanking Interval decoder (VBI) - common files
+ The vertical blanking interval (VBI) is an interval in a television signal
+ that temporarily suspends transmission of the signal for the electron gun
+ to move back up to the first line of the television screen to trace the
+ next screen field.
+ .
+ The vertical blanking interval can be used to carry data, since anything
+ sent during the VBI would naturally not be displayed; various test signals,
+ closed captioning, and other digital data can be sent during this time
+ period. These include information like closed-caption data, Teletext
+ (primarily in Europe), and now Intercast and the ATVEC Internet television
+ encodings.
+ .
+ The Zapping VBI library, in short ZVBI, provides functions to capture and
+ decode VBI data. It is written in plain ANSI C with few dependencies on
+ other tools and libraries, licensed under GPL. Some features:
+   * Captures raw VBI samples from V4L, V4L2 and FreeBSD BKTR devices, sliced
+     VBI data from Linux DVB devices;
+   * Implements a VBI Proxy to share one VBI device between multiple
+     applications;
+   * Has a robust and versatile bit slicer which handles a wide range of data
+     services;
+   * Functions to capture multiple data services at once, such as Closed
+     Caption (both NTSC and PAL), Teletext, VPS, WSS, XDS;
+   * Level 3.5 Teletext decoder with support for all Teletext character sets,
+     graphics, 4096 colors, with built-in page cache including search
+     functions;
+   * Closed Caption decoder which supports roll-up, pop-up and paint-on style
+     caption, color, expanded character set, text attributes and free text
+     placement;
+   * Renders Teletext and Caption pages, can export to HTML, PNG and other
+     formats.
+   * Can determine network names;
+   * Can find Teletext subtitle and program pages;
+   * Functions to extract data transmissions in Teletext streams (currently
+     Page Format Clear and Independent Data Line Format A);
+   * Can multiplex and demultiplex DVB VBI PES and TS streams.
+ .
+ This package contains internationalization files.
+Original-Maintainer: Joao Eriberto Mota Filho <eriberto@debian.org>
+Homepage: http://zapping.sf.net/ZVBI
+
+Package: apt
+Status: install ok installed
+Priority: important
+Section: admin
+Installed-Size: 3350
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1.2.29ubuntu0.1
+Replaces: bash-completion (<< 1:2.1-4.2+fakesync1), manpages-it (<< 2.80-4~), manpages-pl (<< 20060617-3~), openjdk-6-jdk (<< 6b24-1.11-0ubuntu1~), sun-java5-jdk (>> 0), sun-java6-jdk (>> 0)
+Depends: libapt-pkg5.0 (>= 1.2.29ubuntu0.1), libc6 (>= 2.15), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2), init-system-helpers (>= 1.18~), ubuntu-keyring, gpgv | gpgv2, gnupg | gnupg2, adduser
+Suggests: aptitude | synaptic | wajig, dpkg-dev (>= 1.17.2), apt-doc, python-apt
+Breaks: apt-utils (<< 1.1.3), manpages-it (<< 2.80-4~), manpages-pl (<< 20060617-3~), openjdk-6-jdk (<< 6b24-1.11-0ubuntu1~), sun-java5-jdk (>> 0), sun-java6-jdk (>> 0)
+Conffiles:
+ /etc/apt/apt.conf.d/01-vendor-ubuntu 5232396660502461fc834c0a1229dbe4
+ /etc/apt/apt.conf.d/01autoremove 735050108d38dbf99e933a9f647f6892
+ /etc/cron.daily/apt-compat bc4a71cbcaeed4179f25d798257fa980
+ /etc/kernel/postinst.d/apt-auto-removal 8ad76ae4492b54f0dcbf18c79429dfab
+ /etc/logrotate.d/apt 179f2ed4f85cbaca12fa3d69c2a4a1c3
+Description: commandline package manager
+ This package provides commandline tools for searching and
+ managing as well as querying information about packages
+ as a low-level access to all features of the libapt-pkg library.
+ .
+ These include:
+  * apt-get for retrieval of packages and information about them
+    from authenticated sources and for installation, upgrade and
+    removal of packages together with their dependencies
+  * apt-cache for querying available information about installed
+    as well as installable packages
+  * apt-cdrom to use removable media as a source for packages
+  * apt-config as an interface to the configuration settings
+  * apt-key as an interface to manage authentication keys
+Original-Maintainer: APT Development Team <deity@lists.debian.org>
+
+Package: apport
+Status: install ok installed
+Priority: optional
+Section: utils
+Installed-Size: 760
+Maintainer: Martin Pitt <martin.pitt@ubuntu.com>
+Architecture: all
+Version: 2.20.1-0ubuntu2.18
+Replaces: core-dump-handler, python-apport (<< 2.2-0ubuntu1)
+Provides: core-dump-handler
+Depends: python3, python3-apport (>= 2.20.1-0ubuntu2.18), lsb-base (>= 4.1+Debian11ubuntu7), python3-gi, gir1.2-glib-2.0 (>= 1.29.17), init-system-helpers (>= 1.18~)
+Recommends: apport-symptoms, policykit-1, python3-systemd
+Suggests: apport-gtk | apport-kde
+Breaks: python-apport (<< 2.2-0ubuntu1)
+Conflicts: core-dump-handler
+Conffiles:
+ /etc/apport/blacklist.d/README.blacklist c2ed1eb9a17ec2550747b4960cf4b73c
+ /etc/apport/blacklist.d/apport 44503501302b80099552bac0204a45c1
+ /etc/apport/crashdb.conf 0bb3a2832a92a0401e00583bf2d23e93
+ /etc/bash_completion.d/apport_completion dfe766d9328bb5c895038b44185133f9
+ /etc/cron.daily/apport df5d3bc9ab3a67b58156376318077304
+ /etc/default/apport 3446c6cac185f44237f59786e006ebe4
+ /etc/init.d/apport 96d410e3149a2590bbf1cdd194a64c2a
+ /etc/init/apport.conf 7a4dab1c982d9c3cf7bb58b87c2a48e2
+ /etc/logrotate.d/apport fa54dab59ef899b48d5455c976008df4
+Description: automatically generate crash reports for debugging
+ apport automatically collects data from crashed processes and
+ compiles a problem report in /var/crash/. This utilizes the crashdump
+ helper hook provided by the Ubuntu kernel.
+ .
+ This package also provides a command line frontend for browsing and
+ handling the crash reports. For desktops, you should consider
+ installing the GTK+ or Qt user interface (apport-gtk or apport-kde).
+Homepage: https://wiki.ubuntu.com/Apport
+
+Package: libfribidi0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 118
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: fribidi
+Version: 0.19.7-1
+Depends: libc6 (>= 2.4)
+Description: Free Implementation of the Unicode BiDi algorithm
+ FriBiDi is a BiDi algorithm implementation for Hebrew and/or Arabic
+ languages.
+ This package contains the shared libraries.
+Original-Maintainer: Debian Hebrew Packaging Team <debian-hebrew-package@lists.alioth.debian.org>
+Homepage: http://www.fribidi.org/
+
+Package: libxcb-shm0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 36
+Maintainer: Ubuntu X-SWAT <ubuntu-x@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libxcb
+Version: 1.11.1-1ubuntu1
+Depends: libc6 (>= 2.4), libxcb1 (>= 1.9.2)
+Description: X C Binding, shm extension
+ This package contains the library files needed to run software using
+ libxcb-shm, the shm extension for the X C Binding.
+ .
+ The XCB library provides an interface to the X Window System protocol,
+ designed to replace the Xlib interface.  XCB provides several advantages over
+ Xlib:
+ .
+  * Size: small library and lower memory footprint
+  * Latency hiding: batch several requests and wait for the replies later
+  * Direct protocol access: one-to-one mapping between interface and protocol
+  * Thread support: access XCB from multiple threads, with no explicit locking
+  * Easy creation of new extensions: automatically generates interface from
+    machine-parsable protocol descriptions
+Homepage: http://xcb.freedesktop.org
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: liblocale-gettext-perl
+Status: install ok installed
+Priority: required
+Section: perl
+Installed-Size: 51
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1.07-1build1
+Depends: libc6 (>= 2.2.5)
+Pre-Depends: perl-base (>= 5.22.1-1), perlapi-5.22.1
+Description: module using libc functions for internationalization in Perl
+ The Locale::gettext module permits access from perl to the gettext() family of
+ functions for retrieving message strings from databases constructed
+ to internationalize software.
+ .
+ It provides gettext(), dgettext(), dcgettext(), textdomain(),
+ bindtextdomain(), bind_textdomain_codeset(), ngettext(), dcngettext()
+ and dngettext().
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Homepage: https://metacpan.org/release/gettext
+
+Package: qml-module-ubuntu-test
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 211
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: ubuntu-ui-toolkit
+Version: 1.3.1918+16.04.20160404-0ubuntu1
+Replaces: qtdeclarative5-ubuntu-ui-toolkit-plugin (<< 1.3.1918+16.04.20160404-0ubuntu1)
+Depends: qml-module-qttest | qtdeclarative5-test-plugin, qml-module-ubuntu-components, libc6 (>= 2.14), libqt5core5a (>= 5.5.1), libqt5gui5 (>= 5.0.2) | libqt5gui5-gles (>= 5.0.2), libqt5qml5 (>= 5.0.2), libqt5quick5 (>= 5.0.2) | libqt5quick5-gles (>= 5.0.2), libqt5test5 (>= 5.0.2), libstdc++6 (>= 4.1.1), libubuntugestures5, qtbase-abi-5-5-1
+Pre-Depends: dpkg (>= 1.15.6~)
+Breaks: qtdeclarative5-ubuntu-ui-toolkit-plugin (<< 1.3.1918+16.04.20160404-0ubuntu1)
+Description: Qt Components for Ubuntu - Test QML plugin
+ Qt Components for Ubuntu offers a set of reusable user interface
+ components for Qt Quick 2 / QML.
+ .
+ This package contains the Ubuntu Test QML plugin.
+Homepage: https://launchpad.net/ubuntu-ui-toolkit
+
+Package: libmpfr4
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 812
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: mpfr4
+Version: 3.1.4-1
+Depends: libc6 (>= 2.14), libgmp10
+Breaks: libgmp3 (<< 4.1.4-3)
+Description: multiple precision floating-point computation
+ MPFR provides a library for multiple-precision floating-point computation
+ with correct rounding.  The computation is both efficient and has a
+ well-defined semantics. It copies the good ideas from the
+ ANSI/IEEE-754 standard for double-precision floating-point arithmetic
+ (53-bit mantissa).
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Homepage: http://www.mpfr.org/
+
+Package: libwinpr-path0.1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 237
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: freerdp
+Version: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3
+Replaces: libfreerdp1 (<< 1.1.0~git20140921.1.440916e+dfsg-1)
+Depends: libc6 (>= 2.14), libwinpr-crt0.1 (>= 1.1.0~beta1+git20130629), libwinpr-environment0.1 (>= 1.1.0~beta1+git20130629), libwinpr-heap0.1 (>= 1.1.0~beta1+git20130629)
+Suggests: freerdp-x11
+Breaks: libfreerdp1 (<< 1.1.0~git20140921.1.440916e+dfsg-1)
+Description: Windows Portable Runtime library (path library)
+ WinPR is a spin-off project of FreeRDP which aims at providing a portable
+ implementation of important portions of the Windows API. Just like FreeRDP,
+ WinPR is released under the Apache license. Unlike Wine, WinPR does not provide
+ binary compatibility, and does not require applications to be built for
+ Windows. Instead, WinPR provides API compatibility for applications targeting
+ non-Windows environments. When on Windows, the original native API is being
+ used instead of the equivalent WinPR implementation, without having to modify
+ the code using it.
+ .
+ This package contains the winpr-path shared library.
+Homepage: http://www.freerdp.com/
+Original-Maintainer: Mike Gabriel <sunweaver@debian.org>
+
+Package: libgettextpo-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 764
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: gettext
+Version: 0.19.7-2ubuntu3.1
+Replaces: gettext (<< 0.18.1.1-10)
+Depends: libgettextpo0 (= 0.19.7-2ubuntu3.1)
+Suggests: gettext-doc
+Breaks: gettext (<< 0.18.1.1-10)
+Description: GNU Internationalization library development files
+ This package contains development files for the libgettextpo library.
+Homepage: http://www.gnu.org/software/gettext/
+Original-Maintainer: Santiago Vila <sanvila@debian.org>
+
+Package: libgtkspell3-3-0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 116
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: gtkspell3
+Version: 3.0.7-2
+Replaces: libgtkspell-3-0
+Depends: libc6 (>= 2.4), libenchant1c2a (>= 1.6.0), libglib2.0-0 (>= 2.37.3), libgtk-3-0 (>= 3.0.0)
+Conflicts: libgtkspell-3-0
+Description: spell-checking addon for GTK+'s TextView widget
+ GtkSpell provides Microsoft Word/OS X-style highlighting of misspelled
+ words in a GtkTextView widget.  Right-clicking a misspelled word pops up a
+ menu of suggested replacements.
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Homepage: http://gtkspell.sourceforge.net/
+
+Package: libgail-3-0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 159
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: gtk+3.0
+Version: 3.18.9-1ubuntu3.3
+Depends: libatk1.0-0 (>= 2.15.1), libc6 (>= 2.4), libglib2.0-0 (>= 2.45.8), libgtk-3-0 (= 3.18.9-1ubuntu3.3), libpango-1.0-0 (>= 1.37.3), at-spi2-core
+Description: GNOME Accessibility Implementation Library -- shared libraries
+ Gail implements ATK interfaces for GTK+ widgets which are dynamically
+ loadable at runtime by a GTK+ application. Once loaded, those parts of
+ an application that use standard GTK+ widgets will have a basic level
+ of accessibility, without the need to modify the application at all.
+ .
+ This package contains the shared library.
+Homepage: http://www.gtk.org/
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+
+Package: libpangox-1.0-0
+Status: install ok installed
+Priority: extra
+Section: oldlibs
+Installed-Size: 165
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: pangox-compat
+Version: 0.0.2-5
+Replaces: libpango1.0-0 (<< 1.32.5-2)
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.34.0), libpango-1.0-0 (>= 1.32.5-3~), libx11-6
+Pre-Depends: multiarch-support
+Breaks: libpango1.0-0 (<< 1.32.5-2)
+Description: pango library X backend
+ Pango is a library for layout and rendering of text, with an emphasis
+ on internationalization. Pango can be used anywhere that text layout is
+ needed. however, most of the work on Pango-1.0 was done using the GTK+
+ widget toolkit as a test platform. Pango forms the core of text and
+ font handling for GTK+-2.0.
+ .
+ Pango is designed to be modular; the core Pango layout can be used with
+ four different font backends:
+  - Core X windowing system fonts
+  - Client-side fonts on X using the Xft library
+  - Direct rendering of scalable fonts using the FreeType library
+  - Native fonts on Microsoft backends
+ .
+ This package contains the Core X backend.
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+
+Package: libxpm4
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 89
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libxpm
+Version: 1:3.5.11-1ubuntu0.16.04.1
+Depends: libc6 (>= 2.14), libx11-6
+Description: X11 pixmap library
+ libXpm provides support and common operation for the XPM pixmap format, which
+ is commonly used in legacy X applications.  XPM is an extension of the
+ monochrome XBM bitmap specified in the X protocol.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXpm
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: python3-cupshelpers
+Status: install ok installed
+Priority: optional
+Section: gnome
+Installed-Size: 273
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: system-config-printer
+Version: 1.5.7+20160212-0ubuntu2
+Replaces: python-cupshelpers (<< 1.5.0+20140805-0ubuntu3)
+Depends: python3-requests
+Breaks: python-cupshelpers (<< 1.5.0+20140805-0ubuntu3)
+Conffiles:
+ /etc/cupshelpers/preferreddrivers.xml 0b19e50addd76f454133ab2039f5f1c8
+Description: Python modules for printer configuration with CUPS
+ Python modules for printer configuration with CUPS. The modules have no GUI
+ and can therefore also be used on headless servers or by background processes.
+Original-Maintainer: Otavio Salvador <otavio@ossystems.com.br>
+
+Package: libclone-perl
+Status: install ok installed
+Priority: optional
+Section: perl
+Installed-Size: 36
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.38-1build1
+Depends: perl (>= 5.22.1-1), perlapi-5.22.1, libc6 (>= 2.2.5)
+Description: module for recursively copying Perl datatypes
+ The Clone module provides a clone() method which makes recursive copies of
+ nested hash, array, scalar and reference types, including tied variables and
+ objects.
+ .
+ It is faster (although less flexible) than Storable's dclone. Its
+ functionality is _not_ serializing in-memory objects (i.e. as
+ Data::Dumper or YAML::Dump do), but deep-copying them over to new
+ in-memory structures.
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Homepage: https://metacpan.org/release/Clone
+
+Package: libcanberra-gtk3-0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 41
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libcanberra
+Version: 0.30-2.1ubuntu1
+Depends: libc6 (>= 2.4), libcanberra0 (>= 0.12), libglib2.0-0 (>= 2.32), libgtk-3-0 (>= 3.0.0), libx11-6
+Recommends: libcanberra-gtk3-module
+Description: GTK+ 3.0 helper for playing widget event sounds with libcanberra
+ libcanberra-gtk provides a few functions that simplify libcanberra
+ usage from GTK+ 3.0.
+ .
+ Contextual information is needed to play event sound. This library
+ can help to compile directly event sounds property lists based on
+ active GtkWidget objects or GdkEvent events.
+Homepage: http://0pointer.de/lennart/projects/libcanberra/
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+
+Package: linux-headers-4.15.0-46
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 75368
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Source: linux-hwe
+Version: 4.15.0-46.49~16.04.1
+Depends: coreutils
+Description: Header files related to Linux kernel version 4.15.0
+ This package provides kernel header files for version 4.15.0, for sites
+ that want the latest kernel headers. Please read
+ /usr/share/doc/linux-hwe-headers-4.15.0-46/debian.README.gz for details
+
+Package: libasprintf-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 47
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: gettext
+Version: 0.19.7-2ubuntu3.1
+Replaces: gettext (<< 0.18.1.1-10)
+Depends: libasprintf0v5 (= 0.19.7-2ubuntu3.1)
+Suggests: gettext-doc
+Breaks: gettext (<< 0.18.1.1-10)
+Description: GNU Internationalization library development files
+ This package contains development files for the libasprintf library.
+Homepage: http://www.gnu.org/software/gettext/
+Original-Maintainer: Santiago Vila <sanvila@debian.org>
+
+Package: x11-xserver-utils
+Status: install ok installed
+Priority: optional
+Section: x11
+Installed-Size: 479
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 7.7+7
+Replaces: iceauth, sessreg, xbase-clients (<< 1:7.3), xgamma, xhost, xmodmap, xrandr, xrdb, xrefresh, xrgb, xset, xsetmode, xsetpointer, xsetroot, xstdcmap, xutils (<< 1:7.2), xvidtune
+Depends: libc6 (>= 2.14), libice6 (>= 1:1.0.0), libx11-6, libxaw7, libxcursor1 (>> 1.1.2), libxext6, libxi6, libxmu6, libxmuu1, libxrandr2 (>= 2:1.5.0), libxt6, libxxf86vm1, cpp
+Suggests: nickle, cairo-5c, xorg-docs-core
+Breaks: arandr (<< 0.1.9)
+Conflicts: iceauth, sessreg, xgamma, xhost, xmodmap, xrandr, xrdb, xrefresh, xrgb, xset, xsetmode, xsetpointer, xsetroot, xstdcmap, xvidtune
+Conffiles:
+ /etc/X11/app-defaults/Xvidtune 0493a0782b498e9f0dee51a4013a80e6
+Description: X server utilities
+ An X client is a program that interfaces with an X server (almost always via
+ the X libraries), and thus with some input and output hardware like a
+ graphics card, monitor, keyboard, and pointing device (such as a mouse).
+ .
+ This package provides a miscellaneous assortment of X Server utilities
+ that ship with the X Window System, including:
+  - iceauth, a tool for manipulating ICE protocol authorization records;
+  - rgb;
+  - sessreg, a simple program for managing utmp/wtmp entries;
+  - xcmsdb, a device color characteristic utility for the X Color Management
+    System;
+  - xgamma, a tool for querying and setting a monitor's gamma correction;
+  - xhost, a very dangerous program that you should never use;
+  - xmodmap, a utility for modifying keymaps and pointer button mappings in X;
+  - xrandr, a command-line interface to the RandR extension;
+  - xrdb, a tool to manage the X server resource database;
+  - xrefresh, a tool that forces a redraw of the X screen;
+  - xset, a tool for setting miscellaneous X server parameters;
+  - xsetmode and xsetpointer, tools for handling X Input devices;
+  - xsetroot, a tool for tailoring the appearance of the root window;
+  - xstdcmap, a utility to selectively define standard colormap properties;
+  - xvidtune, a tool for customizing X server modelines for your monitor.
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: evolution-data-server-online-accounts
+Status: install ok installed
+Priority: optional
+Section: gnome
+Installed-Size: 295
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: evolution-data-server
+Version: 3.18.5-1ubuntu1.1
+Depends: libaccounts-glib0 (>= 1.4), libc6 (>= 2.4), libcamel-1.2-54 (= 3.18.5-1ubuntu1.1), libebackend-1.2-10 (>= 3.17), libedataserver-1.2-21 (>= 3.17), libglib2.0-0 (>= 2.40), libgoa-1.0-0b (>= 3.11.90), libjson-glib-1.0-0 (>= 0.12.0), librest-0.7-0 (>= 0.7), libsignon-glib1 (>= 1.8), libsoup2.4-1 (>= 2.42), libxml2 (>= 2.9.0), evolution-data-server-common (= 3.18.5-1ubuntu1.1)
+Recommends: signon-plugin-password
+Suggests: evolution
+Breaks: evolution-data-server (<< 3.8.3)
+Description: evolution data server integration with Ubuntu Online Accounts
+ The data server, called "Evolution Data Server" is responsible for managing
+ mail, calendar, addressbook, tasks and memo information.
+ .
+ This package adds support for Online Accounts, allowing Evolution Data
+ Server to query GOA and UOA for configured accounts.
+Homepage: https://wiki.gnome.org/Apps/Evolution
+Original-Maintainer: Debian Evolution Maintainers <pkg-evolution-maintainers@lists.alioth.debian.org>
+
+Package: dnsmasq-base
+Status: install ok installed
+Priority: optional
+Section: net
+Installed-Size: 736
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: dnsmasq
+Version: 2.75-1ubuntu0.16.04.5
+Replaces: dnsmasq (<< 2.63-1~)
+Depends: adduser, libc6 (>= 2.14), libdbus-1-3 (>= 1.9.14), libgmp10, libhogweed4, libidn11 (>= 1.13), libnetfilter-conntrack3, libnettle6
+Recommends: dns-root-data
+Breaks: dnsmasq (<< 2.63-1~)
+Conffiles:
+ /etc/dbus-1/system.d/dnsmasq.conf 9a18c8a761c2262dbf0c8b3345a85242
+Description: Small caching DNS proxy and DHCP/TFTP server
+ This package contains the dnsmasq executable and documentation, but
+ not the infrastructure required to run it as a system daemon. For
+ that, install the dnsmasq package.
+Original-Maintainer: Simon Kelley <simon@thekelleys.org.uk>
+
+Package: libcrack2
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 144
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: cracklib2
+Version: 2.9.2-1ubuntu1
+Depends: libc6 (>= 2.14)
+Recommends: cracklib-runtime
+Description: pro-active password checker library
+ Shared library for cracklib2 which contains a C function which may be
+ used in a passwd like program. The idea is simple: try to prevent
+ users from choosing passwords that could be guessed by crack by
+ filtering them out, at source. cracklib2 is NOT a replacement passwd
+ program. cracklib2 is a LIBRARY.
+Homepage: http://sourceforge.net/projects/cracklib
+Original-Maintainer: Jan Dittberner <jandd@debian.org>
+
+Package: libcompizconfig0
+Status: install ok installed
+Priority: optional
+Section: x11
+Installed-Size: 534
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: compiz
+Version: 1:0.9.12.3+16.04.20180221-0ubuntu1
+Depends: compiz-core (= 1:0.9.12.3+16.04.20180221-0ubuntu1), libc6 (>= 2.14), libgcc1 (>= 1:3.0), libprotobuf9v5, libstdc++6 (>= 5.2), libx11-6, libxml2 (>= 2.7.4)
+Conffiles:
+ /etc/compizconfig/config 0dcefbc26461e12d9f31107ad93d176f
+Description: Settings library for plugins - OpenCompositing Project
+ The OpenCompositing Project brings 3D desktop visual effects that improve
+ usability of the X Window System and provide increased productivity
+ through plugins and themes contributed by the community giving a
+ rich desktop experience.
+ .
+ This package contains the library for plugins to configure settings.
+Homepage: https://launchpad.net/compiz
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: libxt6
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 471
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libxt
+Version: 1:1.1.5-0ubuntu1
+Depends: libc6 (>= 2.14), libice6 (>= 1:1.0.0), libsm6, libx11-6
+Description: X11 toolkit intrinsics library
+ libXt provides the X Toolkit Intrinsics, an abstract widget library upon
+ which other toolkits are based.  Xt is the basis for many toolkits, including
+ the Athena widgets (Xaw), and LessTif (a Motif implementation).
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXt
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: update-manager
+Status: install ok installed
+Priority: optional
+Section: gnome
+Installed-Size: 1018
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1:16.04.15
+Depends: python3:any (>= 3.3.2-2~), dconf-gsettings-backend | gsettings-backend, update-manager-core (= 1:16.04.15), python3-aptdaemon.gtk3widgets (>= 1.1.1+bzr982-0ubuntu13) | synaptic, policykit-1, python3-dbus, python3-gi (>= 3.8), gir1.2-gtk-3.0, ubuntu-release-upgrader-gtk, update-notifier, policykit-1-gnome | policykit-1-kde | lxpolkit | mate-polkit | razorqt-policykit-agent
+Recommends: software-properties-gtk (>= 0.71.2), libgtk2-perl
+Suggests: gir1.2-dbusmenu-glib-0.4, gir1.2-unity-5.0
+Breaks: update-notifier (<< 3.168.4)
+Description: GNOME application that manages apt updates
+ This is the GNOME apt update manager. It checks for updates and lets the user
+ choose which to install.
+
+Package: enchant
+Status: install ok installed
+Priority: optional
+Section: text
+Installed-Size: 53
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1.6.0-10.1build2
+Replaces: libenchant1c2a (<< 1.6.0-4)
+Depends: libc6 (>= 2.4), libenchant1c2a (>= 1.6.0), libglib2.0-0 (>= 2.12.0)
+Breaks: libenchant1c2a (<< 1.6.0-4)
+Description: Wrapper for various spell checker engines (binary programs)
+ Enchant is a generic spell checking library which uses existing
+ spell checker engines such as ispell, aspell and myspell as its backends.
+ .
+ Enchant steps in to provide uniformity and conformity on top of these
+ libraries, and implement certain features that may be lacking in any
+ individual provider library.
+ .
+ This package contains standalone runtime binary programs.
+Original-Maintainer: Prach Pongpanich <prachpub@gmail.com>
+Homepage: http://www.abisource.com/projects/enchant/
+
+Package: pciutils
+Status: install ok installed
+Priority: standard
+Section: admin
+Installed-Size: 1284
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: foreign
+Version: 1:3.3.1-1.1ubuntu1.3
+Depends: libc6 (>= 2.14), libkmod2 (>= 5~), libpci3 (= 1:3.3.1-1.1ubuntu1.3)
+Suggests: bzip2, wget | curl | lynx-cur
+Description: Linux PCI Utilities
+ This package contains various utilities for inspecting and setting of
+ devices connected to the PCI bus.
+Homepage: http://atrey.karlin.mff.cuni.cz/~mj/pciutils.shtml
+Original-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+
+Package: libpciaccess0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 62
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libpciaccess
+Version: 0.13.4-1
+Depends: libc6 (>= 2.7), zlib1g (>= 1:1.1.4)
+Suggests: pciutils
+Description: Generic PCI access library for X
+ Provides functionality for X to access the PCI bus and devices
+ in a platform-independent way.
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: libxcb-shape0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 37
+Maintainer: Ubuntu X-SWAT <ubuntu-x@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libxcb
+Version: 1.11.1-1ubuntu1
+Depends: libc6 (>= 2.4), libxcb1
+Description: X C Binding, shape extension
+ This package contains the library files needed to run software using
+ libxcb-shape, the shape extension for the X C Binding.
+ .
+ The XCB library provides an interface to the X Window System protocol,
+ designed to replace the Xlib interface.  XCB provides several advantages over
+ Xlib:
+ .
+  * Size: small library and lower memory footprint
+  * Latency hiding: batch several requests and wait for the replies later
+  * Direct protocol access: one-to-one mapping between interface and protocol
+  * Thread support: access XCB from multiple threads, with no explicit locking
+  * Easy creation of new extensions: automatically generates interface from
+    machine-parsable protocol descriptions
+Homepage: http://xcb.freedesktop.org
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: libxrender1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 79
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libxrender
+Version: 1:0.9.9-0ubuntu1
+Depends: libc6 (>= 2.14), libx11-6 (>= 2:1.6.0)
+Description: X Rendering Extension client library
+ The X Rendering Extension (Render) introduces digital image composition as
+ the foundation of a new rendering model within the X Window System.
+ Rendering geometric figures is accomplished by client-side tessellation into
+ either triangles or trapezoids.  Text is drawn by loading glyphs into the
+ server and rendering sets of them.  The Xrender library exposes this
+ extension to X clients.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXrender
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: gkbd-capplet
+Status: install ok installed
+Priority: optional
+Section: gnome
+Installed-Size: 31
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: libgnomekbd
+Version: 3.6.0-1ubuntu2
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.26), libgnomekbd8 (>= 3.6.0), libgtk-3-0 (>= 3.0.0), libxklavier16 (>= 5.0)
+Description: GNOME control center tools for libgnomekbd
+ libgnomekbd offers an API to manage the keyboard in GNOME applications.
+ .
+ This package contains a helper for the GNOME control center to
+ configure and display keyboard mappings.
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+
+Package: liblangtag-common
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 1490
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: liblangtag
+Version: 0.5.7-2ubuntu1
+Description: library to access tags for identifying languages -- data
+ liblangtag is an interface library to access/deal with tags for
+ identifying languages, which is described in RFC 5646
+ .
+ This package contains the architecture-independent language data.
+Original-Maintainer: Rene Engelhard <rene@debian.org>
+Homepage: http://tagoh.bitbucket.org/liblangtag/
+
+Package: libfftw3-single3
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 2204
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: fftw3
+Version: 3.3.4-2ubuntu1
+Replaces: libfftw3-3 (<< 3.3.3-1)
+Depends: libc6 (>= 2.14), libgomp1 (>= 4.9)
+Pre-Depends: multiarch-support
+Suggests: libfftw3-bin, libfftw3-dev
+Breaks: libfftw3-3 (<< 3.3.3-1)
+Description: Library for computing Fast Fourier Transforms - Single precision
+ The FFTW library computes Fast Fourier Transforms (FFT) in one or more
+ dimensions. It is extremely fast. This package contains the shared library
+ for single precision transforms.
+ .
+ To get the static library and the header files, you need to install
+ libfftw3-dev. For documentation, see libfftw3-doc.
+Homepage: http://fftw.org
+Original-Maintainer: Debian Science Team <debian-science-maintainers@lists.alioth.debian.org>
+
+Package: python3-gdbm
+Status: install ok installed
+Priority: optional
+Section: python
+Installed-Size: 46
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: python3-stdlib-extensions
+Version: 3.5.1-1
+Replaces: python3.0 (<< 3.0.1)
+Provides: python3.5-gdbm
+Depends: python3 (>= 3.5), python3 (<< 3.6), libc6 (>= 2.4), libgdbm3 (>= 1.8.3)
+Suggests: python3-gdbm-dbg
+Description: GNU dbm database support for Python 3.x
+ GNU dbm database module for Python 3.x. Install this if you want to
+ create or read GNU dbm database files with Python.
+Original-Maintainer: Matthias Klose <doko@debian.org>
+
+Package: diffutils
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: utils
+Installed-Size: 416
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1:3.3-3
+Replaces: diff
+Pre-Depends: libc6 (>= 2.17)
+Suggests: diffutils-doc, wdiff
+Description: File comparison utilities
+ The diffutils package provides the diff, diff3, sdiff, and cmp programs.
+ .
+ `diff' shows differences between two files, or each corresponding file
+ in two directories.  `cmp' shows the offsets and line numbers where
+ two files differ.  `cmp' can also show all the characters that
+ differ between the two files, side by side.  `diff3' shows differences
+ among three files.  `sdiff' merges two files interactively.
+ .
+ The set of differences produced by `diff' can be used to distribute
+ updates to text files (such as program source code) to other people.
+ This method is especially useful when the differences are small compared
+ to the complete files.  Given `diff' output, the `patch' program can
+ update, or "patch", a copy of the file.
+Original-Maintainer: Santiago Vila <sanvila@debian.org>
+Homepage: http://www.gnu.org/software/diffutils/
+
+Package: speech-dispatcher-audio-plugins
+Status: install ok installed
+Priority: optional
+Section: sound
+Installed-Size: 114
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: speech-dispatcher
+Version: 0.8.3-1ubuntu3
+Replaces: speech-dispatcher (<< 0.8-1)
+Depends: libao4 (>= 1.1.0), libasound2 (>= 1.0.16), libaudio2, libc6 (>= 2.4), libglib2.0-0 (>= 2.12.0), libpulse0 (>= 0.99.1)
+Breaks: speech-dispatcher (<< 0.8-1)
+Description: Speech Dispatcher: Audio output plugins
+ Speech Dispatcher provides a device independent layer for speech synthesis.
+ It supports various software and hardware speech synthesizers as
+ backends and provides a generic layer for synthesizing speech and
+ playing back PCM data via those different backends to applications.
+ .
+ Various high level concepts like enqueueing vs. interrupting speech and
+ application specific user configurations are implemented in a device
+ independent way, therefore freeing the application programmer from
+ having to yet again reinvent the wheel.
+ .
+ This package contains all the speech-dispatcher audio output plugins.
+Homepage: http://devel.freebsoft.org/speechd
+Original-Maintainer: Debian TTS Team <tts-project@lists.alioth.debian.org>
+
+Package: cups-filters-core-drivers
+Status: install ok installed
+Priority: optional
+Section: net
+Installed-Size: 486
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: cups-filters
+Version: 1.8.3-2ubuntu3.4
+Replaces: cups (<< 1.5.0-16), cups-filters (<< 1.1.0-2~)
+Depends: libc6 (>= 2.14), libcups2 (>= 1.7.0), libcupsfilters1 (>= 1.0.58), libcupsimage2 (>= 1.4.0), libgcc1 (>= 1:3.0), liblcms2-2 (>= 2.2+git20110628), libpoppler58 (>= 0.41.0), libqpdf21 (>> 8.0~), libstdc++6 (>= 5.2), bc, poppler-utils
+Breaks: cups (<< 1.5.0-16), cups-filters (<< 1.1.0-2~)
+Description: OpenPrinting CUPS Filters - PPD-less printing
+ This package provides additional CUPS filters which are not provided
+ by the CUPS project itself. This includes filters for a PDF based
+ printing workflow.
+ .
+ This package contains only the filters needed for PPD-less printing of
+ PDF input files on IPP printers with known, common languages (PDF,
+ PostScript, PWG Raster, PCL).
+Homepage: http://www.openprinting.org/
+Original-Maintainer: Debian Printing Team <debian-printing@lists.debian.org>
+
+Package: libopencore-amrnb0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 207
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: opencore-amr
+Version: 0.1.3-2.1
+Depends: libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Description: Adaptive Multi Rate speech codec - shared library
+ This library contains an implementation of the 3GPP TS 26.073 specification for
+ the Adaptive Multi Rate (AMR) speech codec. The implementation is derived from
+ the OpenCORE framework, part of the Google Android project.
+ .
+ This package contains the encoder/decoder shared library.
+Original-Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Homepage: https://sourceforge.net/projects/opencore-amr/
+
+Package: liblightdm-gobject-1-0
+Status: install ok installed
+Priority: optional
+Section: x11
+Installed-Size: 146
+Maintainer: Robert Ancell <robert.ancell@ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: lightdm
+Version: 1.18.3-0ubuntu1.1
+Depends: libc6 (>= 2.14), libglib2.0-0 (>= 2.37.3), libx11-6, libxklavier16 (>= 5.0)
+Recommends: accountsservice
+Suggests: lightdm
+Description: LightDM GObject client library
+ A GObject based library for LightDM clients to use to interface with LightDM.
+Homepage: https://launchpad.net/lightdm
+
+Package: libparse-debianchangelog-perl
+Status: install ok installed
+Priority: optional
+Section: perl
+Installed-Size: 232
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1.2.0-8
+Depends: perl, libcgi-pm-perl | perl (<< 5.19), libclass-accessor-perl, libio-string-perl, liblocale-gettext-perl, libtimedate-perl
+Suggests: libhtml-parser-perl, libhtml-template-perl, libxml-simple-perl
+Description: parse Debian changelogs and output them in other formats
+ Parse::DebianChangelog is a replacement for the very limited
+ dpkg-parsechangelog. It can be used either via the parsechangelog
+ command line script or as Perl module.
+ .
+ Currently supported output formats:
+  * original dpkg-parsechangelog output format
+  * similar format with multiple stanzas instead of one
+  * XML
+  * HTML (customizable via HTML::Template templates).
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Homepage: http://www.djpig.de/software/
+
+Package: libxv1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 56
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libxv
+Version: 2:1.0.10-1
+Depends: libc6 (>= 2.14), libx11-6 (>= 2:1.6.0), libxext6
+Pre-Depends: multiarch-support
+Description: X11 Video extension library
+ libXv provides an X Window System client interface to the XVideo
+ extension to the X protocol.
+ .
+ The XVideo extension allows for accelerated drawing of videos.  Hardware
+ adaptors are exposed to clients, which may draw in a number of colourspaces,
+ including YUV.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXv
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: xserver-xorg-video-fbdev-hwe-16.04
+Status: install ok installed
+Priority: optional
+Section: x11
+Installed-Size: 47
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1:0.4.4-1build6~16.04.1
+Replaces: xserver-xorg-video-fbdev
+Provides: xorg-driver-video, xorg-renamed-package, xorg-renamed-package-hwe-16.04, xserver-xorg-video-fbdev
+Depends: libc6 (>= 2.4), xorg-video-abi-23, xserver-xorg-core-hwe-16.04 (>= 2:1.18.99.901)
+Conflicts: xserver-xorg-video-fbdev
+Description: X.Org X server -- fbdev display driver
+ This package provides the driver for the Linux framebuffer device (aka
+ 'fbdev').
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This package is built from the X.org xf86-video-fbdev driver module.
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: libido3-0.1-0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 167
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: ido
+Version: 13.10.0+16.04.20161028-0ubuntu1
+Depends: libc6 (>= 2.4), libcairo2 (>= 1.2.4), libgdk-pixbuf2.0-0 (>= 2.23.0), libglib2.0-0 (>= 2.41.1), libgtk-3-0 (>= 3.8.2-0ubuntu2), libpango-1.0-0 (>= 1.20.0), libpangocairo-1.0-0 (>= 1.14.0)
+Description: Shared library providing extra gtk menu items for display in
+ system indicators
+ .
+ This package contains shared libraries to be used by GTK+ 3 applications.
+Homepage: https://launchpad.net/ido
+
+Package: libx11-protocol-perl
+Status: install ok installed
+Priority: optional
+Section: perl
+Installed-Size: 395
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 0.56-7
+Depends: perl
+Recommends: perl (>= 5.19.8) | libio-socket-ip-perl
+Description: Perl module for the X Window System Protocol, version 11
+ X11::Protocol is a client-side interface to the X11 Protocol (see X(1) for
+ information about X11), allowing perl programs to display windows and
+ graphics on X11 servers.
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Homepage: https://metacpan.org/release/X11-Protocol
+
+Package: libwinpr-registry0.1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 232
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: freerdp
+Version: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3
+Replaces: libfreerdp1 (<< 1.1.0~git20140921.1.440916e+dfsg-1)
+Depends: libc6 (>= 2.14), libwinpr-crt0.1 (>= 1.1.0~beta1+git20130629)
+Suggests: freerdp-x11
+Breaks: libfreerdp1 (<< 1.1.0~git20140921.1.440916e+dfsg-1)
+Description: Windows Portable Runtime library (registry library)
+ WinPR is a spin-off project of FreeRDP which aims at providing a portable
+ implementation of important portions of the Windows API. Just like FreeRDP,
+ WinPR is released under the Apache license. Unlike Wine, WinPR does not provide
+ binary compatibility, and does not require applications to be built for
+ Windows. Instead, WinPR provides API compatibility for applications targeting
+ non-Windows environments. When on Windows, the original native API is being
+ used instead of the equivalent WinPR implementation, without having to modify
+ the code using it.
+ .
+ This package contains the winpr-registry shared library.
+Homepage: http://www.freerdp.com/
+Original-Maintainer: Mike Gabriel <sunweaver@debian.org>
+
+Package: libxml-xpathengine-perl
+Status: install ok installed
+Priority: optional
+Section: perl
+Installed-Size: 153
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 0.13-1
+Depends: perl
+Description: re-usable XPath engine for DOM-like trees
+ XML::XPathEngine provides an XPath engine, that can be re-used by other
+ module/classes that implement trees.
+ .
+ In order to use the XPath engine, nodes in the user module need to mimic
+ DOM nodes. The degree of similarity between the user tree and a DOM dictates
+ how much of the XPath features can be used. A module implementing all of the
+ DOM should be able to use this module very easily (you might need to add
+ the cmp method on nodes in order to get ordered result sets).
+ .
+ This module is derived from Matt Sergeant's XML::XPath.
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Homepage: http://search.cpan.org/dist/XML-XPathEngine/
+
+Package: ttf-ubuntu-font-family
+Status: install ok installed
+Priority: optional
+Section: fonts
+Installed-Size: 4085
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Source: ubuntu-font-family-sources
+Version: 1:0.83-0ubuntu2
+Replaces: ubuntu-private-fonts, ubuntu-private-nda-fonts
+Provides: ubuntu-private-fonts, ubuntu-private-nda-fonts
+Conflicts: ubuntu-private-fonts, ubuntu-private-nda-fonts
+Description: Ubuntu Font Family, sans-serif typeface hinted for clarity
+ The Ubuntu Font Family are a set of matching new libre/open fonts in
+ development during 2010--2011. The development is being funded by
+ Canonical Ltd on behalf the wider Free Software community and the
+ Ubuntu project.  The technical font design work and implementation is
+ being undertaken by Dalton Maag.
+ .
+ Both the final font Truetype/OpenType files and the design files used
+ to produce the font family are distributed under an open licence and
+ you are expressly encouraged to experiment, modify, share and improve.
+Original-Maintainer: Paul Sladen <ubuntu@paul.sladen.org>
+Homepage: http://font.ubuntu.com/
+
+Package: libsensors4
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 111
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: lm-sensors
+Version: 1:3.4.0-2
+Depends: libc6 (>= 2.14)
+Suggests: lm-sensors
+Conffiles:
+ /etc/sensors.d/.placeholder d41d8cd98f00b204e9800998ecf8427e
+ /etc/sensors3.conf 2380011501bd2ad9e44f070c80a4c74d
+Description: library to read temperature/voltage/fan sensors
+ Lm-sensors is a hardware health monitoring package for Linux. It allows you
+ to access information from temperature, voltage, and fan speed sensors. It
+ works with most newer systems.
+ .
+ This package contains a shared library for querying lm-sensors.
+Original-Maintainer: Aurelien Jarno <aurel32@debian.org>
+Homepage: http://www.lm-sensors.org
+
+Package: libmircommon7
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 368
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: mir
+Version: 0.26.3+16.04.20170605-0ubuntu1.1
+Depends: libboost-filesystem1.58.0, libboost-system1.58.0, libc6 (>= 2.17), libcapnp-0.5.3, libgcc1 (>= 1:3.4), libmircore1 (>= 0.26.3+16.04.20170605), libstdc++6 (>= 5.2)
+Description: Display server for Ubuntu - shared library
+ Mir is a display server running on linux systems, with a focus on efficiency,
+ robust operation and a well-defined driver model.
+ .
+ Contains the shared libraries required for the Mir server and client.
+Homepage: https://launchpad.net/mir
+Original-Maintainer: Thomas Voß <thomas.voss@canonical.com>
+
+Package: man-db
+Status: install ok installed
+Priority: important
+Section: doc
+Installed-Size: 2088
+Maintainer: Colin Watson <cjwatson@debian.org>
+Architecture: amd64
+Multi-Arch: foreign
+Version: 2.7.5-1
+Replaces: man, manpages-de (<< 0.5-4), manpages-zh (<< 1.5.2-1.1), nlsutils
+Provides: man, man-browser
+Depends: groff-base (>= 1.18.1.1-15), bsdmainutils, debconf (>= 1.2.0) | debconf-2.0, libc6 (>= 2.17), libgdbm3 (>= 1.8.3), libpipeline1 (>= 1.4.0), zlib1g (>= 1:1.1.4)
+Pre-Depends: dpkg (>= 1.16.1~)
+Suggests: groff, less, www-browser
+Breaks: manpages-zh (<< 1.5.2-1.1)
+Conflicts: man, suidmanager (<< 0.50)
+Conffiles:
+ /etc/cron.daily/man-db e467745743809f974051c3ec5b9cd022
+ /etc/cron.weekly/man-db 9527d2000fb1f221dbcecb75467a3e49
+ /etc/manpath.config 1098290101bb4346489b1efeefb67d70
+Description: on-line manual pager
+ This package provides the man command, the primary way of examining the
+ on-line help files (manual pages). Other utilities provided include the
+ whatis and apropos commands for searching the manual page database, the
+ manpath utility for determining the manual page search path, and the
+ maintenance utilities mandb, catman and zsoelim. man-db uses the groff
+ suite of programs to format and display the manual pages.
+Homepage: http://man-db.nongnu.org/
+
+Package: shared-mime-info
+Status: install ok installed
+Priority: optional
+Section: misc
+Installed-Size: 2440
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: foreign
+Version: 1.5-2ubuntu0.2
+Depends: libc6 (>= 2.14), libglib2.0-0 (>= 2.35.9), libxml2 (>= 2.7.4)
+Conflicts: libglib2.0-0 (<< 2.17.2), libgnomevfs2-0 (<< 1:2.24.0), tracker (<< 0.6.90)
+Description: FreeDesktop.org shared MIME database and spec
+ This is the shared MIME-info database from the X Desktop Group. It is required
+ by any program complying to the Shared MIME-Info Database spec, which is also
+ included in this package.
+ .
+ At this time at least ROX, GNOME, KDE and Xfce use this database.
+Homepage: http://freedesktop.org/wiki/Software/shared-mime-info
+Original-Maintainer: Sebastian Dröge <slomo@debian.org>
+
+Package: libxkbcommon0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 273
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libxkbcommon
+Version: 0.5.0-1ubuntu2.1
+Depends: xkb-data, libc6 (>= 2.17)
+Description: library interface to the XKB compiler - shared library
+ This package provides a library to handle keyboard descriptions, including
+ loading them from disk, parsing them and handling their state. It's mainly
+ meant for client toolkits, window systems, and other system applications;
+ currently that includes Wayland, kmscon, GTK+, Clutter, and more.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libxkbcommon
+Homepage: http://www.xkbcommon.org/
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: libhttp-message-perl
+Status: install ok installed
+Priority: optional
+Section: perl
+Installed-Size: 182
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 6.11-1
+Replaces: libwww-perl (<< 6.00)
+Depends: perl, libencode-locale-perl, libhttp-date-perl, libio-html-perl, liblwp-mediatypes-perl, liburi-perl, perl (>= 5.11) | libio-compress-perl
+Breaks: libwww-perl (<< 6.00)
+Description: perl interface to HTTP style messages
+ The HTTP::Message distribution contains classes useful for representing the
+ messages passed in HTTP style communication. These are classes representing
+ requests, responses and the headers contained within them.
+ .
+ The HTTP::Headers class encapsulates HTTP-style message headers. The headers
+ consist of attribute-value pairs also called fields, which may be repeated,
+ and which are printed in a particular order. The field names are cases
+ insensitive.
+ .
+ Instances of this class are usually created as member variables of the
+ HTTP::Request and HTTP::Response classes, internal to the library.
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Homepage: https://metacpan.org/release/HTTP-Message
+
+Package: indicator-appmenu
+Status: install ok installed
+Priority: optional
+Section: gnome
+Installed-Size: 100
+Maintainer: Ubuntu Desktop Team <ubuntu-desktop@lists.ubuntu.com>
+Architecture: amd64
+Version: 15.02.0+16.04.20151104-0ubuntu1
+Depends: libbamf3-2 (>= 0.5.2~bzr0+16.04.20151104), libc6 (>= 2.4), libdbusmenu-glib4 (>= 0.4.2), libdbusmenu-gtk3-4 (>= 0.4.2), libglib2.0-0 (>= 2.41.1), libgtk-3-0 (>= 3.5.12), libindicator3-7 (>= 0.4.90), libx11-6, dconf-gsettings-backend | gsettings-backend
+Recommends: indicator-applet | indicator-renderer, unity-gtk2-module, unity-gtk3-module, appmenu-qt, appmenu-qt5, jayatana
+Conffiles:
+ /etc/apport/crashdb.conf.d/indicator-appmenu-crashdb.conf 06336e6b7493783d4cfd355135692bc1
+Description: Indicator for application menus.
+ .
+ This package provides support for application menus.
+Homepage: http://launchpad.net/indicator-appmenu
+
+Package: g++
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 16
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: gcc-defaults (1.150ubuntu1)
+Version: 4:5.3.1-1ubuntu1
+Provides: c++-compiler
+Depends: cpp (>= 4:5.3.1-1ubuntu1), gcc (>= 4:5.3.1-1ubuntu1), g++-5 (>= 5.3.1-3~), gcc-5 (>= 5.3.1-3~)
+Suggests: g++-multilib
+Description: GNU C++ compiler
+ This is the GNU C++ compiler, a fairly portable optimizing compiler for C++.
+ .
+ This is a dependency package providing the default GNU C++ compiler.
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: gir1.2-packagekitglib-1.0
+Status: install ok installed
+Priority: optional
+Section: introspection
+Installed-Size: 144
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: packagekit
+Version: 0.8.17-4ubuntu6~gcc5.4ubuntu1.4
+Depends: gir1.2-glib-2.0 (>= 1.36), libpackagekit-glib2-16 (>= 0.8.17-4ubuntu6~gcc5.4ubuntu1.4)
+Description: GObject introspection data for the PackageKit GLib library
+ PackageKit allows performing simple software management tasks over a DBus
+ interface e.g. refreshing the cache, updating, installing and removing
+ software packages or searching for multimedia codecs and file handlers.
+ .
+ This package contains introspection data for the PackageKit
+ GLib interface library.
+ .
+ It can be used by packages using the GIRepository format to generate
+ dynamic bindings.
+Homepage: http://www.packagekit.org
+Original-Maintainer: Matthias Klumpp <matthias@tenstral.net>
+
+Package: linux-image-4.15.0-46-generic
+Status: install ok installed
+Priority: optional
+Section: kernel
+Installed-Size: 7956
+Maintainer: Canonical Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: amd64
+Source: linux-signed-hwe
+Version: 4.15.0-46.49~16.04.1
+Provides: aufs-dkms, fuse-module, ivtv-modules, kvm-api-4, linux-image, redhat-cluster-modules, spl-dkms, spl-modules, virtualbox-guest-modules, zfs-dkms, zfs-modules
+Depends: kmod, linux-base (>= 4.5ubuntu1~16.04.1), linux-modules-4.15.0-46-generic
+Recommends: grub-pc | grub-efi-amd64 | grub-efi-ia32 | grub | lilo, initramfs-tools | linux-initramfs-tool
+Suggests: fdutils, linux-hwe-tools, linux-headers-4.15.0-46-generic
+Conflicts: linux-image-unsigned-4.15.0-46-generic
+Description: Signed kernel image generic
+ A kernel image for generic.  This version of it is signed with
+ Canonical's UEFI/Opal signing key.
+Built-Using: linux (= 4.15.0-46.49~16.04.1)
+
+Package: python3-software-properties
+Status: install ok installed
+Priority: optional
+Section: python
+Installed-Size: 116
+Maintainer: Michael Vogt <michael.vogt@ubuntu.com>
+Architecture: all
+Source: software-properties
+Version: 0.96.20.8
+Depends: python3:any (>= 3.3.2-2~), python3, python3-apt (>= 0.6.20ubuntu16), python3-pycurl, lsb-release, iso-codes
+Recommends: unattended-upgrades
+Description: manage the repositories that you install software from
+ This software provides an abstraction of the used apt repositories.
+ It allows you to easily manage your distribution and independent software
+ vendor software sources.
+
+Package: libglu1-mesa
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 463
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libglu
+Version: 9.0.0-2.1
+Replaces: libglu1
+Provides: libglu1
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libgl1-mesa-glx | libgl1, libstdc++6 (>= 4.1.1)
+Conflicts: libglu1, mesag3 (<< 5.0.0-1), xlibmesa3
+Description: Mesa OpenGL utility library (GLU)
+ GLU offers simple interfaces for building mipmaps; checking for the
+ presence of extensions in the OpenGL (or other libraries which follow
+ the same conventions for advertising extensions); drawing
+ piecewise-linear curves, NURBS, quadrics and other primitives
+ (including, but not limited to, teapots); tesselating surfaces; setting
+ up projection matrices and unprojecting screen coordinates to world
+ coordinates.
+ .
+ On Linux, this library is also known as libGLU or libGLU.so.1.
+ .
+ This package provides the SGI implementation of GLU provided by the
+ Mesa project (ergo the "-mesa" suffix).
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: libgoa-1.0-common
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 96
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Source: gnome-online-accounts
+Version: 3.18.3-1ubuntu2
+Replaces: libgoa-1.0-0 (<< 3.8.2)
+Depends: dconf-gsettings-backend | gsettings-backend
+Breaks: libgoa-1.0-0 (<< 3.8.2)
+Description: library for GNOME Online Accounts - common files
+ This package contains the GNOME Online Accounts service, which provides a
+ centralized place for managing online accounts (Google, etc) for the
+ GNOME desktop.
+ .
+ This package contains the translation files for the GOA library and daemon.
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Homepage: https://wiki.gnome.org/Projects/GnomeOnlineAccounts
+
+Package: libnet-http-perl
+Status: install ok installed
+Priority: optional
+Section: perl
+Installed-Size: 61
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 6.09-1
+Replaces: libwww-perl (<< 6.00)
+Depends: perl, perl (>= 5.19.8) | libio-socket-ip-perl | libio-socket-inet6-perl, liburi-perl
+Recommends: libio-socket-ssl-perl (>= 1.38)
+Breaks: libwww-perl (<< 6.00)
+Description: module providing low-level HTTP connection client
+ The Net::HTTP class is a low-level HTTP client.  An instance of the
+ Net::HTTP class represents a connection to an HTTP server.  The
+ HTTP protocol is described in RFC 2616.  The Net::HTTP class
+ supports HTTP/1.0 and HTTP/1.1. Net::HTTP is a sub-class of IO::Socket::INET.
+ You can mix its methods with reading and writing from the socket directly.
+ This is not necessarily a good idea, unless you know what you are doing.
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Homepage: https://metacpan.org/release/Net-HTTP
+
+Package: resolvconf
+Status: install ok installed
+Priority: optional
+Section: net
+Installed-Size: 184
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1.78ubuntu6
+Depends: ifupdown, lsb-base (>= 4.1+Debian11ubuntu7), debconf (>= 0.5) | debconf-2.0, init-system-helpers (>= 1.18~)
+Breaks: dhcp3-client (<< 4.1.1-P1-15+squeeze1), dnscache-run, sysv-rc (<< 2.88dsf-42)
+Enhances: dhcpcd, dnsmasq, ifupdown, isc-dhcp-client, libc6, network-manager, nscd, pdnsd, ppp, pump, udhcpc
+Conffiles:
+ /etc/dhcp/dhclient-enter-hooks.d/resolvconf 586788af39de093b8145ea9d9fc43875
+ /etc/init.d/resolvconf dce41f7ca0894245efba005015f470a6
+ /etc/init/resolvconf.conf 355033f68372631d1b72b039347ec3a0
+ /etc/network/if-down.d/resolvconf 7e3f037a117b52c4169365a95f676262
+ /etc/network/if-up.d/000resolvconf f544c89d541465f1fea7dbcf71f832c0
+ /etc/ppp/ip-down.d/000resolvconf e50ecd8f5226bebba46e1eab652a4169
+ /etc/ppp/ip-up.d/000resolvconf 8cda84dd75e71467394378a6a71edcd6
+ /etc/resolvconf/interface-order f8b8c98514181b0c55aee4f531765f61
+ /etc/resolvconf/resolv.conf.d/base d41d8cd98f00b204e9800998ecf8427e
+ /etc/resolvconf/resolv.conf.d/head 5aee5a60350035d958401da5c0432be3
+ /etc/resolvconf/update.d/libc c714cc4467b58fa15680a49faedf7a41
+Description: name server information handler
+ Resolvconf is a framework for keeping up to date the system's
+ information about name servers. It sets itself up as the intermediary
+ between programs that supply this information (such as ifup and
+ ifdown, DHCP clients, the PPP daemon and local name servers) and
+ programs that use this information (such as DNS caches and resolver
+ libraries).
+ .
+ This package may require some manual configuration. Please
+ read the README file for detailed instructions.
+Homepage: http://alioth.debian.org/projects/resolvconf/
+Original-Maintainer: resolvconf maintainers <resolvconf-devel@lists.alioth.debian.org>
+
+Package: libnfnetlink0
+Status: install ok installed
+Priority: extra
+Section: libs
+Installed-Size: 60
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libnfnetlink
+Version: 1.0.1-3
+Depends: libc6 (>= 2.14)
+Pre-Depends: multiarch-support
+Description: Netfilter netlink library
+ libnfnetlink is the low-level library for netfilter related
+ kernel/userspace communication. It provides a generic messaging
+ infrastructure for in-kernel netfilter subsystems (such as
+ nfnetlink_log, nfnetlink_queue, nfnetlink_conntrack) and their
+ respective users and/or management tools in userspace.
+Original-Maintainer: Alexander Wirt <formorer@debian.org>
+
+Package: ubuntu-core-launcher
+Status: install ok installed
+Priority: optional
+Section: oldlibs
+Installed-Size: 100
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: snapd
+Version: 2.37.4ubuntu0.1
+Depends: snapd (= 2.37.4ubuntu0.1)
+Pre-Depends: dpkg (>= 1.15.7.2)
+Description: Transitional package for snapd
+ This is a transitional dummy package. It can safely be removed.
+Homepage: https://github.com/snapcore/snapd
+
+Package: libgudev-1.0-0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 76
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libgudev (230-2)
+Version: 1:230-2
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.37.3), libudev1 (>= 183)
+Description: GObject-based wrapper library for libudev
+ This library makes it much simpler to use libudev from programs already using
+ GObject. It also makes it possible to easily use libudev from other
+ programming languages, such as Javascript, because of GObject introspection
+ support.
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Homepage: https://wiki.gnome.org/Projects/libgudev
+
+Package: librest-0.7-0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 131
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: librest
+Version: 0.7.93-1
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.37.3), libsoup-gnome2.4-1 (>= 2.27.4), libsoup2.4-1 (>= 2.30), libxml2 (>= 2.7.4)
+Pre-Depends: multiarch-support
+Description: REST service access library
+ This library was designed to make it easier to access web services that
+ claim to be "RESTful".  It includes convenience wrappers for libsoup and
+ libxml to ease remote use of the RESTful API.
+Original-Maintainer: Ying-Chun Liu (PaulLiu) <paulliu@debian.org>
+Homepage: https://wiki.gnome.org/Librest
+
+Package: libopenal1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 496
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: openal-soft
+Version: 1:1.16.0-3
+Depends: libopenal-data (= 1:1.16.0-3), libc6 (>= 2.16)
+Pre-Depends: multiarch-support
+Recommends: libasound2 (>= 1.0.16), libpulse0 (>= 0.99.1)
+Suggests: libportaudio2 (>= 19+svn20101113)
+Description: Software implementation of the OpenAL audio API (shared library)
+ OpenAL, the Open Audio Library, is a joint effort to create an open,
+ vendor-neutral, cross-platform API for interactive, primarily spatialized
+ audio. OpenAL's primary audience are application developers and desktop
+ users that rely on portable standards like OpenGL, for games and other
+ multimedia applications.
+ .
+ This library is meant as a compatible update/replacement to the OpenAL Sample
+ Implementation (the SI). The SI has been unmaintained for quite a while, and
+ would require a lot of work to clean up. This is a fork the old Windows version
+ to attempt an accelerated ALSA version of an OpenAL implementation.
+ .
+ OpenAL Soft supports mono, stereo, 4-channel, 5.1, 6.1, and 7.1 output, as
+ opposed to the SI's 4-channel max (though it did have some provisions for 6
+ channel, this was not 5.1, and was seemingly a "late" addition). OpenAL Soft
+ does not support the Vorbis and MP3 extensions, however those were considered
+ deprecated even in the SI. It does, though, support some of the newer
+ extensions like AL_EXT_FLOAT32 and AL_EXT_MCFORMATS for multi-channel and
+ floating-point formats, as well as ALC_EXT_EFX for environmental audio effects,
+ and others.
+ .
+ This package installs the OpenAL Soft shared library.
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Homepage: http://kcat.strangesoft.net/openal.html
+
+Package: pinentry-curses
+Status: install ok installed
+Priority: optional
+Section: utils
+Installed-Size: 86
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: pinentry
+Version: 0.9.7-3
+Provides: pinentry
+Depends: libassuan0 (>= 2.0.1), libc6 (>= 2.14), libgpg-error0 (>= 1.14), libncursesw5 (>= 6), libtinfo5 (>= 6)
+Suggests: pinentry-doc
+Enhances: gnupg-agent
+Description: curses-based PIN or pass-phrase entry dialog for GnuPG
+ This package contains a program that allows for secure entry of PINs or
+ pass phrases.  That means it tries to take care that the entered
+ information is not swapped to disk or temporarily stored anywhere.
+ This functionality is particularly useful for entering pass phrases
+ when using encryption software such as GnuPG or e-mail clients using
+ the same.  It uses an open protocol and is therefore not tied to
+ particular software.
+ .
+ The program contained in this package implements a PIN entry dialog
+ using the curses tool kit, meaning that it is useful for users
+ working in text mode without the X Window System.  There are sibling
+ packages that implement PIN entry dialogs that use an X tool kit.  If
+ you install any of the graphical packages then this package is not
+ necessary because the sibling packages automatically fall back to
+ text mode if X is not active.
+Original-Maintainer: Debian GnuPG Maintainers <pkg-gnupg-maint@lists.alioth.debian.org>
+Homepage: https://www.gnupg.org/related_software/pinentry/
+
+Package: gstreamer1.0-plugins-ugly
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 879
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: gst-plugins-ugly1.0
+Version: 1.8.3-1ubuntu0.1
+Replaces: gstreamer1.0-plugins-bad (<< 1.7.2)
+Depends: gstreamer1.0-plugins-ugly-amr (= 1.8.3-1ubuntu0.1), liba52-0.7.4, libc6 (>= 2.14), libcdio13 (>= 0.83), libdvdread4 (>= 4.1.3), libgcc1 (>= 1:3.0), libglib2.0-0 (>= 2.40), libgstreamer-plugins-base1.0-0 (>= 1.6.0), libgstreamer1.0-0 (>= 1.6.0), libmad0 (>= 0.15.1b-3), libmp3lame0, libmpeg2-4 (>= 0.5.1), libmpg123-0 (>= 1.6.2), liborc-0.4-0 (>= 1:0.4.25), libsidplay1v5, libstdc++6 (>= 4.1.1), libtwolame0, libx264-148
+Breaks: gstreamer1.0-plugins-bad (<< 1.7.2)
+Description: GStreamer plugins from the "ugly" set
+ GStreamer is a streaming media framework, based on graphs of filters
+ which operate on media data.  Applications using this library can do
+ anything from real-time sound processing to playing videos, and just
+ about anything else media-related.  Its plugin-based architecture means
+ that new data types or processing capabilities can be added simply by
+ installing new plug-ins.
+ .
+ This package contains plugins from the "ugly" set, a set of
+ good-quality plug-ins that might pose distribution problems.
+Homepage: http://gstreamer.freedesktop.org/modules/gst-plugins-ugly.html
+Gstreamer-Decoders: application/vnd.rn-realmedia; application/x-pn-realaudio; application/x-rdt, media=(string)application, encoding-name=(string)X-REAL-RDT; application/x-rtp, media=(string){ application, video, audio }, payload=(int)[ 96, 127 ], encoding-name=(string)X-ASF-PF; audio/ac3; audio/mpeg, mpegversion=(int)1, layer=(int)[ 1, 3 ]; audio/x-ac3; audio/x-lpcm; audio/x-private1-ac3; audio/x-private1-lpcm; audio/x-sid; video/mpeg, mpegversion=(int)[ 1, 2 ], systemstream=(boolean)false; video/x-ms-asf
+Gstreamer-Elements: a52dec, asfdemux, cdiocddasrc, dvdlpcmdec, dvdreadsrc, dvdsubdec, dvdsubparse, lamemp3enc, mad, mpeg2dec, mpg123audiodec, pnmsrc, rademux, rdtdepay, rdtmanager, rmdemux, rtpasfdepay, rtspreal, rtspwms, siddec, twolamemp2enc, x264enc, xingmux
+Gstreamer-Encoders: audio/mpeg, mpegversion=(int)1, layer=(int){ 1, 2, 3 }; video/x-h264, stream-format=(string){ avc, byte-stream }, alignment=(string)au, profile=(string){ high-4:4:4, high-4:2:2, high-10, high, main, baseline, constrained-baseline, high-4:4:4-intra, high-4:2:2-intra, high-10-intra }
+Gstreamer-Uri-Sources: cdda, dvd, pnm
+Gstreamer-Version: 1.8
+Original-Maintainer: Maintainers of GStreamer packages <pkg-gstreamer-maintainers@lists.alioth.debian.org>
+
+Package: gnome-session-bin
+Status: install ok installed
+Priority: optional
+Section: gnome
+Installed-Size: 610
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: gnome-session
+Version: 3.18.1.2-1ubuntu1.16.04.2
+Depends: libc6 (>= 2.4), libgl1-mesa-glx | libgl1, libglib2.0-0 (>= 2.46.0), libgnome-desktop-3-12 (>= 3.17.92), libgtk-3-0 (>= 3.18.0), libice6 (>= 1:1.0.0), libjson-glib-1.0-0 (>= 0.12.0), libsm6, libsystemd0, libx11-6, libxcomposite1 (>= 1:0.3-1), dconf-gsettings-backend | gsettings-backend, dbus-x11, gsettings-desktop-schemas, upower (>= 0.9.0)
+Recommends: libpam-systemd
+Breaks: gdm3 (<< 3.8)
+Conflicts: gnome-session (<< 3.9.90-0ubuntu8)
+Description: GNOME Session Manager - Minimal runtime
+ The GNOME Session Manager is in charge of starting the core components
+ of the GNOME desktop, and applications that should be launched at
+ login time. It also features a way to save and restore currently
+ running applications.
+ .
+ This package contains the binaries for the GNOME Session Manager, but
+ no startup scripts. It is meant for those willing to start
+ gnome-session by hand with the components of their choice, and for
+ applications such as GDM that use gnome-session internally.
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+
+Package: libavahi-client3
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 121
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: avahi
+Version: 0.6.32~rc+dfsg-1ubuntu2.3
+Depends: libavahi-common3 (>= 0.6.22), libc6 (>= 2.4), libdbus-1-3 (>= 1.9.14)
+Description: Avahi client library
+ Avahi is a fully LGPL framework for Multicast DNS Service Discovery.
+ It allows programs to publish and discover services and hosts
+ running on a local network with no specific configuration. For
+ example you can plug into a network and instantly find printers to
+ print to, files to look at and people to talk to.
+ .
+ This package contains the library for Avahi's C API which  allows you
+ to integrate mDNS/DNS-SD functionality into your application.
+Homepage: http://avahi.org/
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+
+Package: avahi-autoipd
+Status: install ok installed
+Priority: optional
+Section: net
+Installed-Size: 109
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: avahi
+Version: 0.6.32~rc+dfsg-1ubuntu2.3
+Depends: libc6 (>= 2.14), libdaemon0 (>= 0.14), adduser
+Recommends: isc-dhcp-client, iproute2
+Conflicts: zeroconf
+Conffiles:
+ /etc/avahi/avahi-autoipd.action 883986521495563bcbc34a4e3f8a5512
+ /etc/dhcp/dhclient-enter-hooks.d/avahi-autoipd 2a5be4d37a91789eb96df082adcbcc83
+ /etc/dhcp/dhclient-exit-hooks.d/zzz_avahi-autoipd be96f910115ec349e527bd7165ec2250
+ /etc/network/if-down.d/avahi-autoipd 474077c828246c57e1f453f28dc2cb8c
+ /etc/network/if-up.d/avahi-autoipd e810e2f4cf1cea7b36a5cf82467b0a18
+Description: Avahi IPv4LL network address configuration daemon
+ Avahi is a fully LGPL framework for Multicast DNS Service Discovery.
+ It allows programs to publish and discover services and hosts
+ running on a local network with no specific configuration. For
+ example you can plug into a network and instantly find printers to
+ print to, files to look at and people to talk to.
+ .
+ This tool implements IPv4LL, "Dynamic Configuration of IPv4 Link-Local
+ Addresses" (IETF RFC3927), a protocol for automatic IP address
+ configuration from the link-local 169.254.0.0/16 range without the
+ need for a central server. It is primarily intended to be used in
+ ad-hoc networks which lack a DHCP server.
+Homepage: http://avahi.org/
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+
+Package: gir1.2-gudev-1.0
+Status: install ok installed
+Priority: optional
+Section: introspection
+Installed-Size: 46
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libgudev (230-2)
+Version: 1:230-2
+Depends: gir1.2-glib-2.0, libgirepository-1.0-1 (>= 1.41.4-1), libgudev-1.0-0 (>= 212)
+Pre-Depends: dpkg (>= 1.17.14)
+Description: libgudev-1.0 introspection data
+ This package contains the GObject-introspection data of libgudev-1.0 in
+ binary typelib format.
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Homepage: https://wiki.gnome.org/Projects/libgudev
+
+Package: libpam-modules
+Status: install ok installed
+Priority: required
+Section: admin
+Installed-Size: 919
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: pam
+Version: 1.1.8-3.2ubuntu2.1
+Replaces: libpam-umask, libpam0g-util
+Provides: libpam-mkhomedir, libpam-motd, libpam-umask
+Pre-Depends: libaudit1 (>= 1:2.2.1), libc6 (>= 2.15), libdb5.3, libpam0g (>= 1.1.3-2), libselinux1 (>= 2.1.9), debconf (>= 0.5) | debconf-2.0, libpam-modules-bin (= 1.1.8-3.2ubuntu2.1)
+Recommends: update-motd
+Conflicts: libpam-mkhomedir, libpam-motd, libpam-umask
+Conffiles:
+ /etc/security/access.conf 13ec4d189f0ed9acf3433977a53d446b
+ /etc/security/group.conf f1e26e8db6f7abd2d697d7dad3422c36
+ /etc/security/limits.conf 11c27ba00b7bd6a255f33126f75c5005
+ /etc/security/namespace.conf 6424c99a62ddf4b7d3ca713bb06ded89
+ /etc/security/namespace.init b46b23d64860d1557d2a8f44b231fd54
+ /etc/security/pam_env.conf ddee4a931170dc21b4e0b9bb28e02a7b
+ /etc/security/sepermit.conf d41c74654734a5c069a37bfc02f0a6d4
+ /etc/security/time.conf 06e05c6079e839c8833ac7c3abfde192
+Description: Pluggable Authentication Modules for PAM
+ This package completes the set of modules for PAM. It includes the
+  pam_unix.so module as well as some specialty modules.
+Homepage: http://pam.sourceforge.net/
+Original-Maintainer: Steve Langasek <vorlon@debian.org>
+
+Package: python3-urllib3
+Status: install ok installed
+Priority: optional
+Section: python
+Installed-Size: 261
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: python-urllib3
+Version: 1.13.1-2ubuntu0.16.04.2
+Depends: python3:any (>= 3.3.2-2~), python3-six
+Recommends: ca-certificates
+Suggests: python3-ndg-httpsclient, python3-openssl, python3-pyasn1
+Description: HTTP library with thread-safe connection pooling for Python3
+ urllib3 supports features left out of urllib and urllib2 libraries.
+ .
+   - Re-use the same socket connection for multiple requests (HTTPConnectionPool
+     and HTTPSConnectionPool) (with optional client-side certificate
+     verification).
+   - File posting (encode_multipart_formdata).
+   - Built-in redirection and retries (optional).
+   - Supports gzip and deflate decoding.
+   - Thread-safe and sanity-safe.
+   - Small and easy to understand codebase perfect for extending and
+     building upon.
+ .
+ This package contains the Python 3 version of the library.
+Homepage: http://urllib3.readthedocs.org
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+
+Package: printer-driver-pnm2ppa
+Status: install ok installed
+Priority: optional
+Section: text
+Installed-Size: 910
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: pnm2ppa
+Version: 1.13+nondbs-0ubuntu5
+Replaces: pnm2ppa (<< 1.13-3~)
+Depends: libc6 (>= 2.14), debconf (>= 0.5) | debconf-2.0, ghostscript
+Suggests: magicfilter | apsfilter
+Breaks: pnm2ppa (<< 1.13-3~)
+Conflicts: pbm2ppa
+Description: printer driver for HP-GDI printers
+ Using pnm2ppa it's possible to run HP-GDI printers on Linux. These printers
+ are normally "Windows-only" and use the PPA protocol which is proprietary.
+ pnm2ppa supports color.
+ .
+ pnm2ppa supports the following printers: HP Deskjet 7XX Series, HP Deskjet
+ 820 Series and HP Deskjet 1000 Series.
+Homepage: http://pnm2ppa.sf.net/
+Original-Maintainer: Debian Printing Team <debian-printing@lists.debian.org>
+
+Package: libxcb-keysyms1
+Status: install ok installed
+Priority: extra
+Section: libs
+Installed-Size: 56
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: xcb-util-keysyms
+Version: 0.4.0-1
+Depends: libc6 (>= 2.2.5), libxcb1
+Pre-Depends: multiarch-support
+Description: utility libraries for X C Binding -- keysyms
+ This package contains the library files needed to run software using
+ libxcb-keysyms, providing standard X key constants and conversion to/from
+ keycodes.
+ .
+ The xcb-util module provides a number of libraries which sit on top of
+ libxcb, the core X protocol library, and some of the extension
+ libraries. These experimental libraries provide convenience functions
+ and interfaces which make the raw X protocol more usable. Some of the
+ libraries also provide client-side code which is not strictly part of
+ the X protocol but which have traditionally been provided by Xlib.
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Homepage: http://xcb.freedesktop.org
+
+Package: gdbserver
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 633
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: gdb
+Version: 7.11.1-0ubuntu1~16.5
+Replaces: gdb (<< 7.0.1-1)
+Depends: libc6 (>= 2.15)
+Description: GNU Debugger (remote server)
+ GDB is a source-level debugger, capable of breaking programs at
+ any specific line, displaying variable values, and determining
+ where errors occurred. Currently, gdb supports C, C++, D,
+ Objective-C, Fortran, Java, OpenCL C, Pascal, assembly, Modula-2,
+ Go, and Ada. A must-have for any serious programmer.
+ .
+ This package contains gdbserver.  Install this to debug remotely
+ from another system where GDB is installed.
+Homepage: http://www.gnu.org/s/gdb/
+Original-Maintainer: Héctor Or

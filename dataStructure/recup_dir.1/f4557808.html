@@ -1,0 +1,49 @@
+.max(this.bottom, other.bottom)
+    );
+  }
+
+  /** Sort x1/x2 and y1/y2 so x1<x2, y1<y2 */
+  sortCoords() {
+    if (this.x1 > this.x2) {
+      [this.x1, this.x2] = [this.x2, this.x1];
+    }
+    if (this.y1 > this.y2) {
+      [this.y1, this.y2] = [this.y2, this.y1];
+    }
+  }
+
+  clone() {
+    return new Selection(this.x1, this.y1, this.x2, this.y2);
+  }
+
+  toJSON() {
+    return {
+      left: this.left,
+      right: this.right,
+      top: this.top,
+      bottom: this.bottom,
+    };
+  }
+
+  static getBoundingClientRect(el) {
+    if (!el.getBoundingClientRect) {
+      // Typically the <html> element or somesuch
+      return null;
+    }
+    const rect = el.getBoundingClientRect();
+    if (!rect) {
+      return null;
+    }
+    return new Selection(rect.left, rect.top, rect.right, rect.bottom);
+  }
+}
+
+if (typeof exports !== "undefined") {
+  exports.Selection = Selection;
+}
+
+return exports;
+})();
+null;
+
+PK

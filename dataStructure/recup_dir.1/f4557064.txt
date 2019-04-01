@@ -1,0 +1,64 @@
+ning": {
+    "message": "Opgeslagen afbeelding wordt naar $PIXELS$px in hoogte bijgesneden.",
+    "placeholders": {
+      "pixels": {
+        "content": "$1"
+      }
+    }
+  },
+  "requestErrorTitle": {
+    "message": "Buiten werking."
+  },
+  "requestErrorDetails": {
+    "message": "Sorry! Uw afbeelding kon niet worden opgeslagen. Probeer het later opnieuw."
+  },
+  "connectionErrorTitle": {
+    "message": "We kunnen geen verbinding met uw schermafdrukken maken."
+  },
+  "connectionErrorDetails": {
+    "message": "Controleer uw internetverbinding. Als u verbinding met het internet kunt maken, kan er sprake zijn van een tijdelijk probleem met de Firefox Screenshots-service."
+  },
+  "loginErrorDetails": {
+    "message": "Uw afbeelding kon niet worden opgeslagen, omdat er een probleem is met de Firefox Screenshots-service. Probeer het later opnieuw."
+  },
+  "unshootablePageErrorTitle": {
+    "message": "Een schermafbeelding van deze pagina is niet mogelijk."
+  },
+  "unshootablePageErrorDetails": {
+    "message": "Dit is geen standaardwebpagina, dus u kunt er geen schermafbeelding van maken."
+  },
+  "selfScreenshotErrorTitle": {
+    "message": "U kunt geen afbeelding van een Firefox Screenshots-pagina maken!"
+  },
+  "emptySelectionErrorTitle": {
+    "message": "Uw selectie is te klein"
+  },
+  "privateWindowErrorTitle": {
+    "message": "Screenshots is uitgeschakeld in Privénavigatiemodus"
+  },
+  "privateWindowErrorDetails": {
+    "message": "Sorry voor het ongemak. Voor toekomstige releases wordt aan deze functie gewerkt."
+  },
+  "genericErrorTitle": {
+    "message": "Ho! Er is iets mis met Firefox Screenshots."
+  },
+  "genericErrorDetails": {
+    "message": "We weten niet precies wat er zonet is gebeurd. Wilt u het nogmaals proberen, of een schermafbeelding van een andere pagina maken?"
+  },
+  "tourBodyIntro": {
+    "message": "Maak, bewaar en deel schermafbeeldingen zonder Firefox te verlaten."
+  },
+  "tourHeaderPageAction": {
+    "message": "Een nieuwe manier om op te slaan"
+  },
+  "tourBodyPageAction": {
+    "message": "Vouw het menu Pagina-acties in de adresbalk uit zodra u een schermafbeelding wilt maken."
+  },
+  "tourHeaderClickAndDrag": {
+    "message": "Leg alleen vast wat u wilt"
+  },
+  "tourBodyClickAndDrag": {
+    "message": "Klik en sleep om alleen een gedeelte van een pagina vast te leggen. U kunt ook de muisaanwijzer boven een gebied houden om uw selectie te accentueren."
+  },
+  "tourHeaderFullPage": {
+    "message": "Leg vensters of hele pagina

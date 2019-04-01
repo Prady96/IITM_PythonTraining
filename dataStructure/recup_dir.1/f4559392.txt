@@ -1,0 +1,4 @@
+~2[6-9]|3[01]~3[2-5]~3[6-8]~39|4[0-2]", "zip": "(?:37)?\\d{4}", "zipex": "375010,0002,0010"},
+  "data/AO": {"id": "data/AO", "key": "AO", "name": "ANGOLA"},
+  "data/AQ": {"id": "data/AQ", "key": "AQ", "name": "ANTARCTICA"},
+  "data/AR": {"fmt": "%N%n%O%n%A%n%Z %C%n%S", "id": "data/AR", "key": "AR", "lang": "es", "languages": "es", "name": "ARGENTINA", "posturl": "http://www.correoargentino.com.ar/formularios/cpa", "sub_isoids": "B~K~H~U~C~X~W~E~P~Y~L~F~M~N~Q~R~A~J~D~Z~S~G~V~T", "sub_keys": "Buenos Aires~Catamarca~Chaco~Chubut~Ciudad Aut

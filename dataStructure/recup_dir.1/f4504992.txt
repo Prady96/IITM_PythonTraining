@@ -1,0 +1,2 @@
+ne des consoles virtuelles puissent lancer un serveur X.
+Extended_description-gl.utf-8: Como o servidor X se executa con privilexios de superusuario, pode non ser unha boa idea permitir que calquera usuario o inicie, por motivos de seguridade. Por outro lado, pode ser aínda unha peor idea executar programas cliente X de prop

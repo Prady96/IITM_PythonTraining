@@ -1,0 +1,158 @@
+@lists.alioth.debian.org>
+
+Package: dconf-gsettings-backend
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 111
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: d-conf
+Version: 0.24.0-2
+Provides: gsettings-backend
+Depends: libc6 (>= 2.14), libglib2.0-0 (>= 2.39.1), dconf-service (>= 0.24.0-2), dconf-service (<< 0.24.0-2.1~), libdconf1 (= 0.24.0-2)
+Description: simple configuration storage system - GSettings back-end
+ DConf is a low-level key/value database designed for storing desktop
+ environment settings.
+ .
+ This package contains a back-end for GSettings. It is needed by
+ applications accessing settings through GSettings to set custom values
+ and listen for changes.
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Homepage: https://wiki.gnome.org/Projects/dconf
+
+Package: libreoffice-style-breeze
+Status: install ok installed
+Priority: optional
+Section: editors
+Installed-Size: 1030
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: libreoffice
+Version: 1:5.1.6~rc2-0ubuntu1~xenial6
+Provides: libreoffice-style
+Depends: libreoffice-style-galaxy, libreoffice-common (= 1:5.1.6~rc2-0ubuntu1~xenial6)
+Suggests: breeze-icon-theme
+Enhances: libreoffice-core
+Description: office productivity suite -- Breeze symbol style
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the "breeze" symbol style, default style for
+ KDE's Plasma 5.
+Homepage: http://www.libreoffice.org
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+
+Package: libc6-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 13232
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: glibc
+Version: 2.23-0ubuntu11
+Provides: libc-dev
+Depends: libc6 (= 2.23-0ubuntu11), libc-dev-bin (= 2.23-0ubuntu11), linux-libc-dev
+Suggests: glibc-doc, manpages-dev
+Breaks: binutils (<< 2.20.1-1), binutils-gold (<< 2.20.1-11), cmake (<< 2.8.5+dfsg.1-5), gcc-4.4 (<< 4.4.6-4), gcc-4.5 (<< 4.5.3-2), gcc-4.6 (<< 4.6.0-12), libhwloc-dev (<< 1.2-3), libjna-java (<< 3.2.7-4), liblouis-dev (<< 2.3.0-2), liblouisxml-dev (<< 2.4.0-2), make (<< 3.81-8.1), pkg-config (<< 0.26-1)
+Conflicts: libc0.1-dev, libc0.3-dev, libc6.1-dev
+Description: GNU C Library: Development Libraries and Header Files
+ Contains the symlinks, headers, and object files needed to compile
+ and link programs which use the standard C library.
+Homepage: http://www.gnu.org/software/libc/libc.html
+Original-Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+
+Package: libslang2
+Status: install ok installed
+Priority: important
+Section: libs
+Installed-Size: 1506
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: slang2
+Version: 2.3.0-2ubuntu1.1
+Depends: libc6 (>= 2.14)
+Recommends: libpng12-0
+Description: S-Lang programming library - runtime version
+ S-Lang is a C programmer's library that includes routines for the rapid
+ development of sophisticated, user friendly, multi-platform applications.
+ .
+ This package contains only the shared library libslang.so.* and copyright
+ information. It is only necessary for programs that use this library (such
+ as jed and slrn). If you plan on doing development with S-Lang, you will
+ need the companion -dev package as well.
+Built-Using: unicode-data (= 8.0-3)
+Homepage: http://www.jedsoft.org/slang/
+Original-Maintainer: Alastair McKinstry <mckinstry@debian.org>
+
+Package: policykit-desktop-privileges
+Status: install ok installed
+Priority: optional
+Section: admin
+Installed-Size: 17
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 0.20
+Recommends: policykit-1
+Breaks: gnome-settings-daemon (<< 3.6.4-0ubuntu8)
+Description: run common desktop actions without password
+ This package provides a set of PolicyKit privileges which allow Administrators
+ to run common actions without being asked for their password:
+ .
+  * mounting and checking internal disk drives (through udisks)
+  * setting the CPU speed and policy (through the GNOME CPU frequency applet)
+  * setting the time and timezone (through the GNOME clock applet or through
+    KDE)
+  * Adding/changing system-wide NetworkManager connections
+  * Update already installed software
+  * Configure printers
+ .
+ It does not change privileges for non-Administrators (users who are not in the
+ "admin" or "sudo" group). So this satisfies the typical desktop/laptop use
+ case where the user has full control over the hardware anyway.
+ .
+ This is implemented by shipping a pklocalauthority(8) file.
+
+Package: cron
+Status: install ok installed
+Priority: important
+Section: admin
+Installed-Size: 243
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 3.0pl1-128ubuntu2
+Provides: cron-daemon
+Depends: libc6 (>= 2.7), libpam0g (>= 0.99.7.1), libselinux1 (>= 1.32), init-system-helpers (>= 1.18~), lsb-base (>= 4.1+Debian11ubuntu7), debianutils (>= 1.7), adduser, libpam-runtime (>= 1.0.1-11)
+Pre-Depends: dpkg (>= 1.15.7.2)
+Suggests: anacron (>= 2.0-1), logrotate, checksecurity, exim4 | postfix | mail-transport-agent
+Breaks: dpkg (<< 1.15.4)
+Conffiles:
+ /etc/cron.d/.placeholder e5e12910bf011222160404d7bdb824f2
+ /etc/cron.daily/.placeholder e5e12910bf011222160404d7bdb824f2
+ /etc/cron.hourly/.placeholder e5e12910bf011222160404d7bdb824f2
+ /etc/cron.monthly/.placeholder e5e12910bf011222160404d7bdb824f2
+ /etc/cron.weekly/.placeholder e5e12910bf011222160404d7bdb824f2
+ /etc/crontab 8f111d100ea459f68d333d63a8ef2205
+ /etc/default/cron 7bd39371e1c10e74dd3d37a58cc186f8
+ /etc/init.d/cron 85d7a3783889ea93dcda2fb488420c1c
+ /etc/init/cron.conf 1ed11393cd5e5e45d7d14c0e9d028fde
+ /etc/pam.d/cron 11e788a7f7cd5477b10da2c7fd5ecdf0
+Description: process scheduling daemon
+ The cron daemon is a background process that runs particular programs at
+ particular times (for example, every minute, day, week, or month), as
+ specified in a crontab. By default, users may also create crontabs of
+ their own so that processes are run on their behalf.
+ .
+ Output from the commands is usually mailed to the system administrator
+ (or to the user in question); you should probably install a mail system
+ as well so that you can receive these messages.
+ .
+ This cron package does not provide any system maintenance tasks. Basic
+ periodic maintenance tasks are provided by other packages, such
+ as checksecurity.
+Homepage: http://ftp.isc.org/isc/cron/
+Original-Maintainer: Maintainer: Javier Fernández-Sanguino Pe

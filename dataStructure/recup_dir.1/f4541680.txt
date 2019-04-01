@@ -1,0 +1,135 @@
+terminal from Python 3
+ Launch a subprocess in a pseudo terminal (pty), and interact with both
+ the process and its pty.
+ .
+ Sometimes, piping stdin and stdout is not enough. There might be a password
+ prompt that doesn't read from stdin, output that changes when it's going to
+ a pipe rather than a terminal, or curses-style interfaces that rely on a
+ terminal. If you need to automate these things, running the process in a
+ pseudo terminal (pty) is the answer.
+ .
+ This package installs the library for Python 3.
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Homepage: https://github.com/pexpect/ptyprocess
+
+Package: cups-client
+Status: install ok installed
+Priority: optional
+Section: net
+Installed-Size: 462
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: foreign
+Source: cups
+Version: 2.1.3-4ubuntu0.7
+Replaces: cups (<< 1.7.3-5~)
+Depends: libc6 (>= 2.4), libcups2 (= 2.1.3-4ubuntu0.7), libcupsimage2 (>= 1.4.0), cups-common (>= 2.1.3-4ubuntu0.7), adduser
+Suggests: cups, xpp, cups-bsd, smbclient
+Breaks: cups (<< 1.7.3-5~)
+Conflicts: lprng
+Description: Common UNIX Printing System(tm) - client programs (SysV)
+ The Common UNIX Printing System (or CUPS(tm)) is a printing system and
+ general replacement for lpd and the like.  It supports the Internet
+ Printing Protocol (IPP), and has its own filtering driver model for
+ handling various document types.
+ .
+ This package provides the System V style print client programs.
+Homepage: http://www.cups.org
+Original-Maintainer: Debian Printing Team <debian-printing@lists.debian.org>
+
+Package: sane-utils
+Status: install ok installed
+Priority: optional
+Section: graphics
+Installed-Size: 575
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: foreign
+Source: sane-backends
+Version: 1.0.25+git20150528-1ubuntu2.16.04.1
+Depends: adduser, update-inetd, debconf (>= 0.5) | debconf-2.0, init-system-helpers (>= 1.18~), libavahi-client3 (>= 0.6.16), libavahi-common3 (>= 0.6.16), libc6 (>= 2.15), libieee1284-3, libsane (>= 1.0.24), libsystemd0, libusb-1.0-0 (>= 2:1.0.8)
+Suggests: avahi-daemon, unpaper
+Conffiles:
+ /etc/default/saned 99c46f8b429fd197e6e1c6c41141735c
+ /etc/init.d/saned 415c090dc4e22106c20f6f53574b5724
+ /etc/sane.d/saned.conf f68e0a92c8d4207a7d3f35c36f38ca3d
+Description: API library for scanners -- utilities
+ SANE stands for "Scanner Access Now Easy" and is an application
+ programming interface (API) that provides standardized access to any
+ raster image scanner hardware (flatbed scanner, hand-held scanner,
+ video- and still-cameras, frame-grabbers, etc.). The SANE standard is
+ free and its discussion and development are open to everybody. The
+ current source code is written to support several operating systems,
+ including GNU/Linux, OS/2, Win32 and various Unices and is available
+ under the GNU General Public License (commercial applications and
+ backends are welcome, too, however).
+ .
+ This package includes the command line frontend scanimage, the saned
+ server and the sane-find-scanner utility, along with their documentation.
+Homepage: http://www.sane-project.org
+Original-Maintainer: Jörg Frings-Fürst <debian@jff-webhosting.net>
+
+Package: libwmf0.2-7
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 503
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libwmf
+Version: 0.2.8.4-10.5ubuntu1
+Depends: libc6 (>= 2.14), libexpat1 (>= 2.0.1), libfreetype6 (>= 2.2.1), libjpeg8 (>= 8c), libpng12-0 (>= 1.2.13-4), libx11-6, zlib1g (>= 1:1.1.4)
+Recommends: gsfonts
+Suggests: libwmf0.2-7-gtk
+Description: Windows metafile conversion library
+ Windows metafile (WMF) is a picture format used by many Windows
+ programs, e.g. Microsoft Word.  libwmf is a library for interpreting
+ metafile images and either displaying them using X or converting them
+ to standard formats such as PNG, JPEG, PS, EPS and SVG(Z)...
+ .
+ This package contains the shared library.
+Original-Maintainer: Loïc Minier <lool@debian.org>
+
+Package: libassuan0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 100
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libassuan
+Version: 2.4.2-2
+Depends: libc6 (>= 2.14), libgpg-error0 (>= 1.14)
+Description: IPC library for the GnuPG components
+ Libassuan is a small library implementing the so-called "Assuan
+ protocol". This protocol is used for IPC between most newer GnuPG
+ components. Both server and client side functions are provided.
+Original-Maintainer: Debian GnuPG-Maintainers <pkg-gnupg-maint@lists.alioth.debian.org>
+Homepage: http://www.gnupg.org/(en)/related_software/libassuan/index.html
+
+Package: gdb
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 7316
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: allowed
+Version: 7.11.1-0ubuntu1~16.5
+Replaces: gdb, gdb-doc (<< 7.8-1~)
+Depends: libbabeltrace-ctf1 (>= 1.2.1), libbabeltrace1 (>= 1.2.1), libc6 (>= 2.15), libexpat1 (>= 2.0.1), liblzma5 (>= 5.1.1alpha+20110809), libncurses5 (>= 6), libpython3.5 (>= 3.5.0~b1), libreadline6 (>= 6.0), libtinfo5 (>= 6), zlib1g (>= 1:1.2.0)
+Recommends: libc-dbg, libcc1-0, gdbserver
+Suggests: gdb-doc
+Conflicts: gdb
+Conffiles:
+ /etc/gdb/gdbinit e030dc891a3af1f7779429b5c0554c98
+Description: GNU Debugger
+ GDB is a source-level debugger, capable of breaking programs at
+ any specific line, displaying variable values, and determining
+ where errors occurred. Currently, gdb supports C, C++, D,
+ Objective-C, Fortran, Java, OpenCL C, Pascal, assembly, Modula-2,
+ Go, and Ada. A must-have for any serious programmer.
+Homepage: http://www.gnu.org/s/gdb/
+Original-Maintainer: Héctor Or

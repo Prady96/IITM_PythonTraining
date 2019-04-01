@@ -1,0 +1,20 @@
+ACYLINK$.",
+    "placeholders": {
+      "termsandprivacynoticetermslink": {
+        "content": "$1"
+      },
+      "termsandprivacynoticeprivacylink": {
+        "content": "$2"
+      }
+    }
+  },
+  "termsAndPrivacyNoticeTermsLink": {
+    "message": "Uvjeti"
+  },
+  "termsAndPrivacyNoticyPrivacyLink": {
+    "message": "Pravila o privatnosti"
+  },
+  "libraryLabel": {
+    "message": "Snimke ekrana"
+  }
+}PK

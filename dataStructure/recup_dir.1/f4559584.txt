@@ -1,0 +1,4 @@
+M", "key": "ZM", "name": "ZAMBIA", "zip": "\\d{5}", "zipex": "50100,50101"},
+  "data/ZW": {"id": "data/ZW", "key": "ZW", "name": "ZIMBABWE"},
+};
+PK

@@ -1,0 +1,2240 @@
+
+Status: install ok installed
+Priority: extra
+Section: libs
+Installed-Size: 130
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: mpclib3
+Version: 1.0.3-1
+Depends: libc6 (>= 2.4), libgmp10, libmpfr4 (>= 3.1.2)
+Pre-Depends: multiarch-support
+Description: multiple precision complex floating-point library
+ MPC is a portable library written in C for arbitrary precision
+ arithmetic on complex numbers providing correct rounding. For the time
+ being, it contains all arithmetic operations over complex numbers, the
+ exponential and the logarithm functions, the trigonometric and
+ hyperbolic functions.
+ .
+ Ultimately, it should implement a multiprecision equivalent of the ISO
+ C99 standard.
+ .
+ It builds upon the GNU MP and the MPFR libraries.
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Homepage: http://www.multiprecision.org/mpc/
+
+Package: insserv
+Status: install ok installed
+Priority: required
+Section: misc
+Installed-Size: 183
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1.14.0-5ubuntu3
+Depends: libc6 (>= 2.14)
+Suggests: bootchart2
+Breaks: sysv-rc (<< 2.87dsf-3)
+Conffiles:
+ /etc/bash_completion.d/insserv 32975fe14795d6fce1408d5fd22747fd
+ /etc/insserv.conf 3e9467113029a6356f57842085f3c849
+Description: boot sequence organizer using LSB init.d script dependency information
+ The insserv program is used by the standard SysV-based init system. It
+ updates the order of symlinks in /etc/rc?.d/ based on dependencies
+ specified by LSB headers in the init.d scripts themselves.
+ .
+ These declared relations between scripts make it possible to optimize
+ the boot sequence for the currently installed set of packages, while
+ detecting and rejecting dependency loops.
+ .
+ Using insserv incorrectly can result in an unbootable system.
+Homepage: http://savannah.nongnu.org/projects/sysvinit
+Original-Maintainer: Petter Reinholdtsen <pere@debian.org>
+
+Package: libstdc++6
+Status: install ok installed
+Priority: important
+Section: libs
+Installed-Size: 1987
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: gcc-5
+Version: 5.4.0-6ubuntu1~16.04.11
+Replaces: libstdc++6-5-dbg (<< 4.9.0-3)
+Depends: gcc-5-base (= 5.4.0-6ubuntu1~16.04.11), libc6 (>= 2.18), libgcc1 (>= 1:4.2)
+Breaks: blockattack (<= 1.4.1+ds1-2.1build2), boo (<= 0.9.5~git20110729.r1.202a430-2), c++-annotations (<= 10.2.0-1), chromium-browser (<= 43.0.2357.130-0ubuntu2), clustalx (<= 2.1+lgpl-2), dff (<= 1.3.0+dfsg.1-4.1build2), emscripten (<= 1.22.1-1), ergo (<= 3.4.0-1), fceux (<= 2.2.2+dfsg0-1), flush (<= 0.9.12-3.1ubuntu1), freeorion (<= 0.4.4+git20150327-2), fslview (<= 4.0.1-4), fwbuilder (<= 5.1.0-4), gcc-4.3 (<< 4.3.6-1), gcc-4.4 (<< 4.4.6-4), gcc-4.5 (<< 4.5.3-2), gnote (<= 3.16.2-1), gnudatalanguage (<= 0.9.5-2build1), innoextract (<= 1.4-1build1), libantlr-dev (<= 2.7.7+dfsg-6), libapache2-mod-passenger (<= 4.0.53-1), libaqsis1 (<= 1.8.2-1), libassimp3 (<= 3.0~dfsg-4), libboost-date-time1.55.0, libcpprest2.2 (<= 2.2.0-1), libdap17 (<= 3.14.0-2), libdapclient6 (<= 3.14.0-2), libdapserver7 (<= 3.14.0-2), libdavix0 (<= 0.4.0-1build1), libdballe6 (<= 6.8-1), libdiet-admin2.8 (<= 2.8.0-1build3), libdiet-client2.8 (<= 2.8.0-1build3), libdiet-sed2.8 (<= 2.8.0-1build3), libfreefem++ (<= 3.37.1-1), libgazebo5 (<= 5.0.1+dfsg-2.1), libgetfem4++ (<= 4.2.1~beta1~svn4482~dfsg-3ubuntu3), libgmsh2 (<= 2.8.5+dfsg-1.1ubuntu1), libinsighttoolkit4.6 (<= 4.6.0-3ubuntu3), libkgeomap2 (<= 4:15.04.2-0ubuntu1), libkolabxml1 (<= 1.1.0-3), libkvkontakte1 (<= 1.0~digikam4.10.0-0ubuntu2), libmarisa0 (<= 0.2.4-8build1), libmediawiki1 (<= 1.0~digikam4.10.0-0ubuntu2), libogre-1.8.0 (<= 1.8.1+dfsg-0ubuntu5), libogre-1.9.0 (<= 1.9.0+dfsg1-4), libopenwalnut1 (<= 1.4.0~rc1+hg3a3147463ee2-1ubuntu2), libpqxx-4.0 (<= 4.0.1+dfsg-3ubuntu1), libreoffice-core (<= 1:4.4.4~rc3-0ubuntu1), librime1 (<= 1.2+dfsg-2), libwibble-dev (<= 1.1-1), libwreport2 (<= 2.14-1), libxmltooling6 (<= 1.5.3-2.1), lightspark (<= 0.7.2+git20150512-2), mira-assembler (<= 4.9.5-1), mongodb (<= 1:2.6.3-0ubuntu7), mongodb-server (<= 1:2.6.3-0ubuntu7), ncbi-blast+ (<= 2.2.30-4), openscad (<= 2014.03+dfsg-1build1), passepartout (<= 0.7.1-1.1), pdf2djvu (<= 0.7.19-1ubuntu2), photoprint (<= 0.4.2~pre2-2.3), plastimatch (<= 1.6.2+dfsg-1), plee-the-bear (<= 0.6.0-3.1), povray (<= 1:3.7.0.0-8), powertop (<= 2.6.1-1), printer-driver-brlaser (<= 3-3), psi4 (<= 4.0~beta5+dfsg-2build1), python-healpy (<= 1.8.1-1), python3-taglib (<= 0.3.6+dfsg-2build2), realtimebattle (<= 1.0.8-14), ruby-passenger (<= 4.0.53-1), sqlitebrowser (<= 3.5.1-3), tecnoballz (<= 0.93.1-6), wesnoth-1.12-core (<= 1:1.12.4-1), widelands (<= 1:18-3build1), xflr5 (<= 6.09.06-2)
+Conflicts: scim (<< 1.4.2-1)
+Description: GNU Standard C++ Library v3
+ This package contains an additional runtime library for C++ programs
+ built with the GNU compiler.
+ .
+ libstdc++-v3 is a complete rewrite from the previous libstdc++-v2, which
+ was included up to g++-2.95. The first version of libstdc++-v3 appeared
+ in g++-3.0.
+Homepage: http://gcc.gnu.org/
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: libtalloc2
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 102
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: talloc
+Version: 2.1.5-2
+Depends: libc6 (>= 2.16)
+Description: hierarchical pool based memory allocator
+ A hierarchical pool based memory allocator with destructors. It uses
+ reference counting to determine when memory should be freed.
+Original-Maintainer: Debian Samba Maintainers <pkg-samba-maint@lists.alioth.debian.org>
+Homepage: http://talloc.samba.org/
+
+Package: libjavascriptcoregtk-4.0-18
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 17054
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: webkit2gtk
+Version: 2.20.5-0ubuntu0.16.04.1
+Depends: libc6 (>= 2.17), libgcc1 (>= 1:3.4), libglib2.0-0 (>= 2.36.0), libicu55 (>= 55.1-1~), libstdc++6 (>= 5)
+Description: JavaScript engine library from WebKitGTK+
+ JavaScriptCore is the JavaScript engine used in WebKit. It consists
+ of the following building blocks: lexer, parser, start-up interpreter
+ (LLInt), baseline JIT, a low-latency optimizing JIT (DFG), and a
+ high-throughput optimizing JIT (FTL).
+ .
+ This build comes from the GTK+ port of WebKit (API version 4.0).
+ .
+ This package contains the shared libraries.
+Homepage: http://webkitgtk.org/
+Original-Maintainer: Debian WebKit Maintainers <pkg-webkit-maintainers@lists.alioth.debian.org>
+
+Package: libkrb5-3
+Status: install ok installed
+Priority: standard
+Section: libs
+Installed-Size: 991
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: krb5
+Version: 1.13.2+dfsg-5ubuntu2.1
+Depends: libc6 (>= 2.16), libcomerr2 (>= 1.34), libk5crypto3 (>= 1.9+dfsg~beta1), libkeyutils1 (>= 1.5.9), libkrb5support0 (= 1.13.2+dfsg-5ubuntu2.1)
+Recommends: krb5-locales
+Suggests: krb5-doc, krb5-user
+Breaks: libsmbclient (<= 2:3.6.1-2), sssd (<= 1.2.1-4.3)
+Conflicts: libkrb53
+Description: MIT Kerberos runtime libraries
+ Kerberos is a system for authenticating users and services on a network.
+ Kerberos is a trusted third-party service.  That means that there is a
+ third party (the Kerberos server) that is trusted by all the entities on
+ the network (users and services, usually called "principals").
+ .
+ This is the MIT reference implementation of Kerberos V5.
+ .
+ This package contains the runtime library for the main Kerberos v5 API
+ used by applications and Kerberos clients.
+Homepage: http://web.mit.edu/kerberos/
+Original-Maintainer: Sam Hartman <hartmans@debian.org>
+
+Package: gstreamer1.0-plugins-base-apps
+Status: install ok installed
+Priority: optional
+Section: utils
+Installed-Size: 158
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: gst-plugins-base1.0
+Version: 1.8.3-1ubuntu0.2
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.40), libgstreamer-plugins-base1.0-0 (>= 1.6.0), libgstreamer1.0-0 (>= 1.6.0), gstreamer1.0-tools
+Description: GStreamer helper programs from the "base" set
+ GStreamer is a streaming media framework, based on graphs of filters
+ which operate on media data.  Applications using this library can do
+ anything from real-time sound processing to playing videos, and just
+ about anything else media-related.  Its plugin-based architecture means
+ that new data types or processing capabilities can be added simply by
+ installing new plug-ins.
+ .
+ This package contains helper programs from the "base" set, an essential
+ exemplary set of elements.
+Homepage: http://gstreamer.freedesktop.org/modules/gst-plugins-base.html
+Original-Maintainer: Maintainers of GStreamer packages <pkg-gstreamer-maintainers@lists.alioth.debian.org>
+
+Package: python3-reportlab-accel
+Status: install ok installed
+Priority: optional
+Section: python
+Installed-Size: 64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: python-reportlab
+Version: 3.3.0-1
+Provides: python3.5-reportlab-accel
+Depends: python3 (<< 3.6), python3 (>= 3.5~), libc6 (>= 2.4)
+Description: C coded extension accelerator for the ReportLab Toolkit
+ A C coded extension accelerator for the ReportLab Toolkit.
+Original-Maintainer: Matthias Klose <doko@debian.org>
+
+Package: libwps-0.4-4
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 1276
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libwps
+Version: 0.4.3-1ubuntu1
+Replaces: libwps-0.4-4v5
+Provides: libwps-0.4-4v5
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:4.0), librevenge-0.0-0, libstdc++6 (>= 5.2)
+Conflicts: libwps-0.4-4v5
+Description: Works text file format import filter library (shared library)
+ libwps is a library (for use by word processors, for example) for importing the
+ Microsoft Works word processor file format. As of November 2006, the project
+ is new, but it imports Works format versions 2, 3, 4, and 8 with some
+ formatting. Support for Works formats version 2000 (aka 5) is coming soon.
+ .
+ This package contains the shared library.
+Original-Maintainer: Rene Engelhard <rene@debian.org>
+
+Package: libquvi7
+Status: install ok installed
+Priority: extra
+Section: libs
+Installed-Size: 81
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libquvi
+Version: 0.4.1-3
+Depends: libc6 (>= 2.14), libcurl3-gnutls (>= 7.16.2), liblua5.2-0, libquvi-scripts
+Pre-Depends: multiarch-support, dpkg (>= 1.15.6)
+Breaks: mpv (<< 0.3.10-2~)
+Description: library for parsing video download links (runtime libraries)
+ Library to parse Adobe flash video download links. It supports Youtube
+ and other similar video websites. It provides access to functionality and
+ data through an API, and does not enable or require the use of the
+ flash technology.
+Original-Maintainer: Alejandro Garrido Mota <garridomota@gmail.com>
+Homepage: http://quvi.sourceforge.net
+
+Package: libtotem-plparser-common
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 104
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Source: totem-pl-parser
+Version: 3.10.6-1ubuntu1
+Replaces: libtotem-plparser17, libtotem-plparser18 (<< 3.10.5-1)
+Breaks: libtotem-plparser17, libtotem-plparser18 (<< 3.10.5-1)
+Description: Totem Playlist Parser library - common files
+ totem-pl-parser is a simple GObject-based library to parse a host of
+ playlist formats, as well as save those.
+ .
+ This package contains the translation files..
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+
+Package: libcamel-1.2-54
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 1331
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: evolution-data-server
+Version: 3.18.5-1ubuntu1.1
+Depends: libc6 (>= 2.15), libglib2.0-0 (>= 2.40), libgssapi-krb5-2 (>= 1.10+dfsg~), libicu55 (>= 55.1-1~), libnspr4 (>= 2:4.9-2~) | libnspr4-0d (>= 1.8.0.10), libnss3 (>= 2:3.13.4-2~) | libnss3-1d (>= 3.12.0~beta3), libsqlite3-0 (>= 3.6.0), zlib1g (>= 1:1.1.4)
+Description: Evolution MIME message handling library
+ Camel is a generic messaging library. It supports the standard
+ messaging system for receiving and sending messages. It is the
+ messaging backend for Evolution.
+ .
+ Evolution is the integrated mail, calendar, task and address book
+ distributed suite from Novell, Inc.
+Homepage: https://wiki.gnome.org/Apps/Evolution
+Original-Maintainer: Debian Evolution Maintainers <pkg-evolution-maintainers@lists.alioth.debian.org>
+
+Package: yelp-xsl
+Status: install ok installed
+Priority: extra
+Section: gnome
+Installed-Size: 1844
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 3.18.1-1
+Description: XSL stylesheets for the yelp help browser
+ Yelp-xsl contains XSL stylesheets that are used by the yelp help browser
+ to format Docbook and Mallard documents.
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Homepage: https://wiki.gnome.org/Apps/Yelp
+
+Package: binutils
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 13336
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 2.26.1-1ubuntu1~16.04.8
+Replaces: binutils-gold (<< 2.20.51.20100415), binutils-mingw-w64-i686 (<< 2.23.52.20130612-1+3), binutils-mingw-w64-x86-64 (<< 2.23.52.20130612-1+3)
+Provides: binutils-gold, elf-binutils
+Depends: libc6 (>= 2.14), zlib1g (>= 1:1.2.0)
+Suggests: binutils-doc (>= 2.26.1-1ubuntu1~16.04.8)
+Breaks: binutils-mingw-w64-i686 (<< 2.23.52.20130612-1+3), binutils-mingw-w64-x86-64 (<< 2.23.52.20130612-1+3)
+Conflicts: binutils-gold (<< 2.20.51.20100415), binutils-mingw-w64-i686 (<< 2.23.52.20130612-1+3), binutils-mingw-w64-x86-64 (<< 2.23.52.20130612-1+3), elf-binutils, gas, modutils (<< 2.4.19-1)
+Description: GNU assembler, linker and binary utilities
+ The programs in this package are used to assemble, link and manipulate
+ binary and object files.  They may be used in conjunction with a compiler
+ and various libraries to build programs.
+Original-Maintainer: Matthias Klose <doko@debian.org>
+
+Package: python3-cairo
+Status: install ok installed
+Priority: optional
+Section: python
+Installed-Size: 137
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: py3cairo
+Version: 1.10.0+dfsg-5build1
+Depends: libc6 (>= 2.14), libcairo2 (>= 1.10.0), python3 (<< 3.6), python3 (>= 3.5~)
+Description: Python 3 bindings for the Cairo vector graphics library
+ Cairo is a multi-platform library providing anti-aliased vector-based
+ rendering for multiple target backends.
+ .
+ This package contains modules that allow you to use the Cairo in
+ Python 3 programs.
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Homepage: http://cairographics.org/pycairo/
+
+Package: gstreamer1.0-plugins-good
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 5456
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: gst-plugins-good1.0
+Version: 1.8.3-1ubuntu0.4
+Replaces: gstreamer1.0-plugins-bad (<< 1.1.2)
+Provides: gstreamer1.0-audiosink, gstreamer1.0-audiosource, gstreamer1.0-videosink, gstreamer1.0-videosource, gstreamer1.0-visualization
+Depends: libaa1 (>= 1.4p5), libavc1394-0 (>= 0.5.3), libbz2-1.0, libc6 (>= 2.17), libcaca0 (>= 0.99.beta17-1), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.10.0), libdv4, libflac8 (>= 1.3.0), libgcc1 (>= 1:3.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.43.2), libgstreamer-plugins-base1.0-0 (>= 1.8.1), libgstreamer-plugins-good1.0-0 (= 1.8.3-1ubuntu0.4), libgstreamer1.0-0 (>= 1.8.0), libgudev-1.0-0 (>= 146), libiec61883-0 (>= 1.2.0), libjack-jackd2-0 (>= 1.9.5~dfsg-14) | libjack-0.116, libjpeg8 (>= 8c), liborc-0.4-0 (>= 1:0.4.25), libpng12-0 (>= 1.2.13-4), libraw1394-11, libshout3, libsoup2.4-1 (>= 2.48), libspeex1 (>= 1.2~beta3-1), libstdc++6 (>= 4.1.1), libtag1v5 (>= 1.9.1-2.4ubuntu1), libv4l-0 (>= 0.5.0), libvpx3 (>= 1.5.0), libwavpack1 (>= 4.60), libx11-6, libxdamage1 (>= 1:1.1), libxext6, libxfixes3, zlib1g (>= 1:1.1.4), gstreamer1.0-plugins-base
+Recommends: gstreamer1.0-x
+Breaks: gstreamer1.0-plugins-bad (<< 1.7.90)
+Description: GStreamer plugins from the "good" set
+ GStreamer is a streaming media framework, based on graphs of filters
+ which operate on media data.  Applications using this library can do
+ anything from real-time sound processing to playing videos, and just
+ about anything else media-related.  Its plugin-based architecture means
+ that new data types or processing capabilities can be added simply by
+ installing new plug-ins.
+ .
+ This package contains the GStreamer plugins from the "good" set, a set
+ of good-quality plug-ins under the LGPL license.
+Homepage: http://gstreamer.freedesktop.org/modules/gst-plugins-good.html
+Gstreamer-Decoders: application/x-3gp; application/x-apetag; application/x-icy; application/x-id3; application/x-navi-animation; application/x-rtp, media=(string)audio, payload=(int)[ 96, 127 ], encoding-name=(string){ TELEPHONE-EVENT, SBC, OPUS, X-GST-OPUS-DRAFT-SPITTKA-00 }; application/x-rtp, payload=(int)[ 96, 127 ], media=(string){ audio, video }, encoding-name=(string){ X-QT, X-QUICKTIME }; application/x-rtp, media=(string)video, encoding-name=(string)RAW, sampling=(string){ RGB, RGBA, BGR, BGRA, YCbCr-4:4:4, YCbCr-4:2:2, YCbCr-4:2:0, YCbCr-4:1:1 }; application/x-rtp, media=(string){ video, audio, application }, encoding-name=(string)MPEG4-GENERIC, mode=(string){ generic, CELP-cbr, CELP-vbr, AAC-lbr, AAC-hbr }; application/x-rtp, media=(string)video, payload=(int)31, encoding-name=(string)H261; application/x-rtp, media=(string)video, payload=(int)[ 96, 127 ], encoding-name=(string)H261; application/x-rtp, media=(string)audio, encoding-name=(string){ AMR, AMR-WB }, octet-align=(string)1; application/x-rtp, media=(string){ video, audio }, encoding-name=(string)DV, encode=(string){ SD-VCR/525-60, SD-VCR/625-50, HD-VCR/1125-60, HD-VCR/1250-50, SDL-VCR/525-60, SDL-VCR/625-50, 306M/525-60, 306M/625-50, 314M-25/525-60, 314M-25/625-50, 314M-50/525-60, 314M-50/625-50 }; application/x-rtp, media=(string)video, encoding-name=(string){ VP9, VP9-DRAFT-IETF-01, VP8, VP8-DRAFT-IETF-01, THEORA, X-SV3V-ES, X-SORENSON-VIDEO, X-SORENSONVIDEO, X-SorensonVideo, MP4V-ES, MP2T, MP2T-ES, MP1S, JPEG, JPEG2000, H265, H264, H263, H263-1998, H263-2000, MPV }; application/x-rtp, media=(string)audio, encoding-name=(string){ VORBIS, SPEEX, SIREN, X-QDM, QCELP, MP4A-LATM, L24, L16, MPA-ROBUST, X-MP3-DRAFT-00, X-MP3-DRAFT-01, X-MP3-DRAFT-02, X-MP3-DRAFT-03, X-MP3-DRAFT-04, X-MP3-DRAFT-05, X-MP3-DRAFT-06, MPA, PCMU, PCMA, GSM, G729, G726, G726-16, G726-24, G726-32, G726-40, AAL2-G726-16, AAL2-G726-24, AAL2-G726-32, AAL2-G726-40, G723, G722, ILBC, CELT, BV16, BV32, AC3 }; application/x-rtp, media=(string)audio, payload=(int){ 12, 10, 11, 14, 0, 8, 3, 18, 4, 9 }; application/x-rtp, media=(string)video, payload=(int){ 33, 26, 34, 32 }; application/x-rtp, media=(string)other, encoding-name=(string)MP1S; application/x-rtp, media=(string)application, encoding-name=(string){ SMPTE336M, X-GST }; application/x-subtitle-avi; audio/ac3; audio/mpeg, mpegversion=(int){ 1, 2, 4 }; audio/webm; audio/x-ac3; audio/x-alaw; audio/x-amr-nb-sh; audio/x-amr-wb-sh; audio/x-au; audio/x-dts; audio/x-eac3; audio/x-flac; audio/x-m4a; audio/x-matroska; audio/x-mulaw; audio/x-private1-ac3; audio/x-private1-dts; audio/x-sbc; audio/x-speex; audio/x-wav; audio/x-wavpack; image/bmp; image/gif; image/jpeg; image/png; image/svg; image/svg+xml; image/tiff; image/vnd.wap.wbmp; image/x-MS-bmp; image/x-bitmap; image/x-bmp; image/x-cmu-raster; image/x-icon; image/x-pcx; image/x-pixmap; image/x-portable-anymap; image/x-portable-bitmap; image/x-portable-graymap; image/x-portable-pixmap; image/x-sun-raster; image/x-tga; multipart/x-mixed-replace; video/mj2; video/quicktime; video/webm; video/x-dv, systemstream=(boolean){ false, true }; video/x-fli; video/x-flv; video/x-matroska; video/x-matroska-3d; video/x-msvideo; video/x-vp8; video/x-vp9
+Gstreamer-Elements: 3gppmux, aacparse, aasink, ac3parse, agingtv, alawdec, alawenc, alpha, alphacolor, amrparse, apedemux, apev2mux, aspectratiocrop, asteriskh263, audioamplify, audiochebband, audiocheblimit, audiodynamic, audioecho, audiofirfilter, audioiirfilter, audioinvert, audiokaraoke, audiopanorama, audiowsincband, audiowsinclimit, auparse, autoaudiosink, autoaudiosrc, autovideosink, autovideosrc, avidemux, avimux, avisubtitle, breakmydata, cacasink, cairooverlay, capssetter, cpureport, cutter, dcaparse, deinterlace, deinterleave, dicetv, dtmfsrc, dv1394src, dvdec, dvdemux, dynudpsink, edgetv, equalizer-10bands, equalizer-3bands, equalizer-nbands, flacdec, flacenc, flacparse, flactag, flvdemux, flvmux, flxdec, gamma, gdkpixbufdec, gdkpixbufoverlay, gdkpixbufsink, goom, goom2k1, hdv1394src, icydemux, id3demux, id3v2mux, imagefreeze, interleave, ismlmux, jackaudiosink, jackaudiosrc, jifmux, jpegdec, jpegenc, jpegparse, level, matroskademux, matroskamux, matroskaparse, mj2mux, monoscope, mp4mux, mpegaudioparse, mulawdec, mulawenc, multifilesink, multifilesrc, multipartdemux, multipartmux, multiudpsink, navigationtest, navseek, optv, oss4sink, oss4src, osssink, osssrc, pngdec, pngenc, progressreport, pushfilesrc, qtdemux, qtmoovrecover, qtmux, quarktv, radioactv, revtv, rganalysis, rglimiter, rgvolume, rippletv, rndbuffersize, rtpL16depay, rtpL16pay, rtpL24depay, rtpL24pay, rtpac3depay, rtpac3pay, rtpamrdepay, rtpamrpay, rtpbin, rtpbvdepay, rtpbvpay, rtpceltdepay, rtpceltpay, rtpdec, rtpdtmfdepay, rtpdtmfmux, rtpdtmfsrc, rtpdvdepay, rtpdvpay, rtpg722depay, rtpg722pay, rtpg723depay, rtpg723pay, rtpg726depay, rtpg726pay, rtpg729depay, rtpg729pay, rtpgsmdepay, rtpgsmpay, rtpgstdepay, rtpgstpay, rtph261depay, rtph261pay, rtph263depay, rtph263pay, rtph263pdepay, rtph263ppay, rtph264depay, rtph264pay, rtph265depay, rtph265pay, rtpilbcdepay, rtpilbcpay, rtpj2kdepay, rtpj2kpay, rtpjitterbuffer, rtpjpegdepay, rtpjpegpay, rtpklvdepay, rtpklvpay, rtpmp1sdepay, rtpmp2tdepay, rtpmp2tpay, rtpmp4adepay, rtpmp4apay, rtpmp4gdepay, rtpmp4gpay, rtpmp4vdepay, rtpmp4vpay, rtpmpadepay, rtpmpapay, rtpmparobustdepay, rtpmpvdepay, rtpmpvpay, rtpmux, rtpopusdepay, rtpopuspay, rtppcmadepay, rtppcmapay, rtppcmudepay, rtppcmupay, rtpptdemux, rtpqcelpdepay, rtpqdm2depay, rtprtxqueue, rtprtxreceive, rtprtxsend, rtpsbcdepay, rtpsbcpay, rtpsession, rtpsirendepay, rtpsirenpay, rtpspeexdepay, rtpspeexpay, rtpssrcdemux, rtpstreamdepay, rtpstreampay, rtpsv3vdepay, rtptheoradepay, rtptheorapay, rtpvorbisdepay, rtpvorbispay, rtpvp8depay, rtpvp8pay, rtpvp9depay, rtpvp9pay, rtpvrawdepay, rtpvrawpay, rtpxqtdepay, rtspsrc, sbcparse, scaletempo, shagadelictv, shapewipe, shout2send, smpte, smptealpha, souphttpclientsink, souphttpsrc, spectrum, speexdec, speexenc, splitfilesrc, splitmuxsink, splitmuxsrc, streaktv, taginject, testsink, udpsink, udpsrc, v4l2radio, v4l2sink, v4l2src, vertigotv, videobalance, videobox, videocrop, videoflip, videomedian, videomixer, vp8dec, vp8enc, vp9dec, vp9enc, warptv, wavenc, wavpackdec, wavpackenc, wavpackparse, wavparse, webmmux, ximagesrc, y4menc
+Gstreamer-Encoders: application/x-rtcp-stream; application/x-rtp; application/x-rtp-stream; application/x-srtcp-stream; application/x-srtp-stream; application/x-yuv4mpeg, y4mversion=(int)2; audio/webm; audio/x-alaw; audio/x-flac; audio/x-matroska; audio/x-mulaw; audio/x-rf64; audio/x-speex; audio/x-wav; audio/x-wavpack-correction, framed=(boolean)true; image/jpeg, sof-marker=(int){ 0, 1, 2, 9 }; image/png; multipart/x-mixed-replace; video/mj2; video/quicktime; video/webm; video/x-flv; video/x-matroska; video/x-matroska-3d; video/x-msvideo; video/x-vp8, profile=(string){ 0, 1, 2, 3 }; video/x-vp9, profile=(string){ 0, 1, 2, 3 }
+Gstreamer-Uri-Sinks: udp
+Gstreamer-Uri-Sources: dv, hdv, http, https, icy, icyx, pushfile, radio, rtsp, rtsp-sdp, rtsph, rtsps, rtspsh, rtspst, rtspsu, rtspt, rtspu, splitfile, splitmux, udp, v4l2
+Gstreamer-Version: 1.8
+Original-Maintainer: Maintainers of GStreamer packages <pkg-gstreamer-maintainers@lists.alioth.debian.org>
+
+Package: libffi6
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 52
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libffi
+Version: 3.2.1-4
+Depends: libc6 (>= 2.14)
+Description: Foreign Function Interface library runtime
+ A foreign function interface is the popular name for the interface that
+ allows code written in one language to call code written in another
+ language.
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: unity-scope-virtualbox
+Status: install ok installed
+Priority: optional
+Section: gnome
+Installed-Size: 77
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 0.1+13.10.20130723-0ubuntu1
+Replaces: unity-lens-vm
+Provides: unity-lens-vm
+Depends: python3, python3-gi, gir1.2-unity-5.0 (>= 7), gir1.2-dee-1.0 (>= 1.2.5), unity-scopes-runner, gir1.2-glib-2.0
+Conflicts: unity-lens-vm
+Description: VirtualBox scope for Unity
+ This package contains the "virtualbox" scope which allows Unity
+ to search for VirtualBox content.
+Original-Maintainer: David Callé <davidc@framli.eu>
+Homepage: https://launchpad.net/unity-scope-virtualbox
+
+Package: libaudit-common
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 21
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Source: audit
+Version: 1:2.4.5-1ubuntu2.1
+Replaces: libaudit0, libaudit1 (<< 1:2.2.1-2)
+Breaks: libaudit0, libaudit1 (<< 1:2.2.1-2)
+Conffiles:
+ /etc/libaudit.conf cdc703f9d27f0d980271a9e95d0f18b2
+Description: Dynamic library for security auditing - common files
+ The audit-libs package contains the dynamic libraries needed for
+ applications to use the audit framework. It is used to monitor systems for
+ security related events.
+ .
+ This package contains the libaudit.conf configuration file and the associated
+ manpage.
+Homepage: http://people.redhat.com/sgrubb/audit/
+Original-Maintainer: Laurent Bigonville <bigon@debian.org>
+
+Package: ubuntu-docs
+Status: install ok installed
+Priority: optional
+Section: doc
+Installed-Size: 66568
+Maintainer: Ubuntu Documentation Team <ubuntu-doc@lists.ubuntu.com>
+Architecture: all
+Version: 16.04.4
+Depends: yelp
+Description: Ubuntu Desktop Guide
+ This package holds the official Ubuntu-specific documentation, maintained
+ by the Ubuntu Documentation Team. The documentation can be viewed using
+ Yelp, the GNOME help browser.
+Homepage: https://launchpad.net/ubuntu-docs
+
+Package: libibus-1.0-5
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 484
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: ibus
+Version: 1.5.11-1ubuntu2.1
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.37.3)
+Description: Intelligent Input Bus - shared library
+ IBus is an Intelligent Input Bus. It is a new input framework for the Linux
+ OS. It provides full featured and user friendly input method user interface.
+ It also may help developers to develop input method easily.
+ .
+ This package contains shared library
+Homepage: https://github.com/ibus/ibus/releases
+Original-Maintainer: IME Packaging Team <pkg-ime-devel@lists.alioth.debian.org>
+
+Package: libcdio-paranoia1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 159
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libcdio
+Version: 0.83-4.2ubuntu1
+Depends: libc6 (>= 2.14), libcdio-cdda1 (>= 0.83), libcdio13 (>= 0.83)
+Description: library to read digital audio CDs with error correction
+ This library is made to read digital audio CDs, with error
+ correction. It does its best to correct errors and jitter that happen
+ when reading such discs. As it uses libcdio as a backend, it supports
+ the same kind of CDROM drives (and images) as libcdio.
+Original-Maintainer: Nicolas Boullis <nboullis@debian.org>
+Homepage: http://www.gnu.org/software/libcdio/
+
+Package: libtext-charwidth-perl
+Status: install ok installed
+Priority: required
+Section: perl
+Installed-Size: 39
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.04-7build5
+Depends: libc6 (>= 2.4), perl-base (>= 5.22.1-1), perlapi-5.22.1
+Description: get display widths of characters on the terminal
+ This module permits perl software to get the display widths of characters
+ and strings on the terminal, using wcwidth() and wcswidth() from libc.
+ .
+ It provides mbwidth(), mbswidth(), and mblen().
+Original-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Homepage: http://search.cpan.org/search?module=Text::CharWidth
+
+Package: qtdeclarative5-accounts-plugin
+Status: install ok installed
+Priority: optional
+Section: oldlibs
+Installed-Size: 10
+Maintainer: Ubuntu Desktop Team <ubuntu-desktop@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: accounts-qml-module
+Version: 0.6+16.04.20151106-0ubuntu1
+Depends: qml-module-ubuntu-onlineaccounts
+Description: transitional dummy package for Online Accounts QML clients
+ This module provides access to the Online Accounts framework from QML
+ applications.
+Homepage: https://launchpad.net/accounts-qml-module
+
+Package: gcc-5
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 23652
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 5.4.0-6ubuntu1~16.04.11
+Replaces: gcc-5-base (<< 5-20150329-1), gcc-5-plugin-dev (<< 5-20150321-1), gccgo-5 (<< 5.4.0-6ubuntu1~16.04.11)
+Provides: c-compiler
+Depends: cpp-5 (= 5.4.0-6ubuntu1~16.04.11), gcc-5-base (= 5.4.0-6ubuntu1~16.04.11), libcc1-0 (>= 5.4.0-6ubuntu1~16.04.11), binutils (>= 2.26.1), libgcc-5-dev (= 5.4.0-6ubuntu1~16.04.11), libc6 (>= 2.15), libgcc1 (>= 1:3.0), libgmp10 (>= 2:5.0.1~), libisl15 (>= 0.15), libmpc3, libmpfr4 (>= 3.1.3), libstdc++6 (>= 4.1.1), zlib1g (>= 1:1.1.4)
+Recommends: libc6-dev (>= 2.13-0ubuntu6)
+Suggests: gcc-5-multilib, gcc-5-doc (>= 5.2.1-23), gcc-5-locales (>= 5.2.1-23), libgcc1-dbg (>= 1:5.4.0-6ubuntu1~16.04.11), libgomp1-dbg (>= 5.4.0-6ubuntu1~16.04.11), libitm1-dbg (>= 5.4.0-6ubuntu1~16.04.11), libatomic1-dbg (>= 5.4.0-6ubuntu1~16.04.11), libasan2-dbg (>= 5.4.0-6ubuntu1~16.04.11), liblsan0-dbg (>= 5.4.0-6ubuntu1~16.04.11), libtsan0-dbg (>= 5.4.0-6ubuntu1~16.04.11), libubsan0-dbg (>= 5.4.0-6ubuntu1~16.04.11), libcilkrts5-dbg (>= 5.4.0-6ubuntu1~16.04.11), libmpx0-dbg (>= 5.4.0-6ubuntu1~16.04.11), libquadmath0-dbg (>= 5.4.0-6ubuntu1~16.04.11)
+Description: GNU C compiler
+ This is the GNU C compiler, a fairly portable optimizing compiler for C.
+Homepage: http://gcc.gnu.org/
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: libc-dev-bin
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 389
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: foreign
+Source: glibc
+Version: 2.23-0ubuntu11
+Depends: libc6 (>> 2.23), libc6 (<< 2.24)
+Recommends: manpages, manpages-dev
+Description: GNU C Library: Development binaries
+ This package contains utility programs related to the GNU C Library
+ development package.
+Homepage: http://www.gnu.org/software/libc/libc.html
+Original-Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+
+Package: printer-driver-c2esp
+Status: install ok installed
+Priority: optional
+Section: text
+Installed-Size: 163
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: c2esp
+Version: 27-2
+Replaces: c2esp (<< 19-2~)
+Depends: libc6 (>= 2.4), libcups2 (>= 1.4.0), libcupsfilters1 (>= 1.0~b1), libcupsimage2 (>= 1.4.0), libjbig0 (>= 2.0), zlib1g (>= 1:1.1.4)
+Recommends: cups-ppdc
+Suggests: psutils
+Breaks: c2esp (<< 19-2~), cups (<< 1.5.0-2~)
+Description: printer driver for Kodak ESP AiO color inkjet Series
+ The c2esp driver is an open source driver for the Kodak ESP AiO and HERO
+ AiO color inkjet printers series. It is likely to work on the
+ 5100 AiO,
+ 5300 AiO,
+ 5500 AiO,
+ ESP 1.2 AiO,
+ ESP 2.2 AiO,
+ ESP 3200 Series AiO,
+ ESP 3.2 AiO,
+ ESP 3 AiO,
+ ESP 4.2 AiO,
+ ESP 5200 Series AiO,
+ ESP 5 AiO,
+ ESP 7200 Series AiO,
+ ESP 7 AiO,
+ ESP 9200 Series AiO,
+ ESP 9 AiO,
+ ESP C100 Series AiO,
+ ESP C110 Series AiO,
+ ESP C310 Series AiO,
+ ESP Office 4100 Series AiO,
+ ESP Office 6100 Series AiO,
+ HERO 3.1 AiO,
+ HERO 5.1 AiO,
+ HERO 6.1 AiO,
+ HERO 7.1 AiO and
+ HERO 9.1 AiO.
+Original-Maintainer: Debian Printing Team <debian-printing@lists.debian.org>
+Homepage: http://cupsdriverkodak.sf.net/
+
+Package: liblua5.2-0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 414
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: lua5.2
+Version: 5.2.4-1ubuntu1
+Depends: libc6 (>= 2.14), libstdc++6 (>= 4.1.1)
+Description: Shared library for the Lua interpreter version 5.2
+ Lua is a powerful, light-weight programming language designed for extending
+ applications.  The language engine is accessible as a library, having a C
+ API which allows the application to exchange data with Lua programs and also
+ to extend Lua with C functions.  Lua is also used as a general-purpose,
+ stand-alone language through the simple command line interpreter provided.
+ .
+ This package contains runtime libraries.  You shouldn't need to install it
+ explicitly.
+Homepage: http://www.lua.org
+Original-Maintainer: Enrico Tassi <gareuselesinge@debian.org>
+
+Package: busybox-static
+Status: install ok installed
+Priority: extra
+Section: shells
+Installed-Size: 2010
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: busybox
+Version: 1:1.22.0-15ubuntu1
+Replaces: busybox
+Provides: busybox
+Conflicts: busybox
+Description: Standalone rescue shell with tons of builtin utilities
+ BusyBox combines tiny versions of many common UNIX utilities into a single
+ small executable. It provides minimalist replacements for the most common
+ utilities you would usually find on your desktop system (i.e., ls, cp, mv,
+ mount, tar, etc.).  The utilities in BusyBox generally have fewer options than
+ their full-featured GNU cousins; however, the options that are included
+ provide the expected functionality and behave very much like their GNU
+ counterparts.
+ .
+ busybox-static provides you with a statically linked simple stand alone shell
+ that provides all the utilities available in BusyBox. This package is
+ intended to be used as a rescue shell, in the event that you screw up your
+ system. Invoke "busybox sh" and you have a standalone shell ready to save
+ your system from certain destruction. Invoke "busybox", and it will list the
+ available builtin commands.
+Built-Using: glibc (= 2.21-0ubuntu4)
+Homepage: http://www.busybox.net
+Original-Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+
+Package: libavahi-common3
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 102
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: avahi
+Version: 0.6.32~rc+dfsg-1ubuntu2.3
+Depends: libc6 (>= 2.14), libavahi-common-data
+Description: Avahi common library
+ Avahi is a fully LGPL framework for Multicast DNS Service Discovery.
+ It allows programs to publish and discover services and hosts
+ running on a local network with no specific configuration. For
+ example you can plug into a network and instantly find printers to
+ print to, files to look at and people to talk to.
+ .
+ This package contains the Avahi common library, which is a set of common
+ functions used by many of Avahis components and client applications.
+Homepage: http://avahi.org/
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+
+Package: libdrm-radeon1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 86
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libdrm
+Version: 2.4.91-2~16.04.1
+Depends: libc6 (>= 2.4), libdrm2 (>= 2.4.38)
+Description: Userspace interface to radeon-specific kernel DRM services -- runtime
+ This library implements the userspace interface to the kernel DRM
+ services.  DRM stands for "Direct Rendering Manager", which is the
+ kernelspace portion of the "Direct Rendering Infrastructure" (DRI).
+ The DRI is currently used on Linux to provide hardware-accelerated
+ OpenGL drivers.
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Homepage: https://cgit.freedesktop.org/mesa/drm/
+
+Package: x11-apps
+Status: install ok installed
+Priority: optional
+Section: x11
+Installed-Size: 2115
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 7.7+5+nmu1ubuntu1
+Replaces: bitmap, oclock, transset, x11perf, xbase-clients (<= 1:7.2.ds2-3), xbiff, xcalc, xclipboard, xclock, xconsole, xcursorgen, xditview, xeyes, xgc, xload, xlogo, xmag, xman, xmore, xwd, xwud
+Depends: libc6 (>= 2.14), libpng12-0 (>= 1.2.13-4), libsm6, libx11-6, libxaw7, libxcursor1 (>> 1.1.2), libxext6, libxft2 (>> 2.1.1), libxkbfile1, libxmu6, libxmuu1, libxrender1, libxt6 (>= 1:1.1.0), man-db
+Recommends: xbitmaps
+Suggests: mesa-utils
+Conflicts: bitmap, oclock, transset, x11perf, xbiff, xcalc, xclipboard, xclock, xconsole, xcursorgen, xditview, xeyes, xgc, xload, xlogo, xmag, xman, xmore, xwd, xwud
+Conffiles:
+ /etc/X11/app-defaults/Bitmap 9af9c0989c2423f2b9a46e2c9f301ecf
+ /etc/X11/app-defaults/Bitmap-color 946b659d5d6c41b6840f5e0df10680d9
+ /etc/X11/app-defaults/Bitmap-nocase 083b6918e8d205a663bf9c42a3ddd11e
+ /etc/X11/app-defaults/Clock-color 71673f12989686ae7f582269ef7aeed6
+ /etc/X11/app-defaults/XCalc 7d0de2b61403c204e3cf5f33eee61d69
+ /etc/X11/app-defaults/XCalc-color c8efe9caf8987a902df98270e2b291c9
+ /etc/X11/app-defaults/XClipboard daa3f5e325a6d091f6e2cdea6e36bc2e
+ /etc/X11/app-defaults/XClock 812dfcc6f6d83e2ae9da809c3bf11c67
+ /etc/X11/app-defaults/XClock-color 7b049809f0bca03c76480959e2e4db89
+ /etc/X11/app-defaults/XConsole 8a26518ea0a076d1f328cbcf7adebd2d
+ /etc/X11/app-defaults/XLoad 3ea554c7be110102e42e25d3d83c4134
+ /etc/X11/app-defaults/XLogo fb1407c8cb1574726a6eb743b0092407
+ /etc/X11/app-defaults/XLogo-color 439375bf8e3b87f46eebf35f55a8dbb5
+ /etc/X11/app-defaults/XMore af46624bedc385811ea614861a58a601
+ /etc/X11/app-defaults/Xditview 49d35244a61618b60f17d3400f64a81e
+ /etc/X11/app-defaults/Xditview-chrtr 98a562569a7db396c9a0d2e6d414067e
+ /etc/X11/app-defaults/Xedit 013f41442eb431168793e1943779c8f3
+ /etc/X11/app-defaults/Xedit-color 59d7f0d96f4346ae0fe4904d46daf53c
+ /etc/X11/app-defaults/Xgc 744adc578acb239541e378eb16e337f7
+ /etc/X11/app-defaults/Xgc-color 8dfaceb0c12917fd0b1c77423f9f6a47
+ /etc/X11/app-defaults/Xmag 9d88fcab4261fb63f94baddeddfed52d
+ /etc/X11/app-defaults/Xman 1dfd5f7894ae4da2e8b3f743a0f1c239
+Description: X applications
+ This package provides a miscellaneous assortment of X applications
+ that ship with the X Window System, including:
+  - atobm, bitmap, and bmtoa, tools for manipulating bitmap images;
+  - ico, a demo program animating polyhedrons;
+  - oclock and xclock, graphical clocks;
+  - rendercheck, a program to test render extension implementations;
+  - transset, a tool to set opacity property on a window;
+  - xbiff, a tool which tells you when you have new email;
+  - xcalc, a scientific calculator desktop accessory;
+  - xclipboard, a tool to manage cut-and-pasted text selections;
+  - xconsole, which monitors system console messages;
+  - xcursorgen, a tool for creating X cursor files from PNGs;
+  - xditview, a viewer for ditroff output;
+  - xedit, a simple text editor for X;
+  - xeyes, a demo program in which a pair of eyes track the pointer;
+  - xgc, a graphics demo;
+  - xload, a monitor for the system load average;
+  - xlogo, a demo program that displays the X logo;
+  - xmag, which magnifies parts of the X screen;
+  - xman, a manual page browser;
+  - xmore, a text pager;
+  - xwd, a utility for taking window dumps ("screenshots") of the X session;
+  - xwud, a viewer for window dumps created by xwd;
+  - Xmark, x11perf, and x11perfcomp, tools for benchmarking graphical
+    operations under the X Window System;
+ .
+ The xbiff, xcalc, xconsole, xedit and xman programs use bitmap images
+ provided by the xbitmaps package.
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: libhunspell-1.3-0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 403
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: hunspell
+Version: 1.3.3-4ubuntu1
+Replaces: libhunspell-1.3-0v5 (<< 1.3.3-3ubuntu1)
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2)
+Recommends: hunspell-en-us | hunspell-dictionary | myspell-dictionary
+Conflicts: libhunspell-1.3-0v5 (<< 1.3.3-3ubuntu1), openoffice.org-core (= 2.2.0~rc2-1)
+Description: spell checker and morphological analyzer (shared library)
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and an
+ OpenOffice.org UNO module.
+ .
+ Main features:
+  - Unicode support (first 65535 Unicode characters)
+  - morphological analysis (in custom item and arrangement style)
+  - Max. 65535 affix classes and twofold affix stripping (for agglutinative
+    languages, like Azeri, Basque, Estonian, Finnish, Hungarian, Turkish, etc.)
+  - Support complex compoundings (for example, Hungarian and German)
+  - Support language specific algorithms (for example, handling Azeri
+    and Turkish dotted i, or German sharp s)
+  - Handling conditional affixes, circumfixes, fogemorphemes,
+    forbidden words, pseudoroots and homonyms.
+ .
+ This package contains the shared library.
+Homepage: http://hunspell.sourceforge.net/
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+
+Package: libunity-scopes-json-def-desktop
+Status: install ok installed
+Priority: optional
+Section: gnome
+Installed-Size: 32
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Source: libunity
+Version: 7.1.4+16.04.20180209.1-0ubuntu1
+Replaces: libunity-common (<< 7.0.7)
+Provides: libunity-common, unity-scopes-json-def
+Conflicts: libunity-common (<< 7.0.7), unity-scopes-json-def
+Description: binding to get places into the launcher - desktop def file
+ libunity is a shared library to be able to interact with the launcher
+ and add places in Unity environment.
+ .
+ This package contains default scopes definition for the destkop.
+Homepage: https://launchpad.net/libunity
+
+Package: liborc-0.4-0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 569
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: orc
+Version: 1:0.4.25-1
+Depends: libc6 (>= 2.14)
+Description: Library of Optimized Inner Loops Runtime Compiler
+ Orc is a library and set of tools for compiling and executing
+ very simple programs that operate on arrays of data.  The "language"
+ is a generic assembly language that represents many of the features
+ available in SIMD architectures, including saturated addition and
+ subtraction, and many arithmetic operations.
+ .
+ This package contains the orc shared libraries.  It is typically
+ installed automatically when an application or library requires it.
+Original-Maintainer: Maintainers of GStreamer packages <pkg-gstreamer-maintainers@lists.alioth.debian.org>
+Homepage: http://code.entropywave.com/projects/orc/
+
+Package: gnome-menus
+Status: install ok installed
+Priority: optional
+Section: gnome
+Installed-Size: 300
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 3.13.3-6ubuntu3.1
+Depends: python3:any (>= 3.1~)
+Breaks: alacarte (<< 0.13.2-2), gnome-control-center (<< 2.91), gnome-panel (<< 2.91)
+Conffiles:
+ /etc/gnome/menus.blacklist 5870c967d473c1f88ba9d07958ca2d4f
+ /etc/xdg/menus/gnome-applications.menu 7e33b283dcd81dfefaebb33dfb558f94
+Description: GNOME implementation of the freedesktop menu specification
+ The package contains an implementation of the draft
+ "Desktop Menu Specification" from freedesktop.org:
+ .
+ http://www.freedesktop.org/Standards/menu-spec
+ .
+ Also contained here are the GNOME menu layout configuration files, .directory
+ files and assorted menu related utility programs.
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+
+Package: libpcre16-3
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 528
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: pcre3
+Version: 2:8.38-3.1
+Depends: libc6 (>= 2.14)
+Description: Perl 5 Compatible Regular Expression Library - 16 bit runtime files
+ This is a library of functions to support regular expressions whose syntax
+ and semantics are as close as possible to those of the Perl 5 language.
+ .
+ This package contains the 16 bit runtime library.
+Original-Maintainer: Matthew Vernon <matthew@debian.org>
+
+Package: libglibmm-2.4-1v5
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 2419
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: glibmm2.4
+Version: 2.46.3-1
+Replaces: libglibmm-2.4-1c2a
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libglib2.0-0 (>= 2.46.0), libsigc++-2.0-0v5 (>= 2.6.1), libstdc++6 (>= 5.2)
+Conflicts: libglibmm-2.4-1c2a
+Description: C++ wrapper for the GLib toolkit (shared libraries)
+ GLib is a low-level general-purpose library used mainly by GTK+/GNOME
+ applications, but is useful for other programs as well.
+ glibmm is the C++ wrapper for GLib.
+ .
+ This package contains shared libraries.
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Homepage: http://www.gtkmm.org/
+
+Package: initramfs-tools-bin
+Status: install ok installed
+Priority: optional
+Section: utils
+Installed-Size: 111
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: initramfs-tools
+Version: 0.122ubuntu8.14
+Depends: libc6 (>= 2.4), libudev1 (>= 183)
+Description: binaries used by initramfs-tools
+ This package contains binaries used inside the initramfs images generated
+ by initramfs-tools.
+Original-Maintainer: Debian kernel team <debian-kernel@lists.debian.org>
+
+Package: libnma0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 244
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: network-manager-applet
+Version: 1.2.6-0ubuntu0.16.04.4
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.37.3), libgtk-3-0 (>= 3.4), libnm0 (>= 1.0.0), libnma-common (= 1.2.6-0ubuntu0.16.04.4)
+Description: library for wireless and mobile dialogs (libnm version)
+ This library provides Gtk+ dialogs for NetworkManager.
+Homepage: https://www.gnome.org/projects/NetworkManager/
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+
+Package: xfonts-scalable
+Status: install ok installed
+Priority: optional
+Section: fonts
+Installed-Size: 492
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Version: 1:1.0.3-1.1
+Depends: xfonts-utils
+Suggests: xfs | xserver
+Conflicts: xfntscl
+Conffiles:
+ /etc/X11/fonts/Type1/xfonts-scalable.scale b579d5c7759383647c486da590d60815
+Description: scalable fonts for X
+ xfonts-scalable provides fonts that can be drawn at any size by the X server
+ or font server without loss of quality.  In most cases it is desirable to
+ have the X font server (xfs) and/or an X server installed to make the fonts
+ available to X clients.
+ .
+ This package is missing three fonts from the X.Org source archives
+ because the license terms on the fonts do not meet the Debian Free
+ Software Guidelines; they are the Type1 fonts Adobe Utopia, IBM Courier,
+ and Bigelow & Holmes (B&H) Luxi.
+ .
+ This package requires the xutils package to prepare the font directories
+ for use by an X server or X font server.
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: unity-gtk2-module
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 41
+Maintainer: Ubuntu Desktop Team <ubuntu-desktop@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: unity-gtk-module
+Version: 0.0.0+15.04.20150118-0ubuntu2
+Replaces: appmenu-gtk
+Provides: appmenu-gtk
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.41.1), libgtk2.0-0 (>= 2.24.0), libunity-gtk2-parser0 (>= 0.0.0+15.04.20150118-0ubuntu2), libx11-6, unity-gtk-module-common (>= 0.0.0+15.04.20150118-0ubuntu2)
+Pre-Depends: dpkg (>= 1.15.7.2)
+Conflicts: appmenu-gtk
+Description: GtkMenuShell D-Bus exporter
+ This GTK+ 2 module exports GtkMenuShells over D-Bus.
+Homepage: https://code.launchpad.net/unity-gtk-module
+
+Package: xserver-xorg-input-all-hwe-16.04
+Status: install ok installed
+Priority: optional
+Section: x11
+Installed-Size: 48
+Maintainer: Ubuntu X-SWAT <ubuntu-x@lists.ubuntu.com>
+Architecture: amd64
+Source: xorg-hwe-16.04
+Version: 1:7.7+16ubuntu3~16.04.1
+Replaces: xserver-xorg-input-all
+Provides: xorg-renamed-package, xorg-renamed-package-hwe-16.04, xserver-xorg-input-all
+Depends: xserver-xorg-input-evdev-hwe-16.04, xserver-xorg-input-synaptics-hwe-16.04, xserver-xorg-input-wacom-hwe-16.04
+Conflicts: xserver-xorg-input-all
+Description: X.Org X server -- input driver metapackage
+ This package depends on the full suite of input drivers for the X.Org X server
+ (Xorg).  It does not provide any drivers itself, and may be removed if you wish
+ to only have certain drivers installed.
+Homepage: http://www.x.org/
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: libkrb5-26-heimdal
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 633
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: heimdal
+Version: 1.7~git20150920+dfsg-4ubuntu1.16.04.1
+Depends: libasn1-8-heimdal (>= 1.6~git20131117), libc6 (>= 2.15), libcomerr2 (>= 1.41.11), libhcrypto4-heimdal (>= 1.4.0+git20110226), libheimbase1-heimdal (>= 1.6~git20131117), libhx509-5-heimdal (>= 1.4.0+git20110226), libroken18-heimdal (>= 1.7~git20150920), libsqlite3-0 (>= 3.5.9), libwind0-heimdal (>= 1.6~git20120311)
+Description: Heimdal Kerberos - libraries
+ Heimdal is a free implementation of Kerberos 5 that aims to be
+ compatible with MIT Kerberos.
+ .
+ This package contains the Kerberos 5 library.
+Homepage: http://www.h5l.org/
+Original-Maintainer: Brian May <bam@debian.org>
+
+Package: libgme0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 328
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: game-music-emu
+Version: 0.6.0-3ubuntu0.16.04.1
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libstdc++6 (>= 4.1.1), zlib1g (>= 1:1.1.4)
+Description: Playback library for video game music files - shared library
+ game-music-emu is a collection of video game music file emulators that
+ support the following formats and systems:
+  * AY        ZX Spectrum/Amstrad CPC
+  * GBS       Nintendo Game Boy
+  * GYM       Sega Genesis/Mega Drive
+  * HES       NEC TurboGrafx-16/PC Engine
+  * KSS       MSX Home Computer/other Z80 systems (doesn't support FM sound)
+  * NSF/NSFE  Nintendo NES/Famicom (with VRC 6, Namco 106, and FME-7 sound)
+  * SAP       Atari systems using POKEY sound chip
+  * SPC       Super Nintendo/Super Famicom
+  * VGM/VGZ   Sega Master System/Mark III, Sega Genesis/Mega Drive,BBC Micro
+ .
+ This package contains the shared libraries necessary to run programs
+ using libgme.
+Homepage: https://bitbucket.org/mpyne/game-music-emu/wiki/Home
+Original-Maintainer: Sebastian Dröge <slomo@debian.org>
+
+Package: libcomerr2
+Status: install ok installed
+Priority: required
+Section: libs
+Installed-Size: 86
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: e2fsprogs
+Version: 1.42.13-1ubuntu1
+Replaces: e2fsprogs (<< 1.34-1)
+Provides: libcomerr-kth-compat
+Depends: libc6 (>= 2.17)
+Description: common error description library
+ libcomerr is an attempt to present a common error-handling mechanism to
+ manipulate the most common form of error code in a fashion that does not
+ have the problems identified with mechanisms commonly in use.
+Homepage: http://e2fsprogs.sourceforge.net
+Original-Maintainer: Theodore Y. Ts'o <tytso@mit.edu>
+
+Package: libedata-book-1.2-25
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 854
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: evolution-data-server
+Version: 3.18.5-1ubuntu1.1
+Depends: libc6 (>= 2.7), libebackend-1.2-10 (>= 3.18.0), libebook-contacts-1.2-2 (>= 3.16.2), libedataserver-1.2-21 (>= 3.17.90), libglib2.0-0 (>= 2.40), libsqlite3-0 (>= 3.5.9)
+Description: Backend library for evolution address books
+ Evolution is the integrated mail, calendar, task and address book
+ distributed suite from Novell, Inc.
+ .
+ This package is a backend library for evolution address book.
+Homepage: https://wiki.gnome.org/Apps/Evolution
+Original-Maintainer: Debian Evolution Maintainers <pkg-evolution-maintainers@lists.alioth.debian.org>
+
+Package: libtcl8.6
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 3912
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: tcl8.6
+Version: 8.6.5+dfsg-2
+Replaces: tcl8.6 (<< 8.6.0-2)
+Provides: libtcl
+Depends: tzdata, libc6 (>= 2.15), zlib1g (>= 1:1.2.2)
+Suggests: tcl8.6
+Conflicts: tcl74 (<= 7.4p3-2), tcl8.6 (<< 8.6.0-2)
+Description: Tcl (the Tool Command Language) v8.6 - run-time library files
+ Tcl is a powerful, easy to use, embeddable, cross-platform interpreted
+ scripting language.  This package contains the Tcl library and auxiliary
+ code which allows one to run Tcl-enabled applications.  This version
+ includes thread support.
+Original-Maintainer: Debian Tcl/Tk Packagers <pkg-tcltk-devel@lists.alioth.debian.org>
+Homepage: http://www.tcl.tk/
+
+Package: libavahi-glib1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 67
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: avahi
+Version: 0.6.32~rc+dfsg-1ubuntu2.3
+Depends: libavahi-common3 (>= 0.6.16), libc6 (>= 2.2.5), libglib2.0-0 (>= 2.16.0)
+Description: Avahi GLib integration library
+ Avahi is a fully LGPL framework for Multicast DNS Service Discovery.
+ It allows programs to publish and discover services and hosts
+ running on a local network with no specific configuration. For
+ example you can plug into a network and instantly find printers to
+ print to, files to look at and people to talk to.
+ .
+ This library contains the interface to integrate the Avahi libraries
+ into a GLib main loop application, including GTK+ applications.
+Homepage: http://avahi.org/
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+
+Package: libwpg-0.3-3
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 169
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libwpg
+Version: 0.3.1-1ubuntu1
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), librevenge-0.0-0, libstdc++6 (>= 4.1.1), libwpd-0.10-10
+Description: WordPerfect graphics import/convert library (shared library)
+ Libwpg is a collection of library and tools to work with graphics in WPG
+ (WordPerfect Graphics) format. WPG is the format used among others in Corel
+ software, such as WordPerfect(tm) and Presentations(tm).
+ .
+ This package contains the shared library.
+Original-Maintainer: Rene Engelhard <rene@debian.org>
+
+Package: iw
+Status: install ok installed
+Priority: optional
+Section: net
+Installed-Size: 218
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: foreign
+Version: 3.17-1
+Replaces: aircrack-ng (<< 1:1.0~rc2-1)
+Depends: libc6 (>= 2.14), libnl-3-200 (>= 3.2.7), libnl-genl-3-200 (>= 3.2.7)
+Recommends: crda
+Breaks: aircrack-ng (<< 1:1.0~rc2-1)
+Description: tool for configuring Linux wireless devices
+ This package contains the `iw' tool which allows you to configure and show
+ information about wireless networking.
+ .
+ In the future iw will become the canonical command line tool for wireless
+ configuration and iwconfig/wireless-tools will no longer be required. See
+ /usr/share/doc/iw/README.Debian for a more detailed overview of iw.
+Original-Maintainer: Debian wpasupplicant Maintainers <pkg-wpa-devel@lists.alioth.debian.org>
+Homepage: http://wireless.kernel.org/en/users/Documentation/iw
+
+Package: libquvi-scripts
+Status: install ok installed
+Priority: extra
+Section: libs
+Installed-Size: 253
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Version: 0.4.21-2
+Description: library for parsing video download links (Lua scripts)
+ libquvi is a library to parse Adobe flash video download links. It
+ supports Youtube and other similar video websites. It provides access
+ to functionality and data through an API, and does not enable or
+ require the use of the flash technology.
+ .
+ This package contains the Lua scripts used to parse documents.
+Original-Maintainer: Alejandro Garrido Mota <alejandro@debian.org>
+Homepage: http://quvi.sourceforge.net
+
+Package: libcolord2
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 375
+Maintainer: Christopher James Halse Rogers <raof@ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: colord
+Version: 1.2.12-1ubuntu1
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.37.3), liblcms2-2 (>= 2.6), libudev1 (>= 196)
+Recommends: colord
+Description: system service to manage device colour profiles -- runtime
+ colord is a system service that makes it easy to manage, install and generate
+ colour profiles to accurately colour manage input and output devices.
+ .
+ It provides a D-Bus API for system frameworks to query, a persistent data
+ store, and a mechanism for session applications to set system policy.
+ .
+ This package contains a gobject-based convenience library for programs to
+ interact with the colord system daemon.
+Homepage: http://www.freedesktop.org/software/colord/
+
+Package: libthai-data
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 571
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Source: libthai
+Version: 0.1.24-2
+Breaks: libthai0 (<< 0.1.10)
+Description: Data files for Thai language support library
+ LibThai is a set of Thai language support routines aimed to ease
+ developers' tasks to incorporate Thai language support in their applications.
+ It includes important Thai-specific functions e.g. word breaking, input and
+ output methods as well as basic character and string supports.
+ .
+ This package contains data files needed by the LibThai library.
+Original-Maintainer: Theppitak Karoonboonyanan <thep@debian.org>
+Homepage: http://linux.thai.net/projects/libthai
+
+Package: findutils
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: utils
+Installed-Size: 560
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: foreign
+Version: 4.6.0+git+20160126-2
+Pre-Depends: libc6 (>= 2.17), libselinux1 (>= 1.32)
+Suggests: mlocate | locate
+Breaks: binstats (<< 1.08-8.1), debhelper (<< 9.20130504), guilt (<< 0.36-0.2), kernel-package (<< 13.000), libpython3.4-minimal (<< 3.4.4-2), libpython3.5-minimal (<< 3.5.1-3), lsat (<< 0.9.7.1-2.1), mc (<< 3:4.8.11-1), sendmail (<< 8.14.4-5), switchconf (<< 0.0.9-2.1)
+Conflicts: debconf (<< 1.5.50)
+Description: utilities for finding files--find, xargs
+ GNU findutils provides utilities to find files meeting specified
+ criteria and perform various actions on the files which are found.
+ This package contains 'find' and 'xargs'; however, 'locate' has
+ been split off into a separate package.
+Original-Maintainer: Andreas Metzler <ametzler@debian.org>
+Homepage: http://savannah.gnu.org/projects/findutils/
+
+Package: brltty
+Status: install ok installed
+Priority: extra
+Section: admin
+Installed-Size: 7072
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 5.3.1-2ubuntu2.1
+Replaces: libbrlapi1 (<< 3.7.2-7.1)
+Depends: libbluetooth3 (>= 4.91), libbrlapi0.6, libc6 (>= 2.17), libgpm2 (>= 1.20.4), libicu55 (>= 55.1-1~), libncursesw5 (>= 6), libsystemd0, libtinfo5 (>= 6), init-system-helpers (>= 1.18~), lsb-base (>= 3.2-14), initramfs-tools (>= 0.40ubuntu30)
+Recommends: python3
+Suggests: brltty-speechd, brltty-x11, console-braille
+Breaks: udev (<< 136-1)
+Conffiles:
+ /etc/brltty.conf f16d85a09a6573805177db3bbd7ea852
+ /etc/brltty/Attributes/invleft_right.atb 29657414230017fb6a49de12e6ff9d2d
+ /etc/brltty/Attributes/left_right.atb 69a337df14e8267b75880c944fc39ac5
+ /etc/brltty/Attributes/upper_lower.atb b1946b0d6faf68f597e29951a2be0e96
+ /etc/brltty/Contraction/af.ctb ee7f55ca36ab5f45689ce4ce092a2ea7
+ /etc/brltty/Contraction/am.ctb 576a8adcaecb7facbea8675a6ff11735
+ /etc/brltty/Contraction/countries.cti 9b8e65aa1dd6c4f4c7de2588e7ae3f70
+ /etc/brltty/Contraction/de-basis.ctb 483a9d6804fb79085ed276d805388fc4
+ /etc/brltty/Contraction/de-kurzschrift.ctb 73b4696c01a16203ea6ea86a6b3bd090
+ /etc/brltty/Contraction/de-vollschrift.ctb 3cb83ed4cdbe308f55d55fd4cfaee3ef
+ /etc/brltty/Contraction/en-ueb-g2.ctb 0db5094e171432b844a708e0a2e489da
+ /etc/brltty/Contraction/en-us-g2.ctb 8b6b0328a58f6591113556475d303679
+ /etc/brltty/Contraction/es.ctb 1841eb34da8ad924d438b2fa5d7c9d55
+ /etc/brltty/Contraction/fr-abrege.ctb f1708a84e535c93f8ebe539755e47f4f
+ /etc/brltty/Contraction/fr-integral.ctb e8acc31248cc354147f5623ea2a7e9ba
+ /etc/brltty/Contraction/ha.ctb 908db6f1f653cd014c52ec937aab1389
+ /etc/brltty/Contraction/id.ctb 4f3a19efabcc29ff2047589aedcc0415
+ /etc/brltty/Contraction/ipa.ctb 8b6df3df804284a5cf28a8911f978ed6
+ /etc/brltty/Contraction/ja.ctb 7f1d425c19771acbe21693e5347b4a14
+ /etc/brltty/Contraction/ko-g1.ctb 25508bdb0fdafc2f4db25c8d6f1e0421
+ /etc/brltty/Contraction/ko-g2.ctb 41ca42a155c893ad89b1a0c3d460a607
+ /etc/brltty/Contraction/ko.ctb 7efa4de9eff15662d6111ec41dd2b814
+ /etc/brltty/Contraction/latex-access.ctb 2a7072f950a32f512ea53ada1b03eddc
+ /etc/brltty/Contraction/letters-latin.cti 8ab9fc38668bdf038645f68fa6399da4
+ /etc/brltty/Contraction/mg.ctb 48b152f7db67503aecb9bf56f48db05d
+ /etc/brltty/Contraction/mun.ctb 9a5095d5471a522393c2213d95258794
+ /etc/brltty/Contraction/nabcc.cti c20960204097811034448721b5a836e0
+ /etc/brltty/Contraction/nl.ctb ccc98acdbffa6d3ed61b671466f8d4ea
+ /etc/brltty/Contraction/ny.ctb c9eacb1c5ffb6e50e8c0a11cff94aad0
+ /etc/brltty/Contraction/pt.ctb 6f1817ff313f02cb4cafd2174b5c727f
+ /etc/brltty/Contraction/si.ctb a81f3e70a3f3f6c812933160dfc4f6f1
+ /etc/brltty/Contraction/sw.ctb a3707a8821883cb1ebde7146c3bdae9e
+ /etc/brltty/Contraction/th.ctb 36116719c154e08d21067e2aec915e93
+ /etc/brltty/Contraction/zh-tw-ucb.ctb 003ffbdccf83b709c6ebefe55dab23e2
+ /etc/brltty/Contraction/zh-tw.ctb 766a1d52627f03a05fbd84be5c5e0a6a
+ /etc/brltty/Contraction/zu.ctb 6cb665adfc47e64f88247bdf8ed3c797
+ /etc/brltty/Input/al/abt_basic.kti 4a4502690675d181bbe85bfa7feccf6e
+ /etc/brltty/Input/al/abt_extra.kti cb8ceeff544160515dc544eb099044c6
+ /etc/brltty/Input/al/abt_large.ktb f26d13107bfe8706ed36001cd92c342b
+ /etc/brltty/Input/al/abt_small.ktb 6fec5f1773aab497174051aa2c401cf2
+ /etc/brltty/Input/al/bc-etouch.kti 65e17547f4c99f663b2b961312a40391
+ /etc/brltty/Input/al/bc-smartpad.kti c18e889620b373a15beafacbfe8adbae
+ /etc/brltty/Input/al/bc-thumb.kti 5c59f5a7c674520daeb29320921c3ba7
+ /etc/brltty/Input/al/bc.kti 378f8525f33ebbcb63f3d4c12f4ad388
+ /etc/brltty/Input/al/bc640.ktb bc79b2bd2a1f0b5d601422a62fee1c86
+ /etc/brltty/Input/al/bc680.ktb 04f82de01c5832b3b028955ecd6ed500
+ /etc/brltty/Input/al/el.ktb fbcd6f494e80d2244e3fd96072f09fed
+ /etc/brltty/Input/al/sat_basic.kti a096150a36b52123b8424d72d2de219b
+ /etc/brltty/Input/al/sat_extra.kti 02b6149a0d8c8f13b079e05a09dccca0
+ /etc/brltty/Input/al/sat_large.ktb e1b255c191fd2e745b7574e60a2faf70
+ /etc/brltty/Input/al/sat_small.ktb d598dd25fdd3eb20394b76cc713e827c
+ /etc/brltty/Input/al/voyager.ktb 276fe0121d09480bbfa836356cf3058e
+ /etc/brltty/Input/at/all.ktb 6506c95148fd67918c7dd599c674bb55
+ /etc/brltty/Input/ba/all.txt dba5ceb757d7a4118775f3c1b56d6e13
+ /etc/brltty/Input/bd/all.txt e074a6e5d7c8a990b0c553bdedc85d88
+ /etc/brltty/Input/bg/all.ktb b5eac6225cbef7088c6610781b54813c
+ /etc/brltty/Input/bl/18.txt e5f939d8e49888d2ac8673e14b118e91
+ /etc/brltty/Input/bl/40_m20_m40.txt 754440c01c84f579cd3a5471206661d3
+ /etc/brltty/Input/bm/b9b10.kti 86753b8c1db487d4f5f5732545e365e5
+ /etc/brltty/Input/bm/b9b11b10.kti ef6ec580ab1166e235df03431efe2879
+ /etc/brltty/Input/bm/command.kti 379f0ce01faa6ccfb41db7ff8621fbee
+ /etc/brltty/Input/bm/connect.ktb cd8b0ae61a7409f0773ff20cf7270287
+ /etc/brltty/Input/bm/conny.ktb 03a5e0de3545972361b40fe5f4fa1f31
+ /etc/brltty/Input/bm/d6.kti ad3696903769b17c1e18af69ffd2b428
+ /etc/brltty/Input/bm/default.ktb 294dcb13fbe3a5f4981c11c0d0c66bb9
+ /etc/brltty/Input/bm/display6.kti 440efe762169c339c4ec568822a969a4
+ /etc/brltty/Input/bm/display7.kti 1c66c6e78e2a036d42adc9e11f6cf532
+ /etc/brltty/Input/bm/dm80p.ktb 2b11c8cd09384aa55994a1971931f510
+ /etc/brltty/Input/bm/front10.kti 06a4707fb9bee629f47432fa0bfed781
+ /etc/brltty/Input/bm/front6.kti 41382cc6159c7797b1c561171bbdbb54
+ /etc/brltty/Input/bm/horizontal.kti 98d1578d0f394024fd2f7cdfbba22a0a
+ /etc/brltty/Input/bm/inka.ktb 953dbc265baf4d2ed343031cd3b21e49
+ /etc/brltty/Input/bm/keyboard.kti b8415cb55c3dcbc12b026ac244f4cbd5
+ /etc/brltty/Input/bm/pro.ktb 31b990c7f4b1efc1ab88cb6f81996a4c
+ /etc/brltty/Input/bm/pronto.ktb 7a858e7bc032ae832a4d6406755e45e3
+ /etc/brltty/Input/bm/pv.ktb 7a880033a3bec0e8ef8de7bcb3c28a0e
+ /etc/brltty/Input/bm/rb.ktb 8f9f91f12a8d3836297e13823434c937
+ /etc/brltty/Input/bm/routing6.kti 48785a28564779061d29fd0590624c0a
+ /etc/brltty/Input/bm/routing7.kti 725af6459c9d12801f4b3af61e56e8ff
+ /etc/brltty/Input/bm/status.kti 50d1cdd6afb8033582910dbac24eccca
+ /etc/brltty/Input/bm/sv.ktb 537bc56fbbf20b9de572fad833ff76de
+ /etc/brltty/Input/bm/ultra.ktb 45f2c5c81e7268d423f345eefe9ab6c0
+ /etc/brltty/Input/bm/v40.ktb 9f8fc1006d250ffc60648d81429ee9f2
+ /etc/brltty/Input/bm/v80.ktb e8a92c2c56aafd1be2f8d3d48cae18b8
+ /etc/brltty/Input/bm/vertical.kti 1ae3b1d967a7373a073cf039e9de00cd
+ /etc/brltty/Input/bm/vk.ktb c1b954074550bd2ce4787ba185809f9b
+ /etc/brltty/Input/bm/wheels.kti cd2b317851e130b78c0d4b2b0f6217ff
+ /etc/brltty/Input/bn/all.ktb 09a5618caff3c58f039986824e32c6e2
+ /etc/brltty/Input/bn/input.kti f2e239d281bc18112789b7ba84a7dea0
+ /etc/brltty/Input/bp/all.kti 00686465a6eaf31fa9df3ddab7593470
+ /etc/brltty/Input/cb/all.ktb 314f7020b4247126958d17b793184c8b
+ /etc/brltty/Input/ce/all.ktb d6d520d38e1cb43f9a28d3c739ae9dd8
+ /etc/brltty/Input/ce/novem.ktb ed5ca71057eff0689dce2f489e237d86
+ /etc/brltty/Input/chords.kti 579fdccb02699fc7098dcd91b6e431e0
+ /etc/brltty/Input/ec/all.txt 557da62b605e5df3449bdda50916ee7c
+ /etc/brltty/Input/ec/spanish.txt b1b0fe80e08df375bd582d0b465c07d3
+ /etc/brltty/Input/eu/all.txt d0d28bc973a96a5294ca7b7411d6adc4
+ /etc/brltty/Input/eu/braille.kti 64d1e1b5e5c292c345decddb41464c13
+ /etc/brltty/Input/eu/clio.ktb 856e0312bad548519561c4b2977eaa1d
+ /etc/brltty/Input/eu/common.kti 4b46fbe297fdd3b00c64977388515a30
+ /etc/brltty/Input/eu/esys_large.ktb 2349ea1a812641016ba1daf520ceff14
+ /etc/brltty/Input/eu/esys_medium.ktb eb78deacc922c15c89f6a965fcfaabb5
+ /etc/brltty/Input/eu/esys_small.ktb 822e2dfce21a61501bcfb3a7e432129f
+ /etc/brltty/Input/eu/esytime.ktb 4be37e6ace7efe3d44435c94b1a61c52
+ /etc/brltty/Input/eu/iris.ktb 16ab9d0420e0289f327f355a6252ac2c
+ /etc/brltty/Input/eu/joysticks.kti a205b636a0e0bfdd8149abd1be7cb9db
+ /etc/brltty/Input/eu/sw12.kti df3c51561f47251fae7551bde20f21a6
+ /etc/brltty/Input/eu/sw34.kti ae5225cb9174ff19911037798dd1f8bc
+ /etc/brltty/Input/eu/sw56.kti 3ba99e278a9419d860e3da3312be1657
+ /etc/brltty/Input/fs/bumpers.kti ad3872c6a301b09e7bcea805cd89bdf7
+ /etc/brltty/Input/fs/common.kti c96faa3406da492190ce37adfd0f7952
+ /etc/brltty/Input/fs/focus_basic.ktb 9f139a6c73af2a01430f6e1ea00733f9
+ /etc/brltty/Input/fs/focus_basic.kti 770d18b5dbbb3e210e8037125ca46c18
+ /etc/brltty/Input/fs/focus_large.ktb 8585a718bdd302a3f72776cf60822ea8
+ /etc/brltty/Input/fs/focus_small.ktb 1f429b6ed139f02c44ce13c96f61d3e1
+ /etc/brltty/Input/fs/pacmate.ktb 8908b459d69069595da806f2e59c3ffc
+ /etc/brltty/Input/fs/rockers.kti 33c07472302c172a793f07861cb0d622
+ /etc/brltty/Input/hd/mbl.ktb 2021e367999ffb9a224acd84345bade9
+ /etc/brltty/Input/hd/pfl.ktb ad24dbe66348efff10bad24d900d4b32
+ /etc/brltty/Input/hm/braille.kti 6333ae309dfcb034aacc19112076222a
+ /etc/brltty/Input/hm/common.kti e952d4232eb398054f5c6171f89f6244
+ /etc/brltty/Input/hm/contexts.kti 8de0b315f6ed2e379c9c47411860ad5e
+ /etc/brltty/Input/hm/edge.ktb d5a05b6ec6473d1334a8e4085ea899f7
+ /etc/brltty/Input/hm/f14.kti 8401770eeca7922416ddbf97e2604734
+ /etc/brltty/Input/hm/f18.kti d4fde187ee311e765cfde27723091138
+ /etc/brltty/Input/hm/fnkey.kti cddcf509a67ae1b71c211d7299ad847b
+ /etc/brltty/Input/hm/left.kti 7c7ef09e61406cfc65211054adbfab4e
+ /etc/brltty/Input/hm/letters.kti b048eb0ef3915cc166155ffe6c93b660
+ /etc/brltty/Input/hm/pan.ktb 8206a6a6dd77d496b197af5e9c0c81c1
+ /etc/brltty/Input/hm/pan.kti d0b17a4fa35c0e3e610ac9c46f30a5e4
+ /etc/brltty/Input/hm/qwerty.ktb 2e130c3ccd1f948e5dea105b0521428e
+ /etc/brltty/Input/hm/qwerty.kti 1f308281a8407b41aaba5d14969566a0
+ /etc/brltty/Input/hm/right.kti 22e6bfb1ccd4f8e3d59ca496e79fe445
+ /etc/brltty/Input/hm/scroll.ktb 600fab071cc0c8ef2fddc4e48656cbd3
+ /etc/brltty/Input/hm/scroll.kti 5637f82e77d5fc9974dddfbb1562942c
+ /etc/brltty/Input/hm/sync.ktb ebaf4037e7356d619571c223849a53ad
+ /etc/brltty/Input/ht/ab40.ktb 819a4124d9618277ff5f58f104638c9f
+ /etc/brltty/Input/ht/as40.ktb 1ff610b3e0401ca9442b87eae7a58235
+ /etc/brltty/Input/ht/bb.ktb 3fe591a7c4cddd15895f2519be4c3ba5
+ /etc/brltty/Input/ht/bkwm.ktb 3e00eabc7b8a40214b3df9d86168a23e
+ /etc/brltty/Input/ht/brln.ktb bd80ebd02a560ab1f7c584a7777034c5
+ /etc/brltty/Input/ht/bs.kti 9aa64c8d5724e402ae116272adda912c
+ /etc/brltty/Input/ht/bs40.ktb 2d94c483ff18facac655b25b12abf154
+ /etc/brltty/Input/ht/bs80.ktb b596ffdecd399c903cc4e941a5974334
+ /etc/brltty/Input/ht/cb40.ktb b4c3c66d83d15e2fb6bbe2542a079915
+ /etc/brltty/Input/ht/dots.kti 2be3368d8cd35ec0f8cf0a5eef813979
+ /etc/brltty/Input/ht/easy.ktb d2d7c5b1e8fca0765c8b7840503aa05d
+ /etc/brltty/Input/ht/input.kti bb9cc74dcb0b565b33420740616b9281
+ /etc/brltty/Input/ht/keypad.kti 2dee617be9613a87eb43f96ec997287b
+ /etc/brltty/Input/ht/mc88.ktb 67ea7dee4d8978d2e5e48e15b697234e
+ /etc/brltty/Input/ht/mdlr.ktb 860f191343c4519c3df2c55ef44309f6
+ /etc/brltty/Input/ht/me.kti 701ced780e12c219883d332727fc3fab
+ /etc/brltty/Input/ht/me64.ktb bab2c873bbdd8c88c043b3b442c66e75
+ /etc/brltty/Input/ht/me88.ktb 7ba75c86c8e24b2a9ec31481813b5465
+ /etc/brltty/Input/ht/rockers.kti 18c9c1a832ab5bfe59675629d56562e5
+ /etc/brltty/Input/ht/wave.ktb 82c20b4ddc784fc0772a0ae450320978
+ /etc/brltty/Input/hw/all.ktb 46158509d01e7d2c6efe30cfebbd216a
+ /etc/brltty/Input/ir/all.kti 1e0876bf6fec9b6364d789301c090b61
+ /etc/brltty/Input/ir/brl.ktb 2ce02b7710b0b19cc9522581ef0cb2e0
+ /etc/brltty/Input/ir/pc.ktb d22e06684e38e5846b5947033fec869d
+ /etc/brltty/Input/lb/all.txt bcbf6afd0accc850b10ae4e0192ce4b2
+ /etc/brltty/Input/lt/all.txt 99906cfe61aca9945ea0b92d888478f4
+ /etc/brltty/Input/mb/all.txt 772a3004115fe56f26bd6f0c7fd5213a
+ /etc/brltty/Input/md/common.kti d73010e18e7e35dcfa5b7cdc27ba985c
+ /etc/brltty/Input/md/default.ktb 644ca20db3524aa1bac462298cfd1fc2
+ /etc/brltty/Input/md/fk.ktb afc87a4da33e4b0dd3fd4e0ae6a70c2a
+ /etc/brltty/Input/md/fk_s.ktb 52fae803b8d42472511a5761e246293f
+ /etc/brltty/Input/md/fkeys.kti 7347fa06540efec935464dd02c0ec095
+ /etc/brltty/Input/md/kbd.ktb 4092dd1c05c5a4bd37ef5d5d68826bcb
+ /etc/brltty/Input/md/keyboard.kti 746d6e2f39619e90b60d63d4b6759d61
+ /etc/brltty/Input/md/status.kti 44ec17a56aa72705f5246593b3561976
+ /etc/brltty/Input/menu.kti d9981eb13a93cfe95b2436b5eaebd1ab
+ /etc/brltty/Input/mm/common.kti 57fe6f5a0c7918c0c054c5e9b3064358
+ /etc/brltty/Input/mm/pocket.ktb 2540b7def16211044ca15ebcb0bcd147
+ /etc/brltty/Input/mm/smart.ktb 558fc1caf3e0f2b4a9017382a89d2dcd
+ /etc/brltty/Input/mn/all.txt d03d10247abdb76d5cfb3295dc17d314
+ /etc/brltty/Input/mt/bd1_3.ktb d7713cab5af47529833e88e817d1a9f0
+ /etc/brltty/Input/mt/bd1_3.kti 686d9a88a5658ff204ca5910a9979008
+ /etc/brltty/Input/mt/bd1_3s.ktb d66c6893d8b87a9c568ce5cb3437a3b2
+ /etc/brltty/Input/mt/bd1_6.ktb 03a4f83857652c300141c60c23f81026
+ /etc/brltty/Input/mt/bd1_6.kti 227ea5475edb78e90dae18520021ba47
+ /etc/brltty/Input/mt/bd1_6s.ktb 068f7ce347389db395bcbe52bfec04d2
+ /etc/brltty/Input/mt/bd2.ktb 53c9dd5c0d60fa4ee10e0f7c477c8976
+ /etc/brltty/Input/mt/status.kti 48bd948c5181b75a65e71e2375623439
+ /etc/brltty/Input/np/all.ktb 0468ea41a31e3c1fe77f7605af1ca7ba
+ /etc/brltty/Input/pg/all.ktb c77f2aa6c884d2514adf9169eb0760c2
+ /etc/brltty/Input/pm/2d_l.ktb 4530fd51ab0f3aecfb199c8a3af6b79c
+ /etc/brltty/Input/pm/2d_s.ktb 7ab2838f6d8bafc3f9e288d0e10e24a4
+ /etc/brltty/Input/pm/bar.kti c44352c806b28f1d78c45ef1d21ef76f
+ /etc/brltty/Input/pm/c.ktb 74499d6b727e1a9232c66e02cf23710a
+ /etc/brltty/Input/pm/c_486.ktb 547e6aa1b2b6a5201324d7e1d8bfa803
+ /etc/brltty/Input/pm/el2d_80s.ktb cd5409dd17c717b13f22eb78d44345cb
+ /etc/brltty/Input/pm/el40c.ktb 9be6fd30f2ebc98e0677b8b92740e00d
+ /etc/brltty/Input/pm/el40s.ktb 0f010dca8398671a402be888628ba646
+ /etc/brltty/Input/pm/el60c.ktb 1479d98067e73a379b5d4fd8c1abf3fa
+ /etc/brltty/Input/pm/el66s.ktb c50cfa4d272d049890d120af7f8152c2
+ /etc/brltty/Input/pm/el70s.ktb 5e4c53150d9c2e9bbf97741891e767c0
+ /etc/brltty/Input/pm/el80_ii.ktb 95e43ebaba2a97a0a2ea77063d5e2dd4
+ /etc/brltty/Input/pm/el80c.ktb a70f68c51a8a4209dbfdb23269a3aea9
+ /etc/brltty/Input/pm/el80s.ktb 88865123738fcb2b7a16c58f14aff74f
+ /etc/brltty/Input/pm/el_2d_40.ktb e7bc030b8fc962d2b79889cf40b45413
+ /etc/brltty/Input/pm/el_2d_66.ktb 104ac86ec9a38e8a61995e0e1f01648f
+ /etc/brltty/Input/pm/el_2d_80.ktb 78b5b3740fd0053196638cc713e7e920
+ /etc/brltty/Input/pm/el_40_p.ktb d272b7113353c778490511fc4cd72a94
+ /etc/brltty/Input/pm/el_80.ktb f6f29556e605a4f3693c1dbe7d387009
+ /etc/brltty/Input/pm/elb_tr_20.ktb 836d774fd9c7029012a6d093d21afe83
+ /etc/brltty/Input/pm/elb_tr_32.ktb f76b77fe4a0ef5ee50ed52a51bb9a366
+ /etc/brltty/Input/pm/elba_20.ktb c6fae7887865141622d4ad51f641071d
+ /etc/brltty/Input/pm/elba_32.ktb 4527e5fa66df8c485096c16db42b76c3
+ /etc/brltty/Input/pm/front13.kti c7ea2c95f17da0956e3864d8f99164f9
+ /etc/brltty/Input/pm/front9.kti 1985a92c653e97ef06c252b38bd0df5f
+ /etc/brltty/Input/pm/ib_80.ktb c74e58391e70619409ec379fb5f208f7
+ /etc/brltty/Input/pm/keyboard.kti ce8950487cc214c3387623b5e084c650
+ /etc/brltty/Input/pm/keys.kti e68c5b92562a6aa23f34271e36ba5630
+ /etc/brltty/Input/pm/routing.kti f42d628a9bc4882b0a5204a2f9d7a213
+ /etc/brltty/Input/pm/status0.kti 64344fd0cbc7cb375436634f98e73019
+ /etc/brltty/Input/pm/status13.kti 838830e4b9e19e1f2378a1645b89d9af
+ /etc/brltty/Input/pm/status2.kti 1ab562ea463d0c1afb589af86664ce90
+ /etc/brltty/Input/pm/status20.kti 1972552fcf6565b39f5318ee2a054171
+ /etc/brltty/Input/pm/status22.kti 8381f67cc5d6b3ef2f65f08780050e2b
+ /etc/brltty/Input/pm/status4.kti 91c09c281a3ff1905f4b874589eb09ed
+ /etc/brltty/Input/pm/switches.kti 5517720e080644d0bb31ac133dfd0489
+ /etc/brltty/Input/pm/trio.ktb 7d6f032e28931dfc25c6093d4ae87af5
+ /etc/brltty/Input/sk/bdp.ktb 5a663da2c3a8f83e46bec28f1bf6cab5
+ /etc/brltty/Input/sk/ntk.ktb ed8cfc1fc1a486ef86af53151f0cbdc0
+ /etc/brltty/Input/tn/all.txt 23c0fc87f0a12a893346003cb7b3af10
+ /etc/brltty/Input/toggle.kti 1e7e613ca92529675705e2a6779168a9
+ /etc/brltty/Input/ts/nav.kti 6eca36e94e49bc2897d818cf2c094dc1
+ /etc/brltty/Input/ts/nav20.ktb 6ad92e289b6be4d9a8413ee147f9124d
+ /etc/brltty/Input/ts/nav40.ktb 8d030334f456d3597520475786464e91
+ /etc/brltty/Input/ts/nav80.ktb 3e3edea5d2351dbe9b6c711b53b9fd43
+ /etc/brltty/Input/ts/nav_large.kti 9610c9cf6ce72a689ea2a4c5fdadc55c
+ /etc/brltty/Input/ts/nav_small.kti 75f5176c2c803fb10bdfcd026917c79c
+ /etc/brltty/Input/ts/pb.kti fe532522d4440c38a91f2fbcb927d838
+ /etc/brltty/Input/ts/pb40.ktb 6d3dbc865f03ca4f858cd9d7fd1e43f3
+ /etc/brltty/Input/ts/pb65.ktb 77402a95454206d64b76a901d2cb4bf6
+ /etc/brltty/Input/ts/pb80.ktb 30926ce56a89f0c7bfa9a51391bb7bb7
+ /etc/brltty/Input/ts/pb_large.kti 32e7f5d2bb6271c5542155b17b64bcec
+ /etc/brltty/Input/ts/pb_small.kti e04c1e2ea7e3da8be4ed7889d98095a7
+ /etc/brltty/Input/ts/routing.kti 5de0b5bd8cc2604f5776d20e4f698ce2
+ /etc/brltty/Input/tt/all.txt 5e400435befcd7065b54dc3a44828144
+ /etc/brltty/Input/vd/all.txt 97f903d0978b084db8263547032842d2
+ /etc/brltty/Input/vo/all.ktb 30ed28140c0e60526f31c90d91b4174c
+ /etc/brltty/Input/vo/all.kti bddf19c3b13f00c6a70c907d8c85891d
+ /etc/brltty/Input/vo/bp.ktb 33e22eb6c81639894d0b212075247640
+ /etc/brltty/Input/vr/all.txt 59085d7eb62b63059e94574177580c0b
+ /etc/brltty/Input/vs/all.txt afbb69e3847180cf3a8a07eca591cdc8
+ /etc/brltty/Keyboard/braille.ktb b43d31d47426961ff82d089cdbfe8086
+ /etc/brltty/Keyboard/braille.kti c5f94977a9fc9c1a80177dec955e2e7f
+ /etc/brltty/Keyboard/desktop.ktb 96204578028f7578c714ff046b6d4ca2
+ /etc/brltty/Keyboard/desktop.kti 10989b01165b3b3c66ef676f89b0ac00
+ /etc/brltty/Keyboard/keypad.ktb 4244ce81ec4fe8dad7ac8b5ddaa0cd1b
+ /etc/brltty/Keyboard/kp_say.kti 6a559a3539b907a6a5f30081c6159553
+ /etc/brltty/Keyboard/kp_speak.kti cfe87cf30449ff74f26979fc896e8a3a
+ /etc/brltty/Keyboard/laptop.ktb 3294e734e0897b516ce9e10c0efa084d
+ /etc/brltty/Keyboard/sun_type6.ktb 8b21a67ee2fcc20f6f4ba2bd62de65a9
+ /etc/brltty/Text/ar.ttb 0e7ddb661bde00eca1b746af54cf500d
+ /etc/brltty/Text/as.ttb a574562ff3cf5ccfc01071294a3856f9
+ /etc/brltty/Text/ascii-basic.tti ee752a62008e1cbb0faddb4a17d0c2df
+ /etc/brltty/Text/awa.ttb f08ce5f5281b2ece919b088a71baac4a
+ /etc/brltty/Text/bengali.tti 8abda6bf1ba73cfeba362ef288d8300b
+ /etc/brltty/Text/bg.ttb 02fefcfcbe40aa170dc8d892ecfe2121
+ /etc/brltty/Text/bh.ttb bd70799dbf4ee739898e5be1df17efb5
+ /etc/brltty/Text/blocks.tti d3d081ab155ce42106a67653bf2c8d5c
+ /etc/brltty/Text/bn.ttb 0c5cf5f2b35a36f93e7aeebeeed60482
+ /etc/brltty/Text/bo.ttb e1d5d3d6d35a3db89b7b64ceefdf3d4a
+ /etc/brltty/Text/boxes.tti b4ecc57b6ea5707b7ac13515ae50cc0e
+ /etc/brltty/Text/bra.ttb 0f2ce120dcc97ef6a34088dbd623f090
+ /etc/brltty/Text/brf.ttb 8564c6351c97e18b6fc9ee480f77f7b8
+ /etc/brltty/Text/common.tti 7e1fedde97318b189e8e1c7346e1ba7d
+ /etc/brltty/Text/cs.ttb a02b8a4ffeb8b62295f7f0af6531ff51
+ /etc/brltty/Text/ctl-latin.tti 50bc8aa21aed95d0372eae1882bea610
+ /etc/brltty/Text/cy.ttb faef1f6c671b233d8faba0c3c1cd696e
+ /etc/brltty/Text/da-1252.ttb e4c4276a1fdb7a4bfa57a54fdb8cb245
+ /etc/brltty/Text/da-lt.ttb 9f15f1b558edcffc2363780140766a53
+ /etc/brltty/Text/da.ttb ff42130da58f00180d9a197cc4e46f64
+ /etc/brltty/Text/de-chess.tti c61165d7f3f69c7153eea26319f2b6af
+ /etc/brltty/Text/de.ttb 1dea698639ebdeae2dd5b753e1747fcc
+ /etc/brltty/Text/devanagari.tti e748006e48797bea102194c1eb4dc570
+ /etc/brltty/Text/dra.ttb fec0f187504ab70de34de1aa23da7b22
+ /etc/brltty/Text/el.ttb 5535c13dc6c6babf15eb495822fd6803
+ /etc/brltty/Text/en-chess.tti 70d2b4a08e223424f9bd89ebf78b4a7f
+ /etc/brltty/Text/en-na-ascii.tti 2f147bb350a950470ba9b5381cbcda04
+ /etc/brltty/Text/en-nabcc.ttb f2b742927857e16026445a0d3e197339
+ /etc/brltty/Text/en.ttb 3f24af96129e1145bcd2bd481046abfc
+ /etc/brltty/Text/en_CA.ttb f39c316002e4c9e45179da14c7eb2268
+ /etc/brltty/Text/en_GB.ttb 547a63f3b5766d0ebddc3ed3087fada9
+ /etc/brltty/Text/en_US.ttb 10a20a6df0296386544c59a71d4e4438
+ /etc/brltty/Text/eo.ttb 2a72c130f1215342c4ecb43a1fea0e67
+ /etc/brltty/Text/es.ttb 6401b87d494af77ea5950757ddd3b9c2
+ /etc/brltty/Text/et.ttb aac6b546eb9253a4bc4ca85b765a24f8
+ /etc/brltty/Text/fi.ttb f18802180bb46e15fbb390be47b4753b
+ /etc/brltty/Text/fr-2007.ttb 0587c86d2619835c121a4f67f5ce2466
+ /etc/brltty/Text/fr-cbifs.ttb 7ca0589083ef416e9172534a853c6c32
+ /etc/brltty/Text/fr-vs.ttb 8c7fdc49c4d1acc485fc8d0bba2821be
+ /etc/brltty/Text/fr.ttb 989f7f6d62fe7e846557d7ad6c6ecee7
+ /etc/brltty/Text/fr_CA.ttb fe4ea6ccb07310bc0c1fe72b71a8ad15
+ /etc/brltty/Text/fr_FR.ttb 75bf24fa12b8d3b9736a22119e4e0d8d
+ /etc/brltty/Text/ga.ttb a3b5cbdb0fd80f94ce14ccf439fe6c0f
+ /etc/brltty/Text/gd.ttb 6631de6564227387e8fd770e28c03a97
+ /etc/brltty/Text/gon.ttb 1d6f4cfbc5107675a2d8aa3f7c0ef90c
+ /etc/brltty/Text/gu.ttb 2dea09ace839516055877079a7a23e17
+ /etc/brltty/Text/gujarati.tti dd08b64483e0c4e4422ddba5cb3571f2
+ /etc/brltty/Text/gurmukhi.tti ee8212c8058fff198d2c19cddcf42d2f
+ /etc/brltty/Text/he.ttb 0ba15f049194360dfb45f3d7df612b66
+ /etc/brltty/Text/hi.ttb 81667f7927a04deaf34acf4a756e7caf
+ /etc/brltty/Text/hr.ttb 70f8e8b801ecdf14223260937bb7f0e8
+ /etc/brltty/Text/hu.ttb 8155ecff1ec01fbb68518891938cb553
+ /etc/brltty/Text/hy.ttb feafb31a05961a0e58d4cc7b509c9caf
+ /etc/brltty/Text/is.ttb f3db420e6a6f9fdf48ffc92725df399f
+ /etc/brltty/Text/it.ttb af69e56188b1944727de48f51d3f9fae
+ /etc/brltty/Text/kannada.tti 1aea897690dfd8523fe23cd853bd8ac1
+ /etc/brltty/Text/kha.ttb 5b0da508d7cec53e20ecaa4dd15ba132
+ /etc/brltty/Text/kn.ttb 280ebf8e5532d61915d24133a84f30b1
+ /etc/brltty/Text/kok.ttb 501ff58add0984a1d062d5a3d5f7517d
+ /etc/brltty/Text/kru.ttb 704a159440f0ca0ab456f39d639e438b
+ /etc/brltty/Text/lt.ttb 2a88160f308800643ac4059779bc71fb
+ /etc/brltty/Text/ltr-alias.tti a8d90b3d28b99bf5ddf8152b625f5321
+ /etc/brltty/Text/ltr-cyrillic.tti 5939a167c6cb5825d226dc62b649207c
+ /etc/brltty/Text/ltr-dot8.tti 204e3e0a8b8e9d52585a93dd468e04ac
+ /etc/brltty/Text/ltr-latin.tti 2624bd1ebfc36a113a866dba28e9ffcc
+ /etc/brltty/Text/ltr-tibetan.tti b5ec755fbd8b8c549b50e8f9ffc1f2c9
+ /etc/brltty/Text/lv.ttb 16f79755bd01f1717120c5d82d623003
+ /etc/brltty/Text/malayalam.tti c63326a1c4146355c3d7f033069be4d7
+ /etc/brltty/Text/mg.ttb b2475c1336d5cba9a29938db826b2b48
+ /etc/brltty/Text/mi.ttb ae7fbe439ea7ddc205e10c084496e1d9
+ /etc/brltty/Text/ml.ttb 9baf822af1845962c1f8a23297a55801
+ /etc/brltty/Text/mni.ttb 06f19dab1a92e5a29da78156cf415998
+ /etc/brltty/Text/mr.ttb 2db7c6c6f7d3614abd83c94d447c3032
+ /etc/brltty/Text/mt.ttb 46025599d415a567f6832a52804768b0
+ /etc/brltty/Text/mun.ttb 0b117f39f98891a985446e703e84904d
+ /etc/brltty/Text/mwr.ttb 6aa31bfcf873acbd0694a223cce03f52
+ /etc/brltty/Text/ne.ttb 3f33f0f35a0cb395a5bebd036fe3d849
+ /etc/brltty/Text/new.ttb ac627e285e695aeeed3d67b279c7b3df
+ /etc/brltty/Text/nl.ttb f2e8f64907718a8d8c1131055ebe79db
+ /etc/brltty/Text/nl_BE.ttb 46df94b06195347b5f78f6d7b0b278ab
+ /etc/brltty/Text/nl_NL.ttb aee41955f8870025013f99a3129683ee
+ /etc/brltty/Text/no-generic.ttb 9e2e783c0ed93311b111d416f7523ce9
+ /etc/brltty/Text/no-oup.ttb 53cd2f3716f657d50d73b95f6c7c416f
+ /etc/brltty/Text/no.ttb 893bf6a3ae2a3e5f2e2eaa88dea983cb
+ /etc/brltty/Text/num-alias.tti a164041eca28ed8fb423192ecce6c05b
+ /etc/brltty/Text/num-dot6.tti d52b1ad91cf2f2705ab0231e9dd3d3ca
+ /etc/brltty/Text/num-dot8.tti 70fca808436a6831ffda0095e9565a68
+ /etc/brltty/Text/num-french.tti dcfcf339ea30e284ef7fecf843562b3f
+ /etc/brltty/Text/num-nemd8.tti 191be66153b1e51b2e1767f7fe6bd3f2
+ /etc/brltty/Text/num-nemeth.tti fcfe70d4dcd942cff86c5c0deaa8288a
+ /etc/brltty/Text/nwc.ttb b1bc7e8d1af55248eb370f46e8a73568
+ /etc/brltty/Text/or.ttb 212179a550afd9e01199457c52394483
+ /etc/brltty/Text/oriya.tti 07e946ef1655497b99c175000e639d5a
+ /etc/brltty/Text/pa.ttb 0daf0839634c0ab789a964720ddce142
+ /etc/brltty/Text/pi.ttb e8dbc4d75efea6a8bb3209c7d9d2cfc2
+ /etc/brltty/Text/pl.ttb b2ae3449ebd603d5c502997b281c2e04
+ /etc/brltty/Text/pt.ttb b586c540a8d01ff01856c8d8f8d7583a
+ /etc/brltty/Text/punc-alternate.tti 8af21023a6b7a4835d9fc21118c47973
+ /etc/brltty/Text/punc-basic.tti 0fab0c0c94bf16a280cda1b2bd84523a
+ /etc/brltty/Text/punc-tibetan.tti bc5122c77847961bed461884e8430425
+ /etc/brltty/Text/ro.ttb 5c9cc7e4396c5148bddf44b36bb26fdf
+ /etc/brltty/Text/ru.ttb f76d0a2ce295d80dd4da69bfef4273ce
+ /etc/brltty/Text/sa.ttb 986b38195e61ed5de81a0966a4df3fa2
+ /etc/brltty/Text/sat.ttb be613e3d4e0c6c7a89de3c8b507955d3
+ /etc/brltty/Text/sd.ttb 9d0b2460d7abe44eb334b37061ef361b
+ /etc/brltty/Text/sk.ttb 4b9d336cd49b6340f3fc05fafd279f64
+ /etc/brltty/Text/sl.ttb 55a4ce05a502be717d93a9b72784fa04
+ /etc/brltty/Text/spaces.tti 8f7fbec8534b5dd347172aae46f78c80
+ /etc/brltty/Text/sv-1989.ttb cc9c0bc246e14e3a934ad2f4ba229002
+ /etc/brltty/Text/sv-1996.ttb f2ebf42a011a14e076015ba14b929f40
+ /etc/brltty/Text/sv.ttb 528e62423b334aec5f49488944e8dbe0
+ /etc/brltty/Text/sw.ttb 62271f8b072513e8a994f451f9371caf
+ /etc/brltty/Text/ta.ttb 456d6c85c7b8213ac2934058c945496e
+ /etc/brltty/Text/tamil.tti 89b451bcd60d3eab5aefc9584dc7fff8
+ /etc/brltty/Text/te.ttb dde72b645459340d2689410f50a5cd64
+ /etc/brltty/Text/telugu.tti 7b983daedec969067b57c95e3644657e
+ /etc/brltty/Text/tr.ttb d6933c879761cb4aa1a5336e95a2f051
+ /etc/brltty/Text/vi.ttb 28a33c7a38a388faaba8e4011e49e698
+ /etc/default/brltty c99731b55202edfffcfbecd5f0401b85
+ /etc/init.d/brltty ff21add488f1dff38d5b42800d3716c6
+Description: Access software for a blind person using a braille display
+ BRLTTY is a daemon which provides access to the console (text mode)
+ for a blind person using a braille display.  It drives the braille
+ display and provides complete screen review functionality.
+ The following display models are supported:
+  * Alva/Optelec (ABT3xx, Delphi, Satellite, Braille System 40, BC 640/680)
+  * Baum
+  * BrailComm
+  * BrailleLite
+  * BrailleNote
+  * Cebra
+  * EcoBraille
+  * EuroBraille (AzerBraille, Clio, Esys, Iris, NoteBraille, Scriba)
+  * Freedom Scientific (Focus and PacMate)
+  * Handy Tech
+  * HIMS (Braille Sense, SyncBraille)
+  * HumanWare (Brailliant)
+  * Iris
+  * LogText 32
+  * MDV
+  * Metec (BD-40)
+  * NinePoint
+  * Papenmeier
+  * Pegasus
+  * Seika
+  * Tieman (Voyager, CombiBraille, MiniBraille, MultiBraille,
+            BraillePen/EasyLink)
+  * Tivomatic (Albatross)
+  * TSI (Navigator, PowerBraille)
+  * VideoBraille
+  * VisioBraille
+ .
+ BRLTTY also provides a client/server based infrastructure for applications
+ wishing to utilize a Braille display.  The daemon process listens for incoming
+ TCP/IP connections on a certain port.  A shared object library for clients is
+ provided in the package libbrlapi0.6.  A static library, header files and
+ documentation is provided in package libbrlapi-dev.  Bindings to other
+ programming languages can be found in libbrlapi-java (Java) and
+ python3-brlapi (Python).
+Homepage: http://mielke.cc/brltty/
+Original-Maintainer: Debian Accessibility Team <debian-accessibility@lists.debian.org>
+
+Package: accountsservice
+Status: install ok installed
+Priority: optional
+Section: admin
+Installed-Size: 428
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.6.40-2ubuntu11.3
+Depends: dbus, libaccountsservice0 (= 0.6.40-2ubuntu11.3), init-system-helpers (>= 1.18~), libc6 (>= 2.4), libglib2.0-0 (>= 2.37.3), libpolkit-gobject-1-0 (>= 0.99)
+Suggests: gnome-control-center
+Breaks: libpam-pin
+Conffiles:
+ /etc/dbus-1/system.d/org.freedesktop.Accounts.conf 06247d62052029ead7d9ec1ef9457f42
+Description: query and manipulate user account information
+ The AccountService project provides a set of D-Bus
+ interfaces for querying and manipulating user account
+ information and an implementation of these interfaces,
+ based on the useradd, usermod and userdel commands.
+Homepage: http://www.freedesktop.org/wiki/Software/AccountsService/
+Original-Maintainer: Alessio Treglia <alessio@debian.org>
+
+Package: fonts-khmeros-core
+Status: install ok installed
+Priority: optional
+Section: fonts
+Installed-Size: 571
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: fonts-khmeros
+Version: 5.0-7ubuntu1
+Replaces: fonts-khmeros (<< 5.0-5ubuntu1), ttf-khmeros (<< 5.0-4), ttf-khmeros-core (<< 5.0-5ubuntu1)
+Breaks: fonts-khmeros (<< 5.0-5ubuntu1), ttf-khmeros (<< 5.0-4), ttf-khmeros-core (<< 5.0-5ubuntu1)
+Conffiles:
+ /etc/fonts/conf.d/65-khmer.conf 574805699c9ed61a202a6f7876cd8b5c
+Description: KhmerOS Unicode fonts for the Khmer language of Cambodia
+ Free fonts for the Khmer language, used in Cambodia, developed by
+ the Khmer Software Iniative, part of the Open Forum of Cambodia.
+ .
+ This package provides Khmer OS fonts for use in the default Ubuntu desktop.
+Homepage: http://www.khmeros.info
+Original-Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
+
+Package: libpam0g
+Status: install ok installed
+Priority: required
+Section: libs
+Installed-Size: 210
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: pam
+Version: 1.1.8-3.2ubuntu2.1
+Replaces: libpam0g-util
+Depends: libaudit1 (>= 1:2.2.1), libc6 (>= 2.14), debconf (>= 0.5) | debconf-2.0
+Suggests: libpam-doc
+Description: Pluggable Authentication Modules library
+ Contains the shared library for Linux-PAM, a library that enables the
+ local system administrator to choose how applications authenticate users.
+ In other words, without rewriting or recompiling a PAM-aware application,
+ it is possible to switch between the authentication mechanism(s) it uses.
+ One may entirely upgrade the local authentication system without touching
+ the applications themselves.
+Homepage: http://pam.sourceforge.net/
+Original-Maintainer: Steve Langasek <vorlon@debian.org>
+
+Package: libsodium18
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 417
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libsodium
+Version: 1.0.8-5
+Depends: libc6 (>= 2.14)
+Description: Network communication, cryptography and signaturing library
+ NaCl (pronounced "salt") is a new easy-to-use high-speed software library for
+ network communication, encryption, decryption, signatures, etc.
+ .
+ NaCl's goal is to provide all of the core operations needed to build
+ higher-level cryptographic tools.
+ .
+ Sodium is a portable, cross-compilable, installable, packageable fork of NaCl,
+ with a compatible API.
+Original-Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Homepage: http://www.libsodium.org/
+
+Package: libxdmcp6
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 39
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libxdmcp
+Version: 1:1.1.2-1.1
+Depends: libc6 (>= 2.4)
+Description: X11 Display Manager Control Protocol library
+ This package provides the main interface to the X11 display manager control
+ protocol library, which allows for remote logins to display managers.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXdmcp
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: libbind9-140
+Status: install ok installed
+Priority: standard
+Section: libs
+Installed-Size: 98
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: bind9
+Version: 1:9.10.3.dfsg.P4-8ubuntu1.12
+Replaces: libbind0
+Depends: libc6 (>= 2.4), libdns162, libisc160, libisccfg140
+Conflicts: libbind0, libbind9-41
+Description: BIND9 Shared Library used by BIND
+ The Berkeley Internet Name Domain (BIND) implements an Internet domain
+ name server.  BIND is the most widely-used name server software on the
+ Internet, and is supported by the Internet Software Consortium, www.isc.org.
+ .
+ This package delivers the libbind9 shared library used by BIND's daemons and
+ clients.
+Original-Maintainer: LaMont Jones <lamont@debian.org>
+
+Package: libunity-core-6.0-9
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 1954
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: unity
+Version: 7.4.5+16.04.20180221-0ubuntu1
+Replaces: libunity-core-6.0-6, libunity-core-6.0-7, libunity-core-6.0-8, unity-common
+Provides: unity-common, unity-common-7.0
+Depends: libc6 (>= 2.14), libdee-1.0-4 (>= 0.5.16), libgcc1 (>= 1:3.0), libglib2.0-0 (>= 2.41.1), libnux-4.0-0, libsigc++-2.0-0v5 (>= 2.6.1), libstdc++6 (>= 5.2), libunity-protocol-private0 (>= 7.1.4+16.04.20180209.1), unity-services (= 7.4.5+16.04.20180221-0ubuntu1), unity-schemas (= 7.4.5+16.04.20180221-0ubuntu1)
+Conflicts: libunity-core-6.0-6, libunity-core-6.0-7, libunity-core-6.0-8, unity-common
+Conffiles:
+ /etc/apport/crashdb.conf.d/unity-crashdb.conf ef4cf33c25147e05d520ff9f45cfbdb7
+Description: core library for the Unity interface
+ Unity is a desktop experience that sings. Designed by Canonical and the Ayatana
+ community, Unity is all about the combination of familiarity and the future. We
+ bring together visual design, analysis of user experience testing, modern
+ graphics technologies and a deep understanding of the free software landscape
+ to produce what we hope will be the lightest, most elegant and most delightful
+ way to use your PC.
+ .
+ This package contains shared libraries to be used by unity-3d.
+Homepage: https://launchpad.net/unity
+
+Package: xml-core
+Status: install ok installed
+Priority: optional
+Section: text
+Installed-Size: 188
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 0.13+nmu2
+Depends: sgml-base (>= 1.26+nmu2), sed (>= 4.1.2-8)
+Suggests: debhelper (>= 9.20120909)
+Conffiles:
+ /etc/sgml/xml-core.cat 055ba0bd3154c0a58b9bf8a0c9ecf2fa
+Description: XML infrastructure and XML catalog file support
+ This package creates the XML infrastructure directories and provides
+ XML catalog file support in compliance with the current Debian XML
+ Policy draft:
+ .
+   * infrastructure directories:
+      - /etc/xml
+      - /usr/share/xml/{declaration,entities,misc,schema}
+      - /usr/local/share/xml/{declaration,entities,misc,schema}
+ .
+   * XML catalog schema: OASIS XML Catalog Committee Specification 1.0
+ .
+   * update-xmlcatalog(8): tool for maintaining the root XML catalog
+     file and the package XML catalog files in the '/etc/xml' directory
+     as well as local XML catalog files.
+ .
+   * dh_installxmlcatalogs(1): debhelper tool for installing local XML
+     catalog files and registering XML entities in package XML catalog
+     files and the root XML catalog file (requires debhelper package)
+Original-Maintainer: Debian XML/SGML Group <debian-xml-sgml-pkgs@lists.alioth.debian.org>
+
+Package: libcap-ng0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 35
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libcap-ng
+Version: 0.7.7-1
+Depends: libc6 (>= 2.8)
+Description: An alternate POSIX capabilities library
+ This library implements the user-space interfaces to the POSIX
+ 1003.1e capabilities available in Linux kernels.  These capabilities are
+ a partitioning of the all powerful root privilege into a set of distinct
+ privileges.
+ .
+ The libcap-ng library is intended to make programming with POSIX
+ capabilities much easier than the traditional libcap library.
+ .
+ This package contains header files and libraries for libcap-ng.
+Original-Maintainer: Pierre Chifflier <pollux@debian.org>
+Homepage: http://people.redhat.com/sgrubb/libcap-ng
+
+Package: libbdplus0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 140
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libbdplus
+Version: 0.1.2-1
+Depends: libc6 (>= 2.14), libgcrypt20 (>= 1.6.1), libgpg-error0 (>= 1.14)
+Recommends: libaacs0
+Enhances: libbluray1
+Description: implementation of BD+ for reading Blu-ray Discs
+ libbdplus is a research project to implement the BD+ System Specifications.
+ It provides, through an open-source library, a way to understand how the BD+
+ works.
+ .
+ This package DOES NOT provide any key, certificate, configuration
+ file or virtual machine that could be used to decode encrypted
+ copyrighted material.
+ .
+ This package provides the shared library.
+Original-Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Homepage: https://www.videolan.org/developers/libbdplus.html
+
+Package: friendly-recovery
+Status: install ok installed
+Priority: optional
+Section: admin
+Installed-Size: 48
+Maintainer: Michael Vogt <michael.vogt@ubuntu.com>
+Architecture: all
+Version: 0.2.31ubuntu2
+Depends: lsb-base (>= 4.1+Debian11ubuntu7), upstart | systemd-sysv, whiptail
+Recommends: gettext-base, update-manager-core (>= 0.90.0)
+Breaks: grub2 (<< 1.99-12ubuntu4), initramfs-tools (<< 0.99ubuntu4), upstart (<< 1.3-0ubuntu9)
+Conffiles:
+ /etc/init/friendly-recovery.conf e5ccadca648d429f076c31fabbd6bb81
+Description: Make recovery more user-friendly
+ Make the recovery mode more user-friendly by providing a menu
+ with pluggable options.
+
+Package: qpdf
+Status: install ok installed
+Priority: optional
+Section: text
+Installed-Size: 573
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 8.0.2-3~16.04.1
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libqpdf21 (>> 8.0~), libstdc++6 (>= 5.2)
+Description: tools for transforming and inspecting PDF files
+ QPDF is a program that can be used to linearize (web-optimize),
+ encrypt (password-protect), decrypt, and inspect PDF files from the
+ command-line.  It does these and other structural, content-preserving
+ transformations on PDF files, reading a PDF file as input and
+ creating a new one as output.  It also provides many useful
+ capabilities to developers of PDF-producing software or for people
+ who just want to look at the innards of a PDF file to learn more
+ about how they work.
+ .
+ QPDF understands PDF files that use compressed object streams
+ (supported by newer PDF applications) and can convert such files into
+ those that can be read with older viewers.  It can also be used for
+ checking PDF files for structural errors, inspecting stream contents,
+ or extracting objects from PDF files.  QPDF is not PDF content
+ creation or viewing software -- it does not have the capability to
+ create PDF files from scratch or to display PDF files.
+ .
+ This package includes the command-line qpdf tools.  It also contains
+ the documentation.
+Original-Maintainer: Jay Berkenbilt <qjb@debian.org>
+Homepage: http://qpdf.sourceforge.net
+
+Package: signon-ui-service
+Status: install ok installed
+Priority: optional
+Section: gnome
+Installed-Size: 16
+Maintainer: Ubuntu Desktop Team <ubuntu-desktop@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Source: signon-ui
+Version: 0.17+16.04.20151125-0ubuntu1
+Replaces: signon-ui (<< 0.17), ubuntu-system-settings-online-accounts (<< 0.4)
+Breaks: signon-ui (<< 0.17), ubuntu-system-settings-online-accounts (<< 0.4)
+Description: D-Bus service file for signon-ui
+ This D-Bus service is used to provide a UI for authenticating online accounts.
+Homepage: https://launchpad.net/signon-ui
+
+Package: libmad0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 158
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libmad
+Version: 0.15.1b-9ubuntu16.04.1
+Depends: libc6 (>= 2.14)
+Description: MPEG audio decoder library
+ MAD is an MPEG audio decoder. It currently only supports the MPEG 1
+ standard, but fully implements all three audio layers (Layer I, Layer II,
+ and Layer III, the latter often colloquially known as MP3.)
+ .
+ MAD has the following special features:
+   - 100% fixed-point (integer) computation
+   - completely new implementation based on the ISO/IEC 11172-3 standard
+   - distributed under the terms of the GNU General Public License (GPL)
+Original-Maintainer: Mad Maintainers <pkg-mad-maintainers@lists.alioth.debian.org>
+
+Package: dbus
+Status: install ok installed
+Priority: standard
+Section: admin
+Installed-Size: 536
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: foreign
+Version: 1.10.6-1ubuntu3.3
+Depends: libapparmor1 (>= 2.8.95), libaudit1 (>= 1:2.2.1), libc6 (>= 2.14), libcap-ng0, libdbus-1-3 (= 1.10.6-1ubuntu3.3), libexpat1 (>= 2.0.1), libselinux1 (>= 2.0.65), libsystemd0, lsb-base (>= 4.1+Debian11ubuntu7), adduser
+Suggests: dbus-user-session | dbus-x11
+Conffiles:
+ /etc/default/dbus 0d0f25a2f993509c857eb262f6e22015
+ /etc/init.d/dbus ec9a7d183ec50837a12aca3f9c95cc27
+ /etc/init/dbus.conf f77985d342a32cdf82acfc74772ef203
+Description: simple interprocess messaging system (daemon and utilities)
+ D-Bus is a message bus, used for sending messages between applications.
+ Conceptually, it fits somewhere in between raw sockets and CORBA in
+ terms of complexity.
+ .
+ D-Bus supports broadcast messages, asynchronous messages (thus
+ decreasing latency), authentication, and more. It is designed to be
+ low-overhead; messages are sent using a binary protocol, not using
+ XML. D-Bus also supports a method call mapping for its messages, but
+ it is not required; this makes using the system quite simple.
+ .
+ It comes with several bindings, including GLib, Python, Qt and Java.
+ .
+ This package contains the D-Bus daemon and related utilities.
+ .
+ The client-side library can be found in the libdbus-1-3 package, as it is no
+ longer contained in this package.
+Homepage: http://dbus.freedesktop.org/
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+
+Package: ubuntu-minimal
+Status: install ok installed
+Priority: optional
+Section: metapackages
+Installed-Size: 45
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: ubuntu-meta
+Version: 1.361.2
+Depends: adduser, apt, apt-utils, bzip2, console-setup, debconf, debconf-i18n, eject, gnupg, ifupdown, initramfs-tools, iproute2, iputils-ping, isc-dhcp-client, kbd, kmod, less, locales, lsb-release, makedev, mawk, net-tools, netbase, netcat-openbsd, passwd, procps, python3, resolvconf, rsyslog, sudo, tzdata, ubuntu-advantage-tools, ubuntu-keyring, udev, ureadahead, vim-tiny, whiptail
+Description: Minimal core of Ubuntu
+ This package depends on all of the packages in the Ubuntu minimal system,
+ that is a functional command-line system with the following capabilities:
+ .
+  - Boot
+  - Detect hardware
+  - Connect to a network
+  - Install packages
+  - Perform basic diagnostics
+ .
+ It is also used to help ensure proper upgrades, so it is recommended that
+ it not be removed.
+
+Package: libmount1
+Status: install ok installed
+Priority: required
+Section: libs
+Installed-Size: 384
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: util-linux
+Version: 2.27.1-6ubuntu3.6
+Depends: libblkid1 (>= 2.17.2), libc6 (>= 2.17), libselinux1 (>= 1.32)
+Description: device mounting library
+ This device mounting library is used by mount and umount helpers.
+Original-Maintainer: Debian util-linux Maintainers <ah-util-linux@debian.org>
+
+Package: ethtool
+Status: install ok installed
+Priority: optional
+Section: net
+Installed-Size: 311
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1:4.5-1
+Depends: libc6 (>= 2.14)
+Conffiles:
+ /etc/network/if-pre-up.d/ethtool 39693276fe35fccec75f610cb71d3e85
+ /etc/network/if-up.d/ethtool b0d11ba5983c8c5990bb9933c35a3ec5
+Description: display or change Ethernet device settings
+ ethtool can be used to query and change settings such as speed, auto-
+ negotiation and checksum offload on many network devices, especially
+ Ethernet devices.
+Original-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Homepage: https://www.kernel.org/pub/software/network/ethtool/
+
+Package: libxxf86vm1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 59
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libxxf86vm
+Version: 1:1.1.4-1
+Depends: libc6 (>= 2.4), libx11-6 (>= 2:1.6.0), libxext6
+Pre-Depends: multiarch-support
+Description: X11 XFree86 video mode extension library
+ libXxf86vm provides an interface to the XFree86-VidModeExtension
+ extension, which allows client applications to get and set video mode
+ timings in extensive detail.  It is used by the xvidtune program in
+ particular.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXxf86vm
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: libndp0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 41
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libndp
+Version: 1.4-2ubuntu0.16.04.1
+Depends: libc6 (>= 2.15)
+Description: Library for Neighbor Discovery Protocol
+ libndp is a library for the IPv6 Neighbor Discovery Protocol (NDP).  It
+ contains functions for building and parsing NDP messages, and provides
+ a high-level interface for sending and receiving NDP messages on a
+ network interface.
+Homepage: http://libndp.org
+Original-Maintainer: Andrew Ayer <agwa@andrewayer.name>
+
+Package: libzvbi0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 670
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: zvbi
+Version: 0.2.35-10
+Replaces: libzvbi-0.1 (<= 0.2.1-3)
+Depends: libc6 (>= 2.15), libpng12-0 (>= 1.2.13-4), libzvbi-common (= 0.2.35-10)
+Description: Vertical Blanking Interval decoder (VBI) - runtime files
+ The vertical blanking interval (VBI) is an interval in a television signal
+ that temporarily suspends transmission of the signal for the electron gun
+ to move back up to the first line of the television screen to trace the
+ next screen field.
+ .
+ The vertical blanking interval can be used to carry data, since anything
+ sent during the VBI would naturally not be displayed; various test signals,
+ closed captioning, and other digital data can be sent during this time
+ period. These include information like closed-caption data, Teletext
+ (primarily in Europe), and now Intercast and the ATVEC Internet television
+ encodings.
+ .
+ The Zapping VBI library, in short ZVBI, provides functions to capture and
+ decode VBI data. It is written in plain ANSI C with few dependencies on
+ other tools and libraries, licensed under GPL. Some features:
+   * Captures raw VBI samples from V4L, V4L2 and FreeBSD BKTR devices, sliced
+     VBI data from Linux DVB devices;
+   * Implements a VBI Proxy to share one VBI device between multiple
+     applications;
+   * Has a robust and versatile bit slicer which handles a wide range of data
+     services;
+   * Functions to capture multiple data services at once, such as Closed
+     Caption (both NTSC and PAL), Teletext, VPS, WSS, XDS;
+   * Level 3.5 Teletext decoder with support for all Teletext character sets,
+     graphics, 4096 colors, with built-in page cache including search
+     functions;
+   * Closed Caption decoder which supports roll-up, pop-up and paint-on style
+     caption, color, expanded character set, text attributes and free text
+     placement;
+   * Renders Teletext and Caption pages, can export to HTML, PNG and other
+     formats.
+   * Can determine network names;
+   * Can find Teletext subtitle and program pages;
+   * Functions to extract data transmissions in Teletext streams (currently
+     Page Format Clear and Independent Data Line Format A);
+   * Can multiplex and demultiplex DVB VBI PES and TS streams.
+Original-Maintainer: Joao Eriberto Mota Filho <eriberto@debian.org>
+Homepage: http://zapping.sf.net/ZVBI
+
+Package: libvorbisenc2
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 699
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libvorbis
+Version: 1.3.5-3ubuntu0.2
+Depends: libc6 (>= 2.4), libvorbis0a (= 1.3.5-3ubuntu0.2)
+Description: encoder library for Vorbis General Audio Compression Codec
+ Ogg Vorbis is a fully open, non-proprietary, patent-and-royalty-free,
+ general-purpose compressed audio format for audio and music at fixed
+ and variable bitrates from 16 to 128 kbps/channel.
+ .
+ The Vorbisenc library provides a convenient API for setting up an encoding
+ environment using libvorbis.
+Homepage: http://www.xiph.org/vorbis/
+Original-Maintainer: Debian Xiph.org Maintainers <pkg-xiph-maint@lists.alioth.debian.org>
+
+Package: g++-5
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 22855
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: gcc-5
+Version: 5.4.0-6ubuntu1~16.04.11
+Provides: c++-compiler, c++abi2-dev
+Depends: gcc-5-base (= 5.4.0-6ubuntu1~16.04.11), gcc-5 (= 5.4.0-6ubuntu1~16.04.11), libstdc++-5-dev (= 5.4.0-6ubuntu1~16.04.11), libc6 (>= 2.14), libgmp10 (>= 2:5.0.1~), libisl15 (>= 0.15), libmpc3, libmpfr4 (>= 3.1.3), zlib1g (>= 1:1.1.4)
+Suggests: g++-5-multilib, gcc-5-doc (>= 5.2.1-23), libstdc++6-5-dbg (>= 5.4.0-6ubuntu1~16.04.11)
+Description: GNU C++ compiler
+ This is the GNU C++ compiler, a fairly portable optimizing compiler for C++.
+Homepage: http://gcc.gnu.org/
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: libcanberra-gtk0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 41
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubunt{"browser":{"last_redirect_origin":""},"hardware_acceleration_mode_previous":true,"network_time":{"network_time_mapping":{"local":1554123745948.662,"network":1554103632367.0,"ticks":2895571451.0,"uncertainty":1035356.0}},"plugins":{"metadata":{"adobe-flash-player":{"displayurl":true,"group_name_matcher":"*Shockwave Flash*","help_url":"https://support.google.com/chrome/?p=plugin_flash","lang":"en-US","matching_mime_types":["application/futuresplash"],"mime_types":["application/futuresplash","application/x-shockwave-flash"],"name":"Adobe Flash Player","url":"http://get.adobe.com/flashplayer/","versions":[{"reference":"http://www.adobe.com/support/security/bulletins/apsb12-03.html","status":"up_to_date","version":"11.1.102"}]},"google-chrome-pdf":{"group_name_matcher":"*Chrome PDF Viewer*","mime_types":[],"name":"Chrome PDF Viewer","versions":[{"comment":"Google Chrome PDF has no version information.","status":"up_to_date","version":"0"}]},"google-talk":{"group_name_matcher":"*Google Talk*","mime_types":[],"name":"Google Talk","versions":[{"comment":"'Google Talk Plugin' and 'Google Talk Plugin Video Accelerator' use two completely different versioning schemes, so we can't define a minimum version.","status":"up_to_date","version":"0"}]},"java-runtime-environment":{"displayurl":true,"group_name_matcher":"Java*","help_url":"https://support.google.com/chrome/?p=plugin_java","lang":"en-US","mime_types":["application/x-java-applet","application/x-java-applet,version=1.1","application/x-java-applet,version=1.1.1","application/x-java-applet,version=1.1.2","application/x-java-applet,version=1.1.3","application/x-java-applet,version=1.2","application/x-java-applet,version=1.2.1","application/x-java-applet,version=1.2.2","application/x-java-applet,version=1.3","application/x-java-applet,version=1.3.1","application/x-java-applet,version=1.4","application/x-java-applet,version=1.4.1","application/x-java-applet,version=1.4.2","application/x-java-applet,version=1.5","application/x-java-applet,version=1.6","application/x-java-applet,version=1.7","application/x-java-bean","application/x-java-bean,version=1.1","application/x-java-bean,version=1.1.1","application/x-java-bean,version=1.1.2","application/x-java-bean,version=1.1.3","application/x-java-bean,version=1.2","application/x-java-bean,version=1.2.1","application/x-java-bean,version=1.2.2","application/x-java-bean,version=1.3","application/x-java-bean,version=1.3.1","application/x-java-bean,version=1.4","application/x-java-bean,version=1.4.1","application/x-java-bean,version=1.4.2","application/x-java-bean,version=1.5","application/x-java-bean,version=1.6","application/x-java-bean,version=1.7","application/x-java-vm"],"name":"Java(TM)","url":"http://java.com/download","versions":[{"status":"requires_authorization","version":"1.6.0.39"},{"status":"out_of_date","version":"1.7"},{"status":"requires_authorization","version":"1.7.0.13"}]},"lightspark":{"displayurl":true,"group_name_matcher":"*Shockwave Flash*","lang":"en-US","matching_mime_types":["application/x-lightspark"],"mime_types":["application/x-lightspark"],"name":"Lightspark","url":"https://launchpad.net/lightspark","versions":[{"status":"requires_authorization","version":"0"}]}},"resource_cache_update":"1554121030.111667"},"policy":{"last_statistics_update":"13198594563614355"},"profile":{"info_cache":{"Default":{"active_time":1554120970.080714,"avatar_icon":"chrome://theme/IDR_PROFILE_AVATAR_25","background_apps":false,"gaia_given_name":"Pradyum","gaia_id":"113543455863604552445","gaia_name":"Pradyum Gupta","gaia_picture_file_name":"Google Profile Picture.png","is_ephemeral":false,"is_omitted_from_profile_list":false,"is_using_default_avatar":false,"is_using_default_name":true,"managed_user_id":"","name":"First user","use_gaia_picture":true,"user_name":"pradyumg@gmail.com"}},"last_active_profiles":["Default"]},"rappor":{"cohort_seed":186,"last_daily_sample":"13198594578614885","secret":"P4xS2dG6mkZb6kRjLNZtMvIKHJZEPfF+nnd/kzQK1LrL3yJuWqpSU+UjfY/Q+ngZ"},"shutdown":{"num_processes":0,"num_processes_slow":0,"type":0},"startup_metric":{"last_startup_timestamp":"13198594559130000","last_startup_version":"73.0.3683.86","same_version_startup_count":6},"subresource_filter":{"ruleset_version":{"checksum":336913863,"content":"9.1","format":25}},"supervised_users":{"whitelists":{}},"tab_stats":{"last_daily_sample":"13198594570084106","max_tabs_per_window":16,"total_tab_count_max":16,"window_count_max":1},"ukm":{"client_id":"7541563504267590902","persisted_logs":[],"session_id":7},"uninstall_metrics":{"installation_date2":"1553256206","launch_count":"7","page_load_count":"3241","uptime_sec":"77279"},"updateclientdata":{"apps":{"aemomkdncapdnfajjbbcbdebjljbpmpj":{"cohort":"","cohortname":"","dlrc":4472,"pf":"05cf226d-7e89-4d6b-97c3-fbe1b3046014"},"copjbmjbojbakpaedmpkhmiplmmehfck":{"cohort":"1:p1x:","cohorthint":"Auto","cohortname":"Auto","dlrc":4472,"pf":"611d50d0-e1b7-4077-bf1c-14106fb82b93"},"gcmjkmgdlgnkkcocmoeiminaijmmjnii":{"cohort":"1:bm1:","cohorthint":"M54ToM99","cohortname":"M54ToM99","dlrc":4472,"pf":"9cffe864-0309-44f0-b2a5-31bb4f99333d"},"giekcmmlnklenlaomppkphknjmnnpneh":{"cohort":"1:j5l:","cohorthint":"Auto","cohortname":"Auto","dlrc":4472,"pf":"c0210955-b04e-4e38-a1f9-1739facff2ed"},"hfnkpimlhhgieaddgfemjhofmfblmnib":{"cohort":"1:jcl:","cohorthint":"Auto","cohortname":"Auto","dlrc":4472,"pf":"196062dd-5710-4e01-a553-7c74d6c3b58e"},"hnimpnehoodheedghdeeijklkeaacbdc":{"cohort":"","cohortname":"","dlrc":4472,"pf":"98a5af06-4342-4768-a1a6-7b0f9092482d"},"khaoiebndkojlmppeemjhbpbandiljpe":{"cohort":"1:cux:","cohorthint":"Auto","cohortname":"Auto","dlrc":4472,"pf":"851bb0af-d4a2-496d-b938-ad22f932287f"},"llkgjffcdpffmhiakmfcdcblohccpfmo":{"cohort":"","cohortname":"","dlrc":4472,"pf":"7d68ccf0-7ae6-4d2d-94b6-6a4631531826"},"mimojjlkmoijpicakmndhoigimigcmbb":{"cohort":"1:d0j:","cohorthint":"Chrome [M50... M99]","cohortname":"Chrome [M50... M99]","dlrc":4472,"pf":"9cf181c0-8ae6-4cae-8b55-3a70e114a15f"},"ojjgnpkioondelmggbekfhllhdaimnho":{"cohort":"1:0:","cohorthint":"Auto","cohortname":"Auto","dlrc":4472,"pf":"cc6b8f23-7a6e-4f28-94fe-c92944656739"}}},"user_experience_metrics":{"client_id2":"dfb98811-0b4f-4015-8767-243312e48799","client_id_timestamp":"1553256213","default_opt_in":2,"initial_logs2":[],"last_seen":{"BrowserMetrics":"13198356076046583","CrashpadMetrics":"0"},"low_entropy_source3":680,"ongoing_logs2":[],"reporting_enabled":true,"session_id":6,"stability":{"breakpad_registration_fail":0,"breakpad_registration_ok":0,"browser_last_live_timestamp":"13198594567517704","child_process_crash_count":0,"crash_count":0,"debugger_not_present":0,"debugger_present":0,"deferred_count":0,"discard_count":0,"exited_cleanly":false,"extension_renderer_crash_count":0,"extension_renderer_failed_launch_count":0,"extension_renderer_launch_count":27,"gpu_crash_count":0,"incomplete_session_end_count":0,"launch_count":0,"page_load_count":56,"plugin_stats2":[],"renderer_crash_count":0,"renderer_failed_launch_count":0,"renderer_hang_count":0,"renderer_launch_count":24,"saved_system_profile":"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aAF4AIABAMoBHwgBEAEYAiABKAAwADgBQAFIAFAAWABgAGgBeACAAQDKAR8IBBABGAIgACgAMAA4AUABSAFQAFgBYABoAHgAgAEAygEfCAQQARgCIAAoADAAOAFAAUgAUABYAGAAaAB4AIABAMoBIQgBEAEYAiABKAAwATgBQAFIAFAAWABgAGgBcAB4AIABAMoBIQgBEAEYAiABKAAwADgBQAFIAFAAWABgAGgBcAB4AIABAMoBHwgBEAEYAiABKAAwADgBQAFIAFAAWABgAGgBeACAAQDKAR8IARABGAIgASgAMAA4AUABSABQAFgAYABoAXgAgAEAygEfCAUQARgCIAAoADAAOAFAAUgAUABYAWAAaAB4AIABAMoBHwgBEAEYAiACKAAwADgBQAFIAFAAWABgAGgCeACAAQDKAR8IARABGAIgASgAMAA4AUABSABQAFgAYABoAXgAgAEAygEfCAYQBRgCIAAoADAAOABAAEgAUABYAGAAaAJ4AIABAMoBHwgBEAYYAiAAKAAwADgBQAFIAFAAWAFgAGgCeACAAQDKAR8IARABGAIgACgAMAA4AUABSABQAFgAYABoAXgAgAEAygEfCAQQARgCIAAoADAAOAFAAUgAUABYAGAAaAB4AIABAMoBHwgBEAEYAiABKAAwADgBQAFIAFAAWABgAGgBeACAAQDKAR8IARABGAIgASgAMAA4AUABSABQAFgAYABoAXgAgAEAygEfCAQQARgCIAAoADAAOAFAAUgAUABYAGAAaAB4AIABAMoBHwgEEAEYAiAAKAAwADgBQAFIAFAAWABgAGgAeACAAQDKAR8IARAFGAIgACgAMAA4AEAASABQAFgAYABoAngAgAEAygEfCAQQARgCIAAoADAAOAFAAUgAUABYAGAAaAB4AIABAMoBIQgBEAEYAiABKAAwADgBQAFIAFAAWABgAGgBcAB4AIABAMoBHwgCEAEYAiAAKAAwADgBQAFIAFAAWABgAGgAeACAAQDKAR8IBBAFGAEgACgAMAA4AEAASABQAFgAYABoAHgAgAEAygEfCAEQBRgCIAAoADAAOABAAEgAUABYAGAAaAB4AIABAMoBHwgGEAEYAiAAKAAwADgBQAFIAFAAWABgAGgCeACAAQDKASEIARABGAIgASgAMAA4AUABSABQAFgAYABoAXAAeACAAQDKAR8IARABGAIgASgAMAA4AUABSABQAFgAYABoAXgAgAEAygEfCAEQBRgCIAAoADAAOABAAEgAUABYAGAAaAJ4AIABAMoBHwgBEAUYAiAAKAAwADgAQABIAFAAWABgAGgCeACAAQDKAR8IBhAKGAIgACgAMAA4AUABSABQAFgBYABoAngAgAEAygEhCAEQARgCIAEoADAAOAFAAUgAUABYAGAAaAFwAHgAgAEAygEfCAEQARgCIAEoADAAOAFAAUgAUABYAGAAaAF4AIABAMoBHwgBEAEYAiABKAAwATgBQAFIAFAAWABgAGgBeACAAQDKAR8IBBABGAIgACgAMAA4AUABSABQAFgBYABoAHgAgAEAygEfCAEQChgCIAAoADAAOAFAAUgAUABYAWAAaAJ4AIABAMoBIQgFEAEYAiAAKAAwADgBQAFIAFAAWABgAGgCcAB4AIABAA==","saved_system_profile_hash":"6DBFA92F72964D53F92E5F507B2749CCCDE80702","session_end_completed":true,"stats_buildtime":"1552971600","stats_version":"73.0.3683.86-64","version_mismatch_count":0}},"variations_compressed_seed":"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","variations_country":"in","variations_crash_streak":0,"variations_failed_to_fetch_seed_streak":0,"variations_last_fetch_time":"13198596371340425","variations_permanent_consistency_country":["73.0.3683.86","in"],"variations_safe_compressed_seed":"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","variations_safe_seed_date":"13198331253000000","variations_safe_seed_fetch_time":"13198351365695439","variations_safe_seed_locale":"en-GB","variations_safe_seed_permanent_consistency_country":"in","variations_safe_seed_session_consistency_country":"in","variations_safe_seed_signature":"MEUCIQDvU0QxEzIskr1vJJUJEIDIuULupcfJYHIQQ/jASWA/9wIgN7v+gB9WdMSOFoWSU8k8hevy/Fj6V+cOtucHoKX5uek=","variations_seed_date":"13198576257000000","variations_seed_signature":"MEUCIFbEDcQPEOLgdbYUw9vaXViL62gvNHfmZw7HxO5Ui0eJAiEAyZvkGAaBxvA3fmvLc3UqcaoLiKBQAK6vf9iqlbNBhK0=","was":{"restarted":false}}

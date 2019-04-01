@@ -1,0 +1,677 @@
+64-dev:amd64 (2:0.148.2643+git5c65704-1)
+End-Date: 2019-03-22  18:26:13
+
+Start-Date: 2019-03-22  18:27:06
+Commandline: apt-get install libgtk-3-dev
+Requested-By: pradyum (1000)
+Install: libcairo-script-interpreter2:amd64 (1.14.6-1, automatic), libpthread-stubs0-dev:amd64 (0.3-4, automatic), autotools-dev:amd64 (20150820.1, automatic), libxcb-present-dev:amd64 (1.11.1-1ubuntu1, automatic), libmail-sendmail-perl:amd64 (0.79.16-1, automatic), libice-dev:amd64 (2:1.0.9-1, automatic), libpcre3-dev:amd64 (2:8.38-3.1, automatic), x11proto-kb-dev:amd64 (1.0.7-0ubuntu1, automatic), libx11-xcb-dev:amd64 (2:1.6.3-1ubuntu2.1, automatic), libepoxy-dev:amd64 (1.3.1-1ubuntu0.16.04.2, automatic), x11proto-composite-dev:amd64 (1:0.4.2-2, automatic), libxtst-dev:amd64 (2:1.2.2-1, automatic), libegl1-mesa-dev:amd64 (18.0.5-0ubuntu0~16.04.1, automatic), libxext-dev:amd64 (2:1.3.3-1, automatic), libcairo2-dev:amd64 (1.14.6-1, automatic), libexpat1-dev:amd64 (2.1.0-7ubuntu0.16.04.3, automatic), libxcb-xfixes0-dev:amd64 (1.11.1-1ubuntu1, automatic), x11proto-record-dev:amd64 (1.14.2-1, automatic), libatspi2.0-dev:amd64 (2.18.3-4ubuntu1, automatic), libharfbuzz-gobject0:amd64 (1.0.1-1ubuntu0.1, automatic), libsm-dev:amd64 (2:1.2.2-1, automatic), x11proto-gl-dev:amd64 (1.4.17-1, automatic), xtrans-dev:amd64 (1.3.5-1, automatic), libgmp-dev:amd64 (2:6.1.0+dfsg-2, automatic), libmirclient-dev:amd64 (0.26.3+16.04.20170605-0ubuntu1.1, automatic), x11proto-xinerama-dev:amd64 (1.2.1-2, automatic), libmircommon-dev:amd64 (0.26.3+16.04.20170605-0ubuntu1.1, automatic), libxrandr-dev:amd64 (2:1.5.0-1, automatic), libxkbcommon-dev:amd64 (0.5.0-1ubuntu2.1, automatic), libpcre32-3:amd64 (2:8.38-3.1, automatic), libmircookie2:amd64 (0.26.3+16.04.20170605-0ubuntu1.1, automatic), x11proto-xext-dev:amd64 (7.3.0-1, automatic), x11proto-render-dev:amd64 (2:0.11.1-2, automatic), libxcb1-dev:amd64 (1.11.1-1ubuntu1, automatic), libmircore-dev:amd64 (0.26.3+16.04.20170605-0ubuntu1.1, automatic), libgmpxx4ldbl:amd64 (2:6.1.0+dfsg-2, automatic), libxinerama-dev:amd64 (2:1.1.3-1, automatic), dh-strip-nondeterminism:amd64 (0.015-1, automatic), libfile-stripnondeterminism-perl:amd64 (0.015-1, automatic), libfontconfig1-dev:amd64 (2.11.94-0ubuntu1.1, automatic), po-debconf:amd64 (1.0.19, automatic), libpango1.0-dev:amd64 (1.38.1-1, automatic), libwayland-bin:amd64 (1.12.0-1~ubuntu16.04.3, automatic), x11proto-core-dev:amd64 (7.0.31-1~ubuntu16.04.2, automatic), libharfbuzz-dev:amd64 (1.0.1-1ubuntu0.1, automatic), nettle-dev:amd64 (3.2-1ubuntu0.16.04.1, automatic), x11proto-damage-dev:amd64 (1:1.2.1-2, automatic), libxau-dev:amd64 (1:1.0.8-1, automatic), x11proto-randr-dev:amd64 (1.5.0-1, automatic), libxcb-randr0-dev:amd64 (1.11.1-1ubuntu1, automatic), libwayland-dev:amd64 (1.12.0-1~ubuntu16.04.3, automatic), libxcb-dri3-dev:amd64 (1.11.1-1ubuntu1, automatic), libxcursor-dev:amd64 (1:1.1.14-1ubuntu0.16.04.2, automatic), libxcb-shape0-dev:amd64 (1.11.1-1ubuntu1, automatic), libgtk-3-dev:amd64 (3.18.9-1ubuntu3.3), x11proto-dri2-dev:amd64 (2.8-2, automatic), libxshmfence-dev:amd64 (1.2-1, automatic), libfreetype6-dev:amd64 (2.6.1-0.1ubuntu2.3, automatic), libxft-dev:amd64 (2.3.2-1, automatic), libxdmcp-dev:amd64 (1:1.1.2-1.1, automatic), libxcb-shm0-dev:amd64 (1.11.1-1ubuntu1, automatic), libdbus-1-dev:amd64 (1.10.6-1ubuntu3.3, automatic), libxcb-render0-dev:amd64 (1.11.1-1ubuntu1, automatic), libglib2.0-dev:amd64 (2.48.2-0ubuntu4.1, automatic), debhelper:amd64 (9.20160115ubuntu3, automatic), libxrender-dev:amd64 (1:0.9.9-0ubuntu1, automatic), libgdk-pixbuf2.0-dev:amd64 (2.32.2-1ubuntu1.6, automatic), libxfixes-dev:amd64 (1:5.0.1-2, automatic), x11proto-input-dev:amd64 (2.3.1-1, automatic), libx11-dev:amd64 (2:1.6.3-1ubuntu2.1, automatic), libx11-doc:amd64 (2:1.6.3-1ubuntu2.1, automatic), libxcomposite-dev:amd64 (1:0.4.4-1, automatic), xorg-sgml-doctools:amd64 (1:1.11-1, automatic), libxxf86vm-dev:amd64 (1:1.1.4-1, automatic), libpixman-1-dev:amd64 (0.33.6-1, automatic), libxdamage-dev:amd64 (1:1.1.4-2, automatic), libxcb-sync-dev:amd64 (1.11.1-1ubuntu1, automatic), libpcrecpp0mp the contents of a JFS fsck log file created with xchklog.
+ xchklog - extract a log from the JFS fsck workspace into a file.
+ xpeek - shell-type JFS file system editor.
+Original-Maintainer: Stefan Hornburg (Racke) <racke@linuxia.de>
+Homepage: http://jfs.sourceforge.net/
+
+Package: libauthen-sasl-perl
+Status: install ok installed
+Priority: optional
+Section: perl
+Installed-Size: 153
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 2.1600-1
+Depends: perl
+Suggests: libdigest-hmac-perl, libgssapi-perl
+Description: Authen::SASL - SASL Authentication framework
+ SASL is a generic mechanism for authentication used by several network
+ protocols. Authen::SASL provides an implementation framework that all
+ protocols should be able to share.
+ .
+ The framework allows different implementations of the connection class
+ to be plugged in. At the time of writing there were two such plugins:
+  - Authen::SASL::Perl
+    This module implements several mechanisms and is implemented
+    entirely in Perl.
+  - Authen::SASL::Cyrus
+    This module uses the Cyrus SASL C-library (both version 1 and 2 are
+    supported).
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Homepage: https://metacpan.org/release/Authen-SASL
+
+Package: logrotate
+Status: install ok installed
+Priority: important
+Section: admin
+Installed-Size: 113
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 3.8.7-2ubuntu2.16.04.2
+Depends: libacl1 (>= 2.2.51-8), libc6 (>= 2.14), libpopt0 (>= 1.14), libselinux1 (>= 1.32), cron | anacron | cron-daemon, base-passwd (>= 2.0.3.4)
+Suggests: mailx
+Breaks: postgresql-common (<= 126)
+Conffiles:
+ /etc/cron.daily/logrotate da9c29ed0b408ffd88d05c3d8e881e94
+ /etc/logrotate.conf 4316e462f3c800bebcf43aa9d4fcf4b0
+Description: Log rotation utility
+ The logrotate utility is designed to simplify the administration of
+ log files on a system which generates a lot of log files.  Logrotate
+ allows for the automatic rotation compression, removal and mailing of
+ log files.  Logrotate can be set to handle a log file daily, weekly,
+ monthly or when the log file gets to a certain size.  Normally, logrotate
+ runs as a daily cron job.
+Homepage: https://fedorahosted.org/logrotate/
+Original-Maintainer: Paul Martin <pm@debian.org>
+
+Package: unity-scope-yelp
+Status: install ok installed
+Priority: optional
+Section: gnome
+Installed-Size: 77
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 0.1+13.10.20130723-0ubuntu1
+Replaces: unity-lens-help
+Provides: unity-lens-help
+Depends: python3, python3-gi, gir1.2-unity-5.0 (>= 7), gir1.2-dee-1.0 (>= 1.2.5), unity-scopes-runner, gir1.2-glib-2.0
+Conflicts: unity-lens-help
+Description: Help scope for Unity
+ This package contains the "yelp" scope which allows Unity
+ to search help documentation.
+Original-Maintainer: Mark Tully <markjtully@gmail.com>
+Homepage: https://launchpad.net/unity-scope-yelp
+
+Package: libreoffice-gnome
+Status: install ok installed
+Priority: optional
+Section: gnome
+Installed-Size: 229
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: libreoffice
+Version: 1:5.1.6~rc2-0ubuntu1~xenial6
+Replaces: libreoffice-core (<< 1:3.9999), libreoffice-gtk (<< 1:5.0.0~rc2-1)
+Provides: libreoffice-gtk-gnome
+Depends: libreoffice-core (= 1:5.1.6~rc2-0ubuntu1~xenial6), libreoffice-gtk, libc6 (>= 2.14), libgcc1 (>= 1:3.0), libglib2.0-0 (>= 2.37.3), libstdc++6 (>= 5), uno-libs3 (>= 5.1.0~alpha), ure
+Suggests: libreoffice-evolution
+Conflicts: libreoffice-core (<< 1:3.9999)
+Enhances: libreoffice
+Description: office productivity suite -- GNOME integration
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the GIO support, and the session installer integration.
+ .
+ You can extend the functionality of this by installing these packages:
+ .
+  * libreoffice-evolution: Evolution addressbook support
+  * evolution
+Homepage: http://www.libreoffice.org
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+
+Package: libheimntlm0-heimdal
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 79
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: heimdal
+Version: 1.7~git20150920+dfsg-4ubuntu1.16.04.1
+Depends: libc6 (>= 2.4), libhcrypto4-heimdal (>= 1.4.0+git20110226), libkrb5-26-heimdal (>= 1.4.0+git20110226), libroken18-heimdal (>= 1.4.0+git20110226), libwind0-heimdal (>= 1.4.0+git20110226)
+Description: Heimdal Kerberos - NTLM support library
+ Heimdal is a free implementation of Kerberos 5 that aims to be
+ compatible with MIT Kerberos.
+Homepage: http://www.h5l.org/
+Original-Maintainer: Brian May <bam@debian.org>
+
+Package: hunspell-en-us
+Status: install ok installed
+Priority: optional
+Section: text
+Installed-Size: 707
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 20070829-6ubuntu3
+Replaces: myspell-en-us (<= 1:4.2.1-0ubuntu3), openoffice.org-spellcheck-en-us
+Provides: hunspell-dictionary, hunspell-dictionary-en, hunspell-dictionary-en-us
+Depends: dictionaries-common (>= 0.10)
+Suggests: hunspell, openoffice.org-hunspell | openoffice.org-core (>= 2.0.2)
+Conflicts: firefox (<< 2.0.0.3-2), iceape-browser (<< 1.1.1-2), icedove (<< 2.0.0.0-4), iceweasel (<< 2.0.0.3-2), libxul0d (= 1.8.0.11-3), mozilla-browser (<< 1.8+1.1.1-2), myspell-en-us (<= 1:4.2.1-0ubuntu3), openoffice.org (<= 1.0.3-2), openoffice.org-core (<< 2.1~m190-1), thunderbird (<< 2.0.0.1+0dfsg-0)
+Description: English_american dictionary for hunspell
+ This is the English_american dictionary for use with the hunspell spellchecker
+Original-Maintainer: Rene Engelhard <rene@debian.org>
+
+Package: libsepol1
+Status: install ok installed
+Priority: required
+Section: libs
+Installed-Size: 555
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libsepol
+Version: 2.4-2
+Depends: libc6 (>= 2.14)
+Description: SELinux library for manipulating binary security policies
+ Security-enhanced Linux is a patch of the Linux kernel and a number
+ of utilities with enhanced security functionality designed to add
+ mandatory access controls to Linux.  The Security-enhanced Linux
+ kernel contains new architectural components originally developed to
+ improve the security of the Flask operating system. These
+ architectural components provide general support for the enforcement
+ of many kinds of mandatory access control policies, including those
+ based on the concepts of Type Enforcement®, Role-based Access
+ Control, and Multi-level Security.
+ .
+ libsepol provides an API for the manipulation of SELinux binary policies.
+ It is used by checkpolicy (the policy compiler) and similar tools, as well
+ as by programs like load_policy that need to perform specific transformations
+ on binary policies such as customizing policy boolean settings.
+Original-Maintainer: Debian SELinux maintainers <selinux-devel@lists.alioth.debian.org>
+Homepage: http://userspace.selinuxproject.org/
+
+Package: python3-louis
+Status: install ok installed
+Priority: extra
+Section: python
+Installed-Size: 50
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: liblouis
+Version: 2.6.4-2ubuntu0.4
+Depends: python3:any (>= 3.3.2-2~), liblouis9 (>= 2.6.4-2ubuntu0.4)
+Description: Python bindings for liblouis
+ Liblouis is a braille translator and back-translator.  It features support for
+ computer and literary braille, supports contracted and uncontracted translation
+ for many languages and has support for hyphenation.  Liblouis also supports
+ math braille (Nemeth and Marburg).
+ .
+ This package contains Python bindings.
+Homepage: https://github.com/liblouis/liblouis/releases
+Original-Maintainer: Debian Accessibility Team <debian-accessibility@lists.debian.org>
+
+Package: checkbox-gui
+Status: install ok installed
+Priority: extra
+Section: oldlibs
+Installed-Size: 54
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: checkbox
+Version: 1.2.4-0ubuntu1
+Depends: checkbox-converged
+Description: QML based interface for checkbox (transitional package)
+ This is a transitional dummy package to allow upgrading from old releases.
+ If nothing depends on it, this package can be safely removed after upgrade.
+Original-Maintainer: Checkbox Developers <checkbox-devel@lists.ubuntu.com>
+
+Package: libitm1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 126
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: gcc-5
+Version: 5.4.0-6ubuntu1~16.04.11
+Depends: gcc-5-base (= 5.4.0-6ubuntu1~16.04.11), libc6 (>= 2.14)
+Description: GNU Transactional Memory Library
+ GNU Transactional Memory Library (libitm) provides transaction support for
+ accesses to the memory of a process, enabling easy-to-use synchronization of
+ accesses to shared memory by several threads.
+Homepage: http://gcc.gnu.org/
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: gnome-power-manager
+Status: install ok installed
+Priority: optional
+Section: gnome
+Installed-Size: 320
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 3.18.0-1ubuntu1
+Depends: libc6 (>= 2.4), libcairo2 (>= 1.2.4), libgcc1 (>= 1:4.1.1), libglib2.0-0 (>= 2.45.8), libgtk-3-0 (>= 3.4.0), libpango-1.0-0 (>= 1.18.0), libpangocairo-1.0-0 (>= 1.14.0), libupower-glib3 (>= 0.99.0), dconf-gsettings-backend | gsettings-backend, dbus-x11, upower (>= 0.99), gnome-settings-daemon-schemas (>= 3.2)
+Suggests: policykit-1
+Description: power management tool for the GNOME desktop
+ GNOME Power Manager is a session daemon for the GNOME desktop
+ that takes care of system or desktop events related to power, and
+ triggers actions accordingly. Its philosophy is to completely hide
+ these complex tasks and only show some settings important to the user.
+ .
+ GNOME power manager displays and manages battery status, power plug
+ events, display brightness, CPU, graphics card and hard disk drive
+ power saving, and can trigger suspend-to-RAM, hibernate or shutdown
+ events, all integrated to other components of the GNOME desktop.
+Homepage: https://projects.gnome.org/gnome-power-manager/
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+
+Package: libx11-data
+Status: install ok installed
+Priority: optional
+Section: x11
+Installed-Size: 1498
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Source: libx11
+Version: 2:1.6.3-1ubuntu2.1
+Breaks: libx11-6 (<< 2:1.4.1)
+Description: X11 client-side library
+ This package provides the locale data files for libx11.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libX11
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: qml-module-qt-labs-folderlistmodel
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 132
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: qtdeclarative-opensource-src
+Version: 5.5.1-2ubuntu6
+Replaces: qtdeclarative5-folderlistmodel-plugin (<< 5.2.1-5~)
+Depends: libc6 (>= 2.14), libqt5core5a (>= 5.5.0), libqt5qml5 (>= 5.0.2), libstdc++6 (>= 4.1.1)
+Breaks: qtdeclarative5-folderlistmodel-plugin (<< 5.2.1-5~)
+Description: Qt 5 folderlistmodel QML module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ The FolderListModel provides a model of the contents of a file system folder.
+Homepage: http://qt-project.org/
+Original-Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+
+Package: libpython2.7-stdlib
+Status: install ok installed
+Priority: standard
+Section: python
+Installed-Size: 8721
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: python2.7
+Version: 2.7.12-1ubuntu0~16.04.4
+Replaces: python2.7 (<< 2.7.5-0~)
+Provides: python-argparse, python2.7-argparse, python2.7-celementtree, python2.7-cjkcodecs, python2.7-ctypes, python2.7-elementtree, python2.7-profiler, python2.7-wsgiref
+Depends: libpython2.7-minimal (= 2.7.12-1ubuntu0~16.04.4), mime-support, libbz2-1.0, libc6 (>= 2.15), libdb5.3, libexpat1 (>= 2.1~beta3), libffi6 (>= 3.0.4), libncursesw5 (>= 6), libreadline6 (>= 6.0), libsqlite3-0 (>= 3.5.9), libssl1.0.0 (>= 1.0.2~beta3), libtinfo5 (>= 6)
+Breaks: python-urllib3 (<< 1.9.1-3)
+Description: Interactive high-level object-oriented language (standard library, version 2.7)
+ Python is a high-level, interactive, object-oriented language. Its 2.7 version
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package contains Python 2.7's standard library. It is normally not
+ used on its own, but as a dependency of python2.7.
+Original-Maintainer: Matthias Klose <doko@debian.org>
+
+Package: diffstat
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 59
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1.61-1
+Depends: libc6 (>= 2.14)
+Description: produces graph of changes introduced by a diff file
+ This program is a simple filter that reads the output of the 'diff' program,
+ and produces a histogram of the total number of lines that were changed.
+ It is useful for scanning a patch file to see which files were changed.
+Original-Maintainer: Sandro Tosi <morph@debian.org>
+Homepage: http://invisible-island.net/diffstat/
+
+Package: python
+Status: install ok installed
+Priority: standard
+Section: python
+Installed-Size: 635
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: allowed
+Source: python-defaults
+Version: 2.7.12-1~16.04
+Replaces: python-dev (<< 2.6.5-2)
+Provides: python-ctypes, python-email, python-importlib, python-profiler, python-wsgiref
+Depends: python2.7 (>= 2.7.12-1~), libpython-stdlib (= 2.7.12-1~16.04)
+Pre-Depends: python-minimal (= 2.7.12-1~16.04)
+Suggests: python-doc (= 2.7.12-1~16.04), python-tk (>= 2.7.12-1~)
+Breaks: update-manager-core (<< 0.200.5-2)
+Conflicts: python-central (<< 0.5.5)
+Description: interactive high-level object-oriented language (default version)
+ Python, the high-level, interactive object oriented language,
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package is a dependency package, which depends on Debian's default
+ Python version (currently v2.7).
+Original-Maintainer: Matthias Klose <doko@debian.org>
+Homepage: http://www.python.org/
+
+Package: libspeexdsp1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 96
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: speex
+Version: 1.2~rc1.2-1ubuntu1
+Depends: libc6 (>= 2.14)
+Description: The Speex extended runtime library
+ Speex is an audio codec especially designed for compressing voice at low
+ bit-rates for applications such as voice over IP (VoIP). In some senses,
+ it is meant to be complementary to the Vorbis codec which places a greater
+ emphasis on high-quality music reproduction.
+ .
+ This package provides the runtime library of additional functions that
+ are part of the Speex distribution.
+Homepage: http://www.speex.org/
+Original-Maintainer: Ron Lee <ron@debian.org>
+
+Package: libqt4-xml
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 435
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: qt4-x11
+Version: 4:4.8.7+dfsg-5ubuntu2
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libqtcore4 (= 4:4.8.7+dfsg-5ubuntu2), libstdc++6 (>= 4.1.1)
+Description: Qt 4 XML module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ The QtXml module provides a stream reader and writer for XML documents,
+ and C++ implementations of SAX and DOM.
+Homepage: http://qt-project.org/
+Original-Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+
+Package: libxau6
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 50
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libxau
+Version: 1:1.0.8-1
+Depends: libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Description: X11 authorisation library
+ This package provides the main interface to the X11 authorisation handling,
+ which controls authorisation for X connections, both client-side and
+ server-side.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXau
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: branding-ubuntu
+Status: install ok installed
+Priority: optional
+Section: graphics
+Installed-Size: 1219
+Maintainer: Scott Ritchie <scottritchie@ubuntu.com>
+Architecture: all
+Version: 0.8
+Provides: branding
+Description: Replacement artwork with Ubuntu branding
+ The branding-ubuntu package is a series of replacement artworks for packages to
+ make them more Ubuntu specific and fit in with the overall theme.  Removal of
+ the branding package should cause branded applications to fall back to their
+ default artwork.
+Homepage: https://wiki.ubuntu.com/branding
+
+Package: python3-jwt
+Status: install ok installed
+Priority: optional
+Section: python
+Installed-Size: 79
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: pyjwt
+Version: 1.3.0-1ubuntu0.1
+Depends: python3:any (>= 3.3.2-2~)
+Recommends: python3-cryptography
+Suggests: python3-crypto
+Description: Python 3 implementation of JSON Web Token
+ PyJWT implements the JSON Web Token draft 01, a way of representing
+ signed content using JSON data structures.
+ .
+ Supported algorithms for cryptographic signing:
+ .
+   * HS256 - HMAC using SHA-256 hash algorithm (default)
+   * HS384 - HMAC using SHA-384 hash algorithm
+   * HS512 - HMAC using SHA-512 hash algorithm
+   * RS256 - RSASSA-PKCS1-v1_5 signature algorithm using SHA-256 hash
+     algorithm
+   * RS384 - RSASSA-PKCS1-v1_5 signature algorithm using SHA-384 hash
+     algorithm
+   * RS512 - RSASSA-PKCS1-v1_5 signature algorithm using SHA-512 hash
+     algorithm
+ .
+ Supported reserved claim names:
+   - "exp" (Expiration Time) Claim
+ .
+ This package contains the Python 3 version of the library.
+Homepage: https://github.com/jpadilla/pyjwt
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+
+Package: memtest86+
+Status: install ok installed
+Priority: optional
+Section: misc
+Installed-Size: 2488
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 5.01-3ubuntu2
+Depends: debconf (>= 0.5) | debconf-2.0
+Suggests: hwtools, memtester, kernel-patch-badram, memtest86, grub-pc | grub-legacy, mtools
+Conffiles:
+ /etc/grub.d/20_memtest86+ 87d33fe2ba29c6f6e94091930a59034c
+Description: thorough real-mode memory tester
+ Memtest86+ scans your RAM for errors.
+ .
+ This tester runs independently of any OS - it is run at computer
+ boot-up, so that it can test *all* of your memory.  You may want to
+ look at `memtester', which allows to test your memory within Linux,
+ but this one won't be able to test your whole RAM.
+ .
+ It can output a list of bad RAM regions usable by the BadRAM kernel
+ patch, so that you can still use your old RAM with one or two bad bits.
+ .
+ Memtest86+ is based on memtest86 3.0, and adds support for recent
+ hardware, as well as a number of general-purpose improvements,
+ including many patches to memtest86 available from various sources.
+ .
+ Both memtest86 and memtest86+ are being worked on in parallel.
+Homepage: http://www.memtest.org/
+Original-Maintainer: Yann Dirson <dirson@debian.org>
+
+Package: libbabeltrace1
+Status: install ok installed
+Priority: extra
+Section: libs
+Installed-Size: 113
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: babeltrace
+Version: 1.3.2-1
+Depends: libc6 (>= 2.14), libglib2.0-0 (>= 2.24.0)
+Description: Babeltrace conversion libraries
+ Babeltrace provides trace reading and writing libraries, as well as a trace
+ converter. Plugins can be created for any trace format to allow its conversion
+ to/from any other supported format.
+ .
+ This package provides the babeltrace trace reading and conversion library.
+Original-Maintainer: Jon Bernard <jbernard@debian.org>
+Homepage: http://www.efficios.com/babeltrace
+
+Package: libidn11
+Status: install ok installed
+Priority: standard
+Section: libs
+Installed-Size: 240
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libidn
+Version: 1.32-3ubuntu1.2
+Replaces: libidn11-dev
+Depends: libc6 (>= 2.14)
+Conflicts: libidn9-dev
+Description: GNU Libidn library, implementation of IETF IDN specifications
+ GNU Libidn is a fully documented implementation of the Stringprep,
+ Punycode and IDNA specifications.  Libidn's purpose is to encode and
+ decode internationalized domain names.  The Nameprep, XMPP, SASLprep,
+ and iSCSI profiles are supported.
+ .
+ This package contains the shared library.
+Homepage: https://www.gnu.org/software/libidn/
+Original-Maintainer: Debian Libidn Team <help-libidn@gnu.org>
+
+Package: libmpdec2
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 247
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: mpdecimal
+Version: 2.4.2-1
+Replaces: libmpdec2.3
+Depends: libc6 (>= 2.14)
+Breaks: libmpdec2.3
+Description: library for decimal floating point arithmetic (runtime library)
+ mpdecimal is a package for correctly-rounded arbitrary precision decimal
+ floating point arithmetic.
+Original-Maintainer: Matthias Klose <doko@debian.org>
+Homepage: http://www.bytereef.org/mpdecimal/index.html
+
+Package: signon-ui-x11
+Status: install ok installed
+Priority: optional
+Section: gnome
+Installed-Size: 285
+Maintainer: Ubuntu Desktop Team <ubuntu-desktop@lists.ubuntu.com>
+Architecture: amd64
+Source: signon-ui
+Version: 0.17+16.04.20151125-0ubuntu1
+Replaces: signon-ui (<< 0.17)
+Depends: libaccounts-qt5-1, libc6 (>= 2.14), libglib2.0-0 (>= 2.12.0), libnotify4 (>= 0.7.0), libproxy1v5 (>= 0.4.11), libqt5core5a (>= 5.4.0), libqt5dbus5 (>= 5.0.2), libqt5gui5 (>= 5.2.0) | libqt5gui5-gles (>= 5.2.0), libqt5network5 (>= 5.0.2), libqt5qml5 (>= 5.0.2), libqt5quick5 (>= 5.0.2) | libqt5quick5-gles (>= 5.0.2), libqt5webkit5 (>= 5.2.0), libqt5widgets5 (>= 5.2.0), libsignon-qt5-1, libstdc++6 (>= 4.1.1), signon-ui-service
+Breaks: signon-ui (<< 0.17)
+Description: Single Sign-on UI
+ UI for the signond Single Signon service
+Homepage: https://launchpad.net/signon-ui
+
+Package: fuse
+Status: install ok installed
+Priority: optional
+Section: utils
+Installed-Size: 104
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 2.9.4-1ubuntu3.1
+Depends: libc6 (>= 2.14), libfuse2 (= 2.9.4-1ubuntu3.1), adduser, mount (>= 2.19.1), sed (>= 4)
+Conffiles:
+ /etc/fuse.conf 298587592c8444196833f317def414f2
+Description: Filesystem in Userspace
+ Filesystem in Userspace (FUSE) is a simple interface for userspace programs to
+ export a virtual filesystem to the Linux kernel. It also aims to provide a
+ secure method for non privileged users to create and mount their own filesystem
+ implementations.
+Homepage: http://fuse.sourceforge.net/
+Original-Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+
+Package: rsyslog
+Status: install ok installed
+Priority: important
+Section: admin
+Installed-Size: 1297
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 8.16.0-1ubuntu3
+Provides: linux-kernel-log-daemon, system-log-daemon
+Depends: libc6 (>= 2.17), libestr0 (>= 0.1.4), libjson-c2 (>= 0.10), libsystemd0, libuuid1 (>= 2.16), zlib1g (>= 1:1.1.4), init-system-helpers (>= 1.18~), lsb-base (>= 4.1+Debian11ubuntu7), adduser, ucf
+Recommends: logrotate
+Suggests: rsyslog-mysql | rsyslog-pgsql, rsyslog-doc, rsyslog-gnutls, rsyslog-gssapi, rsyslog-relp, apparmor (>= 2.8.96~2541-0ubuntu4~)
+Conflicts: linux-kernel-log-daemon, system-log-daemon
+Conffiles:
+ /etc/apparmor.d/usr.sbin.rsyslogd 5726aad9242260f598ae29e5998d2cea
+ /etc/default/rsyslog c7af23c348917e877399baea1849727a
+ /etc/init.d/rsyslog a1ef1bb01ba370040d705c92fc09e92e
+ /etc/init/rsyslog.conf 34b6c083e007bed20e8341486361529b
+ /etc/logcheck/ignore.d.server/rsyslog d77ab13caf836413b9debd906948d761
+ /etc/logrotate.d/rsyslog b995d89ccfe4a83ac3ffc5ab95b80f7b
+ /etc/rsyslog.conf 58080cfa769d03e19f034e0cfa54ba99
+Description: reliable system and kernel logging daemon
+ Rsyslog is a multi-threaded implementation of syslogd (a system utility
+ providing support for message logging), with features that include:
+  * reliable syslog over TCP, SSL/TLS and RELP
+  * on-demand disk buffering
+  * email alerting
+  * writing to MySQL or PostgreSQL databases (via separate output plugins)
+  * permitted sender lists
+  * filtering on any part of the syslog message
+  * on-the-wire message compression
+  * fine-grained output format control
+  * failover to backup destinations
+  * enterprise-class encrypted syslog relaying
+ .
+ It is the default syslogd on Debian systems.
+Homepage: http://www.rsyslog.com/
+Original-Maintainer: Michael Biebl <biebl@debian.org>
+
+Package: libclass-accessor-perl
+Status: install ok installed
+Priority: optional
+Section: perl
+Installed-Size: 104
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 0.34-1
+Depends: perl, libsub-name-perl
+Description: Perl module that automatically generates accessors
+ Class::Accessor automagically generates accessor/mutator methods for your
+ class. Most of the time, writing accessors is an exercise in cutting and
+ pasting. If you make your module a subclass of Class::Accessor and declare
+ your accessor fields with mk_accessors() then you will find yourself with a
+ set of automatically generated accessors which can even be customized.
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Homepage: http://search.cpan.org/dist/Class-Accessor/
+
+Package: nautilus
+Status: install ok installed
+Priority: optional
+Section: gnome
+Installed-Size: 1660
+Maintainer: Ubuntu Desktop Team <ubuntu-desktop@lists.ubuntu.com>
+Architecture: amd64
+Version: 1:3.18.4.is.3.14.3-0ubuntu6
+Replaces: nautilus-data (<< 1:3.18.1-1ubuntu1), nautilus-sendto
+Depends: libatk1.0-0 (>= 1.32.0), libc6 (>= 2.14), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.10.0), libdbusmenu-glib4 (>= 0.4.2), libexempi3 (>= 2.2.0), libexif12 (>= 0.6.21-1~), libgail-3-0 (>= 3.0.0), libgdk-pixbuf2.0-0 (>= 2.25.2), libglib2.0-0 (>= 2.39.90), libgnome-desktop-3-12 (>= 3.18.1), libgtk-3-0 (>= 3.16.2), libnautilus-extension1a (>= 1:2.91), libnotify4 (>= 0.7.0), libpango-1.0-0 (>= 1.20.0), libpangocairo-1.0-0 (>= 1.14.0), libselinux1 (>= 1.32), libtracker-sparql-1.0-0 (>= 0.10.0), libunity9 (>= 3.8.4), libx11-6, libxml2 (>= 2.7.4), libzeitgeist-2.0-0 (>= 0.9.9), session-migration, nautilus-data (>= 1:3.18), nautilus-data (<< 1:3.19), shared-mime-info (>= 0.50), desktop-file-utils (>= 0.7), gvfs (>= 1.3.2), libglib2.0-data, gsettings-desktop-schemas (>= 3.8.0)
+Recommends: librsvg2-common, gvfs-backends
+Suggests: brasero (>= 2.26), eog, evince | pdf-viewer, totem | mp3-decoder, xdg-user-dirs, tracker, gnome-sushi
+Breaks: gnome-bluetooth (<< 3.0), gnome-session (<< 2.28), gnome-volume-manager (<< 2.24), nautilus-sendto-empathy (<< 3.0), rhythmbox (<< 0.12)
+Conffiles:
+ /etc/xdg/autostart/nautilus-autostart.desktop 132571316e477d7e4a822a6eb985102a
+Description: file manager and graphical shell for GNOME
+ Nautilus is the official file manager for the GNOME desktop. It allows
+ one to browse directories, preview files and launch applications
+ associated with them. It is also responsible for handling the icons on
+ the GNOME desktop. It works on local and remote filesy

@@ -1,0 +1,605 @@
+y c99731b55202edfffcfbecd5f0401b85
+ /etc/init.d/brltty ff21add488f1dff38d5b42800d3716c6
+Description: Access software for a blind person using a braille display
+ BRLTTY is a daemon which provides access to the console (text mode)
+ for a blind person using a braille display.  It drives the braille
+ display and provides complete screen review functionality.
+ The following display models are supported:
+  * Alva/Optelec (ABT3xx, Delphi, Satellite, Braille System 40, BC 640/680)
+  * Baum
+  * BrailComm
+  * BrailleLite
+  * BrailleNote
+  * Cebra
+  * EcoBraille
+  * EuroBraille (AzerBraille, Clio, Esys, Iris, NoteBraille, Scriba)
+  * Freedom Scientific (Focus and PacMate)
+  * Handy Tech
+  * HIMS (Braille Sense, SyncBraille)
+  * HumanWare (Brailliant)
+  * Iris
+  * LogText 32
+  * MDV
+  * Metec (BD-40)
+  * NinePoint
+  * Papenmeier
+  * Pegasus
+  * Seika
+  * Tieman (Voyager, CombiBraille, MiniBraille, MultiBraille,
+            BraillePen/EasyLink)
+  * Tivomatic (Albatross)
+  * TSI (Navigator, PowerBraille)
+  * VideoBraille
+  * VisioBraille
+ .
+ BRLTTY also provides a client/server based infrastructure for applications
+ wishing to utilize a Braille display.  The daemon process listens for incoming
+ TCP/IP connections on a certain port.  A shared object library for clients is
+ provided in the package libbrlapi0.6.  A static library, header files and
+ documentation is provided in package libbrlapi-dev.  Bindings to other
+ programming languages can be found in libbrlapi-java (Java) and
+ python3-brlapi (Python).
+Homepage: http://mielke.cc/brltty/
+Original-Maintainer: Debian Accessibility Team <debian-accessibility@lists.debian.org>
+
+Package: accountsservice
+Status: install ok installed
+Priority: optional
+Section: admin
+Installed-Size: 428
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.6.40-2ubuntu11.3
+Depends: dbus, libaccountsservice0 (= 0.6.40-2ubuntu11.3), init-system-helpers (>= 1.18~), libc6 (>= 2.4), libglib2.0-0 (>= 2.37.3), libpolkit-gobject-1-0 (>= 0.99)
+Suggests: gnome-control-center
+Breaks: libpam-pin
+Conffiles:
+ /etc/dbus-1/system.d/org.freedesktop.Accounts.conf 06247d62052029ead7d9ec1ef9457f42
+Description: query and manipulate user account information
+ The AccountService project provides a set of D-Bus
+ interfaces for querying and manipulating user account
+ information and an implementation of these interfaces,
+ based on the useradd, usermod and userdel commands.
+Homepage: http://www.freedesktop.org/wiki/Software/AccountsService/
+Original-Maintainer: Alessio Treglia <alessio@debian.org>
+
+Package: fonts-khmeros-core
+Status: install ok installed
+Priority: optional
+Section: fonts
+Installed-Size: 571
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: fonts-khmeros
+Version: 5.0-7ubuntu1
+Replaces: fonts-khmeros (<< 5.0-5ubuntu1), ttf-khmeros (<< 5.0-4), ttf-khmeros-core (<< 5.0-5ubuntu1)
+Breaks: fonts-khmeros (<< 5.0-5ubuntu1), ttf-khmeros (<< 5.0-4), ttf-khmeros-core (<< 5.0-5ubuntu1)
+Conffiles:
+ /etc/fonts/conf.d/65-khmer.conf 574805699c9ed61a202a6f7876cd8b5c
+Description: KhmerOS Unicode fonts for the Khmer language of Cambodia
+ Free fonts for the Khmer language, used in Cambodia, developed by
+ the Khmer Software Iniative, part of the Open Forum of Cambodia.
+ .
+ This package provides Khmer OS fonts for use in the default Ubuntu desktop.
+Homepage: http://www.khmeros.info
+Original-Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
+
+Package: libpam0g
+Status: install ok installed
+Priority: required
+Section: libs
+Installed-Size: 210
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: pam
+Version: 1.1.8-3.2ubuntu2.1
+Replaces: libpam0g-util
+Depends: libaudit1 (>= 1:2.2.1), libc6 (>= 2.14), debconf (>= 0.5) | debconf-2.0
+Suggests: libpam-doc
+Description: Pluggable Authentication Modules library
+ Contains the shared library for Linux-PAM, a library that enables the
+ local system administrator to choose how applications authenticate users.
+ In other words, without rewriting or recompiling a PAM-aware application,
+ it is possible to switch between the authentication mechanism(s) it uses.
+ One may entirely upgrade the local authentication system without touching
+ the applications themselves.
+Homepage: http://pam.sourceforge.net/
+Original-Maintainer: Steve Langasek <vorlon@debian.org>
+
+Package: libsodium18
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 417
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libsodium
+Version: 1.0.8-5
+Depends: libc6 (>= 2.14)
+Description: Network communication, cryptography and signaturing library
+ NaCl (pronounced "salt") is a new easy-to-use high-speed software library for
+ network communication, encryption, decryption, signatures, etc.
+ .
+ NaCl's goal is to provide all of the core operations needed to build
+ higher-level cryptographic tools.
+ .
+ Sodium is a portable, cross-compilable, installable, packageable fork of NaCl,
+ with a compatible API.
+Original-Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Homepage: http://www.libsodium.org/
+
+Package: libxdmcp6
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 39
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libxdmcp
+Version: 1:1.1.2-1.1
+Depends: libc6 (>= 2.4)
+Description: X11 Display Manager Control Protocol library
+ This package provides the main interface to the X11 display manager control
+ protocol library, which allows for remote logins to display managers.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXdmcp
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: libbind9-140
+Status: install ok installed
+Priority: standard
+Section: libs
+Installed-Size: 98
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: bind9
+Version: 1:9.10.3.dfsg.P4-8ubuntu1.12
+Replaces: libbind0
+Depends: libc6 (>= 2.4), libdns162, libisc160, libisccfg140
+Conflicts: libbind0, libbind9-41
+Description: BIND9 Shared Library used by BIND
+ The Berkeley Internet Name Domain (BIND) implements an Internet domain
+ name server.  BIND is the most widely-used name server software on the
+ Internet, and is supported by the Internet Software Consortium, www.isc.org.
+ .
+ This package delivers the libbind9 shared library used by BIND's daemons and
+ clients.
+Original-Maintainer: LaMont Jones <lamont@debian.org>
+
+Package: libunity-core-6.0-9
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 1954
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: unity
+Version: 7.4.5+16.04.20180221-0ubuntu1
+Replaces: libunity-core-6.0-6, libunity-core-6.0-7, libunity-core-6.0-8, unity-common
+Provides: unity-common, unity-common-7.0
+Depends: libc6 (>= 2.14), libdee-1.0-4 (>= 0.5.16), libgcc1 (>= 1:3.0), libglib2.0-0 (>= 2.41.1), libnux-4.0-0, libsigc++-2.0-0v5 (>= 2.6.1), libstdc++6 (>= 5.2), libunity-protocol-private0 (>= 7.1.4+16.04.20180209.1), unity-services (= 7.4.5+16.04.20180221-0ubuntu1), unity-schemas (= 7.4.5+16.04.20180221-0ubuntu1)
+Conflicts: libunity-core-6.0-6, libunity-core-6.0-7, libunity-core-6.0-8, unity-common
+Conffiles:
+ /etc/apport/crashdb.conf.d/unity-crashdb.conf ef4cf33c25147e05d520ff9f45cfbdb7
+Description: core library for the Unity interface
+ Unity is a desktop experience that sings. Designed by Canonical and the Ayatana
+ community, Unity is all about the combination of familiarity and the future. We
+ bring together visual design, analysis of user experience testing, modern
+ graphics technologies and a deep understanding of the free software landscape
+ to produce what we hope will be the lightest, most elegant and most delightful
+ way to use your PC.
+ .
+ This package contains shared libraries to be used by unity-3d.
+Homepage: https://launchpad.net/unity
+
+Package: xml-core
+Status: install ok installed
+Priority: optional
+Section: text
+Installed-Size: 188
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 0.13+nmu2
+Depends: sgml-base (>= 1.26+nmu2), sed (>= 4.1.2-8)
+Suggests: debhelper (>= 9.20120909)
+Conffiles:
+ /etc/sgml/xml-core.cat 055ba0bd3154c0a58b9bf8a0c9ecf2fa
+Description: XML infrastructure and XML catalog file support
+ This package creates the XML infrastructure directories and provides
+ XML catalog file support in compliance with the current Debian XML
+ Policy draft:
+ .
+   * infrastructure directories:
+      - /etc/xml
+      - /usr/share/xml/{declaration,entities,misc,schema}
+      - /usr/local/share/xml/{declaration,entities,misc,schema}
+ .
+   * XML catalog schema: OASIS XML Catalog Committee Specification 1.0
+ .
+   * update-xmlcatalog(8): tool for maintaining the root XML catalog
+     file and the package XML catalog files in the '/etc/xml' directory
+     as well as local XML catalog files.
+ .
+   * dh_installxmlcatalogs(1): debhelper tool for installing local XML
+     catalog files and registering XML entities in package XML catalog
+     files and the root XML catalog file (requires debhelper package)
+Original-Maintainer: Debian XML/SGML Group <debian-xml-sgml-pkgs@lists.alioth.debian.org>
+
+Package: libcap-ng0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 35
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libcap-ng
+Version: 0.7.7-1
+Depends: libc6 (>= 2.8)
+Description: An alternate POSIX capabilities library
+ This library implements the user-space interfaces to the POSIX
+ 1003.1e capabilities available in Linux kernels.  These capabilities are
+ a partitioning of the all powerful root privilege into a set of distinct
+ privileges.
+ .
+ The libcap-ng library is intended to make programming with POSIX
+ capabilities much easier than the traditional libcap library.
+ .
+ This package contains header files and libraries for libcap-ng.
+Original-Maintainer: Pierre Chifflier <pollux@debian.org>
+Homepage: http://people.redhat.com/sgrubb/libcap-ng
+
+Package: libbdplus0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 140
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libbdplus
+Version: 0.1.2-1
+Depends: libc6 (>= 2.14), libgcrypt20 (>= 1.6.1), libgpg-error0 (>= 1.14)
+Recommends: libaacs0
+Enhances: libbluray1
+Description: implementation of BD+ for reading Blu-ray Discs
+ libbdplus is a research project to implement the BD+ System Specifications.
+ It provides, through an open-source library, a way to understand how the BD+
+ works.
+ .
+ This package DOES NOT provide any key, certificate, configuration
+ file or virtual machine that could be used to decode encrypted
+ copyrighted material.
+ .
+ This package provides the shared library.
+Original-Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Homepage: https://www.videolan.org/developers/libbdplus.html
+
+Package: friendly-recovery
+Status: install ok installed
+Priority: optional
+Section: admin
+Installed-Size: 48
+Maintainer: Michael Vogt <michael.vogt@ubuntu.com>
+Architecture: all
+Version: 0.2.31ubuntu2
+Depends: lsb-base (>= 4.1+Debian11ubuntu7), upstart | systemd-sysv, whiptail
+Recommends: gettext-base, update-manager-core (>= 0.90.0)
+Breaks: grub2 (<< 1.99-12ubuntu4), initramfs-tools (<< 0.99ubuntu4), upstart (<< 1.3-0ubuntu9)
+Conffiles:
+ /etc/init/friendly-recovery.conf e5ccadca648d429f076c31fabbd6bb81
+Description: Make recovery more user-friendly
+ Make the recovery mode more user-friendly by providing a menu
+ with pluggable options.
+
+Package: qpdf
+Status: install ok installed
+Priority: optional
+Section: text
+Installed-Size: 573
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 8.0.2-3~16.04.1
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libqpdf21 (>> 8.0~), libstdc++6 (>= 5.2)
+Description: tools for transforming and inspecting PDF files
+ QPDF is a program that can be used to linearize (web-optimize),
+ encrypt (password-protect), decrypt, and inspect PDF files from the
+ command-line.  It does these and other structural, content-preserving
+ transformations on PDF files, reading a PDF file as input and
+ creating a new one as output.  It also provides many useful
+ capabilities to developers of PDF-producing software or for people
+ who just want to look at the innards of a PDF file to learn more
+ about how they work.
+ .
+ QPDF understands PDF files that use compressed object streams
+ (supported by newer PDF applications) and can convert such files into
+ those that can be read with older viewers.  It can also be used for
+ checking PDF files for structural errors, inspecting stream contents,
+ or extracting objects from PDF files.  QPDF is not PDF content
+ creation or viewing software -- it does not have the capability to
+ create PDF files from scratch or to display PDF files.
+ .
+ This package includes the command-line qpdf tools.  It also contains
+ the documentation.
+Original-Maintainer: Jay Berkenbilt <qjb@debian.org>
+Homepage: http://qpdf.sourceforge.net
+
+Package: signon-ui-service
+Status: install ok installed
+Priority: optional
+Section: gnome
+Installed-Size: 16
+Maintainer: Ubuntu Desktop Team <ubuntu-desktop@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Source: signon-ui
+Version: 0.17+16.04.20151125-0ubuntu1
+Replaces: signon-ui (<< 0.17), ubuntu-system-settings-online-accounts (<< 0.4)
+Breaks: signon-ui (<< 0.17), ubuntu-system-settings-online-accounts (<< 0.4)
+Description: D-Bus service file for signon-ui
+ This D-Bus service is used to provide a UI for authenticating online accounts.
+Homepage: https://launchpad.net/signon-ui
+
+Package: libmad0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 158
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libmad
+Version: 0.15.1b-9ubuntu16.04.1
+Depends: libc6 (>= 2.14)
+Description: MPEG audio decoder library
+ MAD is an MPEG audio decoder. It currently only supports the MPEG 1
+ standard, but fully implements all three audio layers (Layer I, Layer II,
+ and Layer III, the latter often colloquially known as MP3.)
+ .
+ MAD has the following special features:
+   - 100% fixed-point (integer) computation
+   - completely new implementation based on the ISO/IEC 11172-3 standard
+   - distributed under the terms of the GNU General Public License (GPL)
+Original-Maintainer: Mad Maintainers <pkg-mad-maintainers@lists.alioth.debian.org>
+
+Package: dbus
+Status: install ok installed
+Priority: standard
+Section: admin
+Installed-Size: 536
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: foreign
+Version: 1.10.6-1ubuntu3.3
+Depends: libapparmor1 (>= 2.8.95), libaudit1 (>= 1:2.2.1), libc6 (>= 2.14), libcap-ng0, libdbus-1-3 (= 1.10.6-1ubuntu3.3), libexpat1 (>= 2.0.1), libselinux1 (>= 2.0.65), libsystemd0, lsb-base (>= 4.1+Debian11ubuntu7), adduser
+Suggests: dbus-user-session | dbus-x11
+Conffiles:
+ /etc/default/dbus 0d0f25a2f993509c857eb262f6e22015
+ /etc/init.d/dbus ec9a7d183ec50837a12aca3f9c95cc27
+ /etc/init/dbus.conf f77985d342a32cdf82acfc74772ef203
+Description: simple interprocess messaging system (daemon and utilities)
+ D-Bus is a message bus, used for sending messages between applications.
+ Conceptually, it fits somewhere in between raw sockets and CORBA in
+ terms of complexity.
+ .
+ D-Bus supports broadcast messages, asynchronous messages (thus
+ decreasing latency), authentication, and more. It is designed to be
+ low-overhead; messages are sent using a binary protocol, not using
+ XML. D-Bus also supports a method call mapping for its messages, but
+ it is not required; this makes using the system quite simple.
+ .
+ It comes with several bindings, including GLib, Python, Qt and Java.
+ .
+ This package contains the D-Bus daemon and related utilities.
+ .
+ The client-side library can be found in the libdbus-1-3 package, as it is no
+ longer contained in this package.
+Homepage: http://dbus.freedesktop.org/
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+
+Package: ubuntu-minimal
+Status: install ok installed
+Priority: optional
+Section: metapackages
+Installed-Size: 45
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: ubuntu-meta
+Version: 1.361.2
+Depends: adduser, apt, apt-utils, bzip2, console-setup, debconf, debconf-i18n, eject, gnupg, ifupdown, initramfs-tools, iproute2, iputils-ping, isc-dhcp-client, kbd, kmod, less, locales, lsb-release, makedev, mawk, net-tools, netbase, netcat-openbsd, passwd, procps, python3, resolvconf, rsyslog, sudo, tzdata, ubuntu-advantage-tools, ubuntu-keyring, udev, ureadahead, vim-tiny, whiptail
+Description: Minimal core of Ubuntu
+ This package depends on all of the packages in the Ubuntu minimal system,
+ that is a functional command-line system with the following capabilities:
+ .
+  - Boot
+  - Detect hardware
+  - Connect to a network
+  - Install packages
+  - Perform basic diagnostics
+ .
+ It is also used to help ensure proper upgrades, so it is recommended that
+ it not be removed.
+
+Package: libmount1
+Status: install ok installed
+Priority: required
+Section: libs
+Installed-Size: 384
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: util-linux
+Version: 2.27.1-6ubuntu3.6
+Depends: libblkid1 (>= 2.17.2), libc6 (>= 2.17), libselinux1 (>= 1.32)
+Description: device mounting library
+ This device mounting library is used by mount and umount helpers.
+Original-Maintainer: Debian util-linux Maintainers <ah-util-linux@debian.org>
+
+Package: ethtool
+Status: install ok installed
+Priority: optional
+Section: net
+Installed-Size: 311
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1:4.5-1
+Depends: libc6 (>= 2.14)
+Conffiles:
+ /etc/network/if-pre-up.d/ethtool 39693276fe35fccec75f610cb71d3e85
+ /etc/network/if-up.d/ethtool b0d11ba5983c8c5990bb9933c35a3ec5
+Description: display or change Ethernet device settings
+ ethtool can be used to query and change settings such as speed, auto-
+ negotiation and checksum offload on many network devices, especially
+ Ethernet devices.
+Original-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Homepage: https://www.kernel.org/pub/software/network/ethtool/
+
+Package: libxxf86vm1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 59
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libxxf86vm
+Version: 1:1.1.4-1
+Depends: libc6 (>= 2.4), libx11-6 (>= 2:1.6.0), libxext6
+Pre-Depends: multiarch-support
+Description: X11 XFree86 video mode extension library
+ libXxf86vm provides an interface to the XFree86-VidModeExtension
+ extension, which allows client applications to get and set video mode
+ timings in extensive detail.  It is used by the xvidtune program in
+ particular.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXxf86vm
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: libndp0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 41
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libndp
+Version: 1.4-2ubuntu0.16.04.1
+Depends: libc6 (>= 2.15)
+Description: Library for Neighbor Discovery Protocol
+ libndp is a library for the IPv6 Neighbor Discovery Protocol (NDP).  It
+ contains functions for building and parsing NDP messages, and provides
+ a high-level interface for sending and receiving NDP messages on a
+ network interface.
+Homepage: http://libndp.org
+Original-Maintainer: Andrew Ayer <agwa@andrewayer.name>
+
+Package: libzvbi0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 670
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: zvbi
+Version: 0.2.35-10
+Replaces: libzvbi-0.1 (<= 0.2.1-3)
+Depends: libc6 (>= 2.15), libpng12-0 (>= 1.2.13-4), libzvbi-common (= 0.2.35-10)
+Description: Vertical Blanking Interval decoder (VBI) - runtime files
+ The vertical blanking interval (VBI) is an interval in a television signal
+ that temporarily suspends transmission of the signal for the electron gun
+ to move back up to the first line of the television screen to trace the
+ next screen field.
+ .
+ The vertical blanking interval can be used to carry data, since anything
+ sent during the VBI would naturally not be displayed; various test signals,
+ closed captioning, and other digital data can be sent during this time
+ period. These include information like closed-caption data, Teletext
+ (primarily in Europe), and now Intercast and the ATVEC Internet television
+ encodings.
+ .
+ The Zapping VBI library, in short ZVBI, provides functions to capture and
+ decode VBI data. It is written in plain ANSI C with few dependencies on
+ other tools and libraries, licensed under GPL. Some features:
+   * Captures raw VBI samples from V4L, V4L2 and FreeBSD BKTR devices, sliced
+     VBI data from Linux DVB devices;
+   * Implements a VBI Proxy to share one VBI device between multiple
+     applications;
+   * Has a robust and versatile bit slicer which handles a wide range of data
+     services;
+   * Functions to capture multiple data services at once, such as Closed
+     Caption (both NTSC and PAL), Teletext, VPS, WSS, XDS;
+   * Level 3.5 Teletext decoder with support for all Teletext character sets,
+     graphics, 4096 colors, with built-in page cache including search
+     functions;
+   * Closed Caption decoder which supports roll-up, pop-up and paint-on style
+     caption, color, expanded character set, text attributes and free text
+     placement;
+   * Renders Teletext and Caption pages, can export to HTML, PNG and other
+     formats.
+   * Can determine network names;
+   * Can find Teletext subtitle and program pages;
+   * Functions to extract data transmissions in Teletext streams (currently
+     Page Format Clear and Independent Data Line Format A);
+   * Can multiplex and demultiplex DVB VBI PES and TS streams.
+Original-Maintainer: Joao Eriberto Mota Filho <eriberto@debian.org>
+Homepage: http://zapping.sf.net/ZVBI
+
+Package: libvorbisenc2
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 699
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libvorbis
+Version: 1.3.5-3ubuntu0.2
+Depends: libc6 (>= 2.4), libvorbis0a (= 1.3.5-3ubuntu0.2)
+Description: encoder library for Vorbis General Audio Compression Codec
+ Ogg Vorbis is a fully open, non-proprietary, patent-and-royalty-free,
+ general-purpose compressed audio format for audio and music at fixed
+ and variable bitrates from 16 to 128 kbps/channel.
+ .
+ The Vorbisenc library provides a convenient API for setting up an encoding
+ environment using libvorbis.
+Homepage: http://www.xiph.org/vorbis/
+Original-Maintainer: Debian Xiph.org Maintainers <pkg-xiph-maint@lists.alioth.debian.org>
+
+Package: g++-5
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 22855
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: gcc-5
+Version: 5.4.0-6ubuntu1~16.04.11
+Provides: c++-compiler, c++abi2-dev
+Depends: gcc-5-base (= 5.4.0-6ubuntu1~16.04.11), gcc-5 (= 5.4.0-6ubuntu1~16.04.11), libstdc++-5-dev (= 5.4.0-6ubuntu1~16.04.11), libc6 (>= 2.14), libgmp10 (>= 2:5.0.1~), libisl15 (>= 0.15), libmpc3, libmpfr4 (>= 3.1.3), zlib1g (>= 1:1.1.4)
+Suggests: g++-5-multilib, gcc-5-doc (>= 5.2.1-23), libstdc++6-5-dbg (>= 5.4.0-6ubuntu1~16.04.11)
+Description: GNU C++ compiler
+ This is the GNU C++ compiler, a fairly portable optimizing compiler for C++.
+Homepage: http://gcc.gnu.org/
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: libcanberra-gtk0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 41
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu/libkate.so.1

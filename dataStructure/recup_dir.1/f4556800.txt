@@ -1,0 +1,10 @@
+scargamento in le situationes sequente:"
+  },
+  "downloadOnlyDetailsPrivate": {
+    "message": "In un fenestra de Navigation Private."
+  },
+  "downloadOnlyDetailsThirdParty": {
+    "message": "Cookies de tertie parte disactivate."
+  },
+  "downloadOnlyDetailsNeverRemember": {
+    "message": "

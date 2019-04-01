@@ -1,0 +1,7 @@
+": "Në një dritare Shfletimi Privat."
+  },
+  "downloadOnlyDetailsThirdParty": {
+    "message": "Cookie-t e palëve të treta janë të çaktivizuara."
+  },
+  "downloadOnlyDetailsNeverRemember": {
+    "message": "

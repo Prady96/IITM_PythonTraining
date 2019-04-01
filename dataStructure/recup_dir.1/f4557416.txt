@@ -1,0 +1,116 @@
+         } else if (req.status === 0) {
+            const error = new Error("Could not log in, server unavailable");
+            error.popupMessage = "LOGIN_CONNECTION_ERROR";
+            analytics.sendEvent("login-failed", "connection-error");
+            reject(error);
+          } else {
+            initialized = true;
+            const jsonResponse = JSON.parse(req.responseText);
+            log.info("Screenshots logged in");
+            analytics.sendEvent("login");
+            saveAuthInfo(jsonResponse);
+            if (ownershipCheck) {
+              resolve({isOwner: jsonResponse.isOwner});
+            } else {
+              resolve(true);
+            }
+          }
+        });
+        req.onerror = catcher.watchFunction(() => {
+          analytics.sendEvent("login-failed", "connection-error");
+          const exc = new Error("Connection failed");
+          exc.url = loginUrl;
+          exc.popupMessage = "CONNECTION_ERROR";
+          reject(exc);
+        });
+        req.setRequestHeader("content-type", "application/json");
+        req.send(JSON.stringify({
+          deviceId: registrationInfo.deviceId,
+          secret: registrationInfo.secret,
+          deviceInfo: JSON.stringify(deviceInfo()),
+          ownershipCheck,
+        }));
+      });
+    });
+  }
+
+  function saveAuthInfo(responseJson) {
+    accountId = responseJson.accountId;
+    if (responseJson.sentryPublicDSN) {
+      sentryPublicDSN = responseJson.sentryPublicDSN;
+    }
+    if (responseJson.authHeader) {
+      authHeader = responseJson.authHeader;
+      if (!registrationInfo.registered) {
+        registrationInfo.registered = true;
+        catcher.watchPromise(browser.storage.local.set({registrationInfo}));
+      }
+    }
+    if (responseJson.abTests) {
+      abTests = responseJson.abTests;
+      catcher.watchPromise(browser.storage.local.set({abTests}));
+    }
+  }
+
+  exports.maybeLogin = function() {
+    if (!registrationInfo) {
+      return Promise.resolve();
+    }
+
+    return exports.authHeaders();
+  };
+
+  exports.authHeaders = function() {
+    let initPromise = Promise.resolve();
+    if (!initialized) {
+      initPromise = login();
+    }
+    return initPromise.then(() => {
+      if (authHeader) {
+        return {"x-screenshots-auth": authHeader};
+      }
+      log.warn("No auth header available");
+      return {};
+    });
+  };
+
+  exports.getSentryPublicDSN = function() {
+    return sentryPublicDSN || buildSettings.defaultSentryDsn;
+  };
+
+  exports.getAbTests = function() {
+    return abTests;
+  };
+
+  exports.isRegistered = function() {
+    return registrationInfo && registrationInfo.registered;
+  };
+
+  communication.register("getAuthInfo", (sender, ownershipCheck) => {
+    return fetchStoredInfo.then(() => {
+      // If a device id was never generated, report back accordingly.
+      if (!registrationInfo) {
+        return null;
+      }
+
+      return exports.authHeaders().then((authHeaders) => {
+        let info = registrationInfo;
+        if (info.registered) {
+          return login({ownershipCheck}).then((result) => {
+            return {
+              isOwner: result && result.isOwner,
+              deviceId: registrationInfo.deviceId,
+              accountId,
+              authHeaders,
+            };
+          });
+        }
+        info = Object.assign({authHeaders}, info);
+        return info;
+      });
+  });
+});
+
+  return exports;
+})();
+PK

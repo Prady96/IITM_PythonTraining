@@ -1,0 +1,26 @@
+bute("href").startsWith("#")) {
+          t += " (" + el.href + ")";
+        }
+      } else {
+        t = el.innerText;
+      }
+      if (t) {
+        text.push(t);
+      }
+    }
+    traverse(document.body);
+    if (text.length) {
+      let result = text.join("\n");
+      result = result.replace(/^\s+/, "");
+      result = result.replace(/\s+$/, "");
+      result = result.replace(/[ \t]+\n/g, "\n");
+      return result;
+    }
+    return null;
+  };
+
+
+  return exports;
+})();
+null;
+PK

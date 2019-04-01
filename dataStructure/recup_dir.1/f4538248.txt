@@ -1,0 +1,2 @@
+temi të ketë një përdorim sa më të mirë të kujtesës fizike në dispozicion, kështu që ai të sillet më qëndrueshëm kur kjo e fundit mungon. Mund të hasni probleme instalimi nëse nuk keni kujtesë fizike të mjaftueshme.\n\nNëse nuk kthehesh prapa tek menuja e ndarjes dhe nuk cakton një ndarje swap, instalimi do të vazhdojë pa hapësirë swap.
+Extended_description-sr.utf-8: 

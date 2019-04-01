@@ -1,0 +1,4 @@
+"Oj! Firefox Screenshots verkar inte fungera korrekt."
+  },
+  "genericErrorDetails": {
+    "message": "Vi är inte säkra p

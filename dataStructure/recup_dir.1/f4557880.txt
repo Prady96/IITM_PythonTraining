@@ -1,0 +1,17 @@
+ext.callOnClose({
+              close: () => {
+                try {
+                  LibraryButton.uninit();
+                } catch (ex) {
+                  Services.console.logStringMessage("Firefox Screenshots LibraryButton shutdown error: ", ex);
+                }
+              },
+            });
+            return LibraryButton.init(extension);
+          },
+        },
+      },
+    };
+  }
+};
+PK

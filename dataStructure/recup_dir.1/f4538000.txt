@@ -1,0 +1,4 @@
+gan y system hwn, /opt - pecynnau meddalwedd ychwanegol, /usr/local - hierarchaeth lleol, Mewnosod â llaw, Peidio a'i glymu
+Choices-da.utf-8: / - rodfilsystemet, /boot - opstartsindlæserens statiske filer, /home - Brugernes hjemmemapper, /tmp - midlertidige filer, /usr - statiske data, /var - variable data, /srv - data for services\, tilvejebragt af dette system, /opt - tilføjede programpakker, /usr/local - lokalt hierarki, Angiv manuelt, Montér den ikke
+Choices-de.utf-8: / - Das Wurzeldateisystem, /boot - Statische Dateien des Bootloaders, /home - Home-Verzeichnisse der Benutzer, /tmp - Temporäre Dateien, /usr - Statische Daten, /var - Sich ändernde Daten, /srv - Daten für Server-Dienste\, die bereitgestellt werden, /opt - Zusätzliche Anwendungen, /usr/local - Lokale Hierarchie, Von Hand angeben, Nicht einbinden
+Choices-dz.utf-8: / -

@@ -1,0 +1,5 @@
+oadOnlyDetailsNoUploadPref": {
+    "message": "Tuzna n ifayluyen tensa."
+  },
+  "notificationLinkCopiedTitle": {
+    "message": "Ase
